@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
+var imagemin = require('gulp-imagemin');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
@@ -58,6 +59,13 @@ gulp.task('minify-js', function () {
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+// Compress images
+gulp.task('imagemin', function () {
+  gulp.src('./img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./img'));
 });
 
 // Copy vendor files from /node_modules into /vendor
