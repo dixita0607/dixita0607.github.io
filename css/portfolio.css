@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Stylish Portfolio v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ * Start Bootstrap - Portfolio v1.0.0 (https://dixita0607.github.io/)
+ * Copyright 2013-2018 Dixita Ganatra
+ * Licensed under MIT (https://github.com/BlackrockDigital/dixita0607-portfolio/blob/master/LICENSE)
  */
 body,
 html {
@@ -55,9 +55,6 @@ h6 {
   font-size: 1.5rem;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); }
-  .social-link:hover {
-    background-color: #155d74;
-    text-decoration: none; }
   .social-link.twitter {
     background-color: #1EB0FB; }
   .social-link.fcc {
@@ -253,3 +250,5 @@ a {
     text-align: center;
     color: #444444;
     border-top: 2px solid #dededf; }
+    .card .card-body .card-link-icons {
+      font-size: 24px; }
