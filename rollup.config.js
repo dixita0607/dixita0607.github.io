@@ -1,4 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
+import postcss from 'rollup-plugin-postcss';
+import copyAssets from 'postcss-copy-assets';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -20,10 +22,21 @@ export default {
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
-			}
-		}),
+      emitCss: true
+      // css: css => {
+      // 	css.write('public/build/bundle.css');
+      // }
+    }),
+
+    postcss({
+      extract: true,
+      plugins: [
+        copyAssets({ base: 'public/assets' })
+      ],
+      minimize: production,
+      sourceMap: !production,
+      to: 'public/build/bundle.css'
+    }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
