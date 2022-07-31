@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Dixita's Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dixita0607/dixita0607.github.io.git"
+  },
+  "author": "Dixita Ganatra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dixita0607/dixita0607.github.io/issues"
+  },
+  "homepage": "https://github.com/dixita0607/dixita0607.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
