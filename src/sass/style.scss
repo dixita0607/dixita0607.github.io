@@ -1,5 +1,26 @@
+@import './theme/variables.scss';
+
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
-    background-color: pink;
-    color: blue;
+    background-color: $background-color;
+    color: $primary-text-color;
+    margin: 0;
+    padding: 0;
+
+    .container {
+        width: 900px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 6rem 1rem 1rem;
+    }
+
+    a {
+        color: $primary-color;
+    }
+
 }
