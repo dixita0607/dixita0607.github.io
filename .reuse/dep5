@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: personal-website
+Upstream-Contact: Dixita Ganatra <contact@dixita.dev>
+Source: https://codeberg.org/dixita/personal-website
+
+Files: *
+Copyright: 2022 Dixita Ganatra <contact@dixita.dev>
+License: MIT
