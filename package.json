@@ -4,7 +4,7 @@
   "description": "Dixita's Website",
   "main": "index.js",
   "scripts": {
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "eleventy --formats=png --serve",
     "build:eleventy": "eleventy",
     "watch:sass": "sass --watch src/sass:public/css",
     "build:sass": "sass src/sass:public/css",
