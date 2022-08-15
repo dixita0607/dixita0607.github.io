@@ -13,11 +13,11 @@ npm run build
 # Store current branch
 branch=$(git branch --show-current)
 
-git checkout main
+git checkout public
 
 # Register clean function on exit
 trap cleanup EXIT
 
 git --work-tree=public add .
 git commit
-git push -u origin main
+git push -u origin public
