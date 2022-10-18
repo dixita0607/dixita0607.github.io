@@ -6,3 +6,11 @@ Source: https://codeberg.org/dixita/personal-website
 Files: *
 Copyright: 2022 Dixita Ganatra <contact@dixita.dev>
 License: MIT
+
+Files:
+  src/_includes/resume.njk
+  src/sass/resume.scss
+Copyright:
+  2015 Ainsley Chong
+  2022 Dixita Ganatra <contact@dixita.dev>
+License: MIT
