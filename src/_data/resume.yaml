@@ -1,0 +1,156 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Dixita Ganatra
+  label: Web Developer & Designer
+  email: contact@dixita.dev
+  phone: +91 9638626684
+  url: https://dixita.dev
+  summary: >
+    I’m a full stack web developer who's passionate about design and art.
+    I can design and build web apps from the ground up.
+    I have explored roles where I am given responsibilities of leading a team or a project.
+    I'm generally very flexible when investigating new roles and responsibilities, be it technical or managerial.
+  location:
+    city: Bangalore
+    countryCode: IN
+  profiles:
+    - network: GitHub
+      username: dixita0607
+      url: https://github.com/dixita0607
+    - network: Codeberg
+      username: dixita
+      url: https://codeberg.org/dixita
+    - network: Dribbble
+      username: dixita0607
+      url: https://dribbble.com/dixita0607
+    - network: Mastodon
+      username: dixita
+      url: https://mastodon.art/@dixita
+work:
+  - company: Genea
+    position: Consultant
+    startDate: 2021-05
+    summary: >
+      Contributed to access control features like visitor management, badge editor, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc. Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management. Interviewed various candidates and On-boarded & trained newly joined members. Contributed to DX and did extensive code review.
+    highlights:
+      - ReactJS, antd, SCSS
+      - Redux, Redux Saga, Redux toolkit
+      - NodeJS
+      - PostgreSQL
+      - SSR
+  - company: Technegic Software
+    position: Consultant
+    startDate: 2021-04
+    summary: Implemented cylinder tracking system between multiple facilities. Created wireframes and designs using Figma. Implemented openapi specs, frontend, and backend using PostgreSQL, NodeJS, React, Redux, and antd. Hosted the project on AWS.
+    highlights:
+      - Figma, Invision Studio, Affinity Designer
+      - ReactJS, antd
+      - Redux, Redux toolkit
+      - NodeJS
+      - PostgreSQL
+      - AWS
+  - company: Codieslab
+    position: Consultant
+    startDate: 2019-10
+    endDate: 2020-12
+    summary: Developed Frontend of an E-commerce website/webapp. Contributed to APIs and implemented email schedule for subscription related updates. Integrated BTC Payment gateway for checkout.
+    highlights:
+      - ReactJS, antd
+      - Redux, Redux Saga, Redux toolkit
+      - NodeJS
+      - Postgres
+      - Next.js
+  - company: Simform
+    position: Senior React Developer
+    startDate: 2019-12
+    endDate: 2020-05
+    summary: Developed three web applications and a custom component library. Created features like reordering items in a Grid view for upto 10,000 items, Showing & Updating real-time data in a table with infinite scroll.
+    highlights:
+      - ReactJS, Custom components, Storybook, SCSS
+      - Redux, Redux Saga, MobX
+      - Next.js
+  - company: PoshaQ
+    position: Web Developer
+    startDate: 2018-07
+    endDate: 2018-10
+    summary: Designed and developed full-stack web applications for internal teams.
+    highlights:
+      - Angular, Apollo GraphQL, React
+      - HTML Canvas API
+      - NodeJS
+      - MongoDB
+      - GraphQL
+      - Docker
+  - company: Quintet IN
+    position: Frontend Developer
+    startDate: 2015-08
+    endDate: 2017-06
+    summary: Developed and maintained a website for a college using Wordpress.
+volunteer:
+  - organization: GDG Ahmedabad
+    position: Volunteer - Design team
+    startDate: 2019-09
+    endDate: 2019-10
+    summary: Designed social media posts, posters, and other design content for GDG Ahmedabad event.
+education:
+  - institution: Birla Vishwakarma Mahavidhyalaya
+    area: Computer Engineering
+    studyType: Bachelor
+    startDate: 2013-07
+    endDate: 2017-07
+    score: "8.06"
+publications:
+  - name: "CSS Units for font-size: px | em | rem"
+    publisher: Code Better
+    releaseDate: "2018-02-12"
+    url: https://medium.com/@dixita0607/css-units-for-font-size-px-em-rem-79f7e592bb97
+  - name: Exporting assets for Android using Affinity Designer
+    publisher: Free Code Camp
+    releaseDate: "2018-03-09"
+    url: https://medium.com/free-code-camp/exporting-assets-for-android-using-affinity-designer-2564ecf53755
+certificates:
+  - name: Free Code Camp Legecy Certificates
+    date: 2017-10-07
+    issuer: Free Code Camp
+    url: https://www.freecodecamp.org/dixita0607
+skills:
+  - name: Web Development
+    keywords:
+      - Javascript
+      - ReactJS
+      - Redux
+      - Redux Saga
+      - MobX
+      - Next.JS
+      - Angular
+      - NodeJS
+      - MongoDB
+      - PostgreSQL
+      - GraphQL
+  - name: Designing
+    keywords:
+      - UI/UX Design
+      - Mockup Design
+      - Graphic Design
+      - Illustrations
+projects:
+  - name: Measure Tape
+    description: A digital tool to figure out size of clothing
+    highlights:
+      - Designed and developed a web application that helps take actual measurements of apparels from their image. Teams have been using this tool to generate data for training models.
+    type: Web application
+  - name: Udaan17 Messenger
+    description: SMS sending app for events
+    highlights:
+      - Designed and developed a web application, that was used by event organisers to notify the participants using SMS
+    type: Web application
+languages:
+  - language: English
+  - language: Hindi
+  - language: Gujarati
+interests:
+  - name: Drawing
+  - name: Sketching
+  - name: Gardening
+meta:
+  theme: onepage
