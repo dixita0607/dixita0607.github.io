@@ -31,7 +31,7 @@ work:
     position: Consultant
     startDate: 2021-05
     summary: >
-      Contributed to access control features like visitor management, badge editor, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc. Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management. Interviewed various candidates and On-boarded & trained newly joined members. Contributed to DX and did extensive code review.
+      Contributed to access control features like visitor management, badge editor, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc. Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management. Interviewed various candidates. On-boarded & trained newly joined members. Contributed to DX and did code review.
     highlights:
       - ReactJS, antd, SCSS
       - Redux, Redux Saga, Redux toolkit
@@ -41,7 +41,7 @@ work:
   - company: Technegic Software
     position: Consultant
     startDate: 2021-04
-    summary: Implemented cylinder tracking system between multiple facilities. Created wireframes and designs using Figma. Implemented openapi specs, frontend, and backend using PostgreSQL, NodeJS, React, Redux, and antd. Hosted the project on AWS.
+    summary: Implemented cylinder tracking system between multiple facilities. Created wireframes and designs using Figma. Implemented openAPI specs, frontend, and backend. Hosted the project on AWS.
     highlights:
       - Figma, Invision Studio, Affinity Designer
       - ReactJS, antd
@@ -53,18 +53,18 @@ work:
     position: Consultant
     startDate: 2019-10
     endDate: 2020-12
-    summary: Developed Frontend of an E-commerce website/webapp. Contributed to APIs and implemented email schedule for subscription related updates. Integrated BTC Payment gateway for checkout.
+    summary: Developed front-end of an E-commerce website/webapp. Contributed to APIs and implemented email schedule for subscription related updates. Integrated BTC Payment gateway for checkout.
     highlights:
       - ReactJS, antd
       - Redux, Redux Saga, Redux toolkit
       - NodeJS
-      - Postgres
+      - MongoDB
       - Next.js
   - company: Simform
     position: Senior React Developer
     startDate: 2019-12
     endDate: 2020-05
-    summary: Developed three web applications and a custom component library. Created features like reordering items in a Grid view for upto 10,000 items, Showing & Updating real-time data in a table with infinite scroll.
+    summary: Developed web applications related to auction and healthcare domains. Worked with a custom component library. Created features like reordering around 10,000 items in a Grid view, Showing & Updating real-time data in a table with infinite scroll.
     highlights:
       - ReactJS, Custom components, Storybook, SCSS
       - Redux, Redux Saga, MobX
@@ -110,7 +110,7 @@ publications:
     url: https://medium.com/free-code-camp/exporting-assets-for-android-using-affinity-designer-2564ecf53755
 certificates:
   - name: Free Code Camp Legecy Certificates
-    date: 2017-10-07
+    date: "2017-10-07"
     issuer: Free Code Camp
     url: https://www.freecodecamp.org/dixita0607
 skills:

@@ -298,6 +298,38 @@ layout: resume.njk
     </div>
     <div class='sectionLine'></div>
   {% endif %}
+  {% if resume.certificates.length %}
+    <div class="sectionBlock">
+      <div class="sectionName">
+        <span>CERTIFICATES</span>
+      </div>
+      <div class="sectionContent">
+        {% for certificate in resume.certificates %}
+          <div class='blockHeader'>
+            <span class='title'>
+              {% if certificate.name %}
+                {% if certificate.url %}
+                  <span class='website'>
+                    <a href='{{ certificate.url }}' target="_blank">{{ certificate.name }}</a>
+                  </span>
+                {% else %}
+                  {{ certificate.name }}
+                {% endif %}
+              {% endif %}
+              {% if certificate.issuer %}, {{ certificate.issuer }}
+              {% endif %}
+            </span>
+            {% if certificate.date %}
+              <div class='date'>
+                <span class='releaseDate'>{{ certificate.date }}</span>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class='sectionLine'></div>
+  {% endif %}
   {% if resume.skills.length %}
     <div id='skills' class="sectionBlock">
       <div class='sectionName'>
