@@ -6,52 +6,49 @@ layout: resume.njk
 <div id='resume'>
   <div id='nameBlock' class='largeFont'>
     <span class='name'>
-      {{ resume.basics.name }}
-      {% if resume.basics.label %}
-        ,
-      {% endif %}
+      {{ resume.basics.name }}{{ ',' if resume.basics.label }}
     </span>
-    {% if resume.basics.label %}
+    {%- if resume.basics.label %}
       <span class='label'>{{ resume.basics.label }}</span>
-    {% endif %}
+    {%- endif %}
   </div>
   <div id='basicsBlock' class='smallFont'>
     <div class='contactBlock'>
-      {% if resume.basics.email %}
+      {%- if resume.basics.email %}
         <span class='email'>{{ resume.basics.email }}</span>
-      {% endif %}
-      {% if resume.basics.phone %}
+      {%- endif %}
+      {%- if resume.basics.phone %}
         <span class='divider'>|</span>
         <span class='phone'>{{ resume.basics.phone }}</span>
-      {% endif %}
+      {%- endif %}
       <span class='divider'>|</span>
       <span class='address'>
-        {% if resume.basics.location.city %}
+        {%- if resume.basics.location.city %}
           {{ resume.basics.location.city }}
-        {% endif %}
-        {% if resume.basics.location.region %}, {{ resume.basics.location.region }}
-        {% endif %}
-        {% if resume.basics.location.countryCode %}, {{ resume.basics.location.countryCode }}
-        {% endif %}
+        {%- endif %}
+        {%- if resume.basics.location.region %}, {{ resume.basics.location.region }}
+        {%- endif %}
+        {%- if resume.basics.location.countryCode %}, {{ resume.basics.location.countryCode }}
+        {%- endif %}
       </span>
     </div>
-    {% if resume.basics.profiles.length %}
+    {%- if resume.basics.profiles.length %}
       <div id='profilesBlock'>
-        {% for profile in resume.basics.profiles %}
-          {% if profile.url %}
+        {%- for profile in resume.basics.profiles %}
+          {%- if profile.url %}
             <span class='url'>
-              <a href='{{ profile.url }}' target="_blank">{{ profile.network }}</a>
+              <a href='{{ profile.url }}' target='_blank'>{{ profile.network }}</a>
             </span>
             {# Find alternative of unless last #}
             <span class='divider'>|</span>
-          {% endif %}
-        {% endfor %}
+          {%- endif %}
+        {%- endfor %}
       </div>
-    {% endif %}
+    {%- endif %}
   </div>
   <div class='sectionLine'></div>
-  {% if resume.basics.summary %}
-    <div id='summaryBlock' class="sectionBlock">
+  {%- if resume.basics.summary %}
+    <div id='summaryBlock' class='sectionBlock'>
       <div class='sectionName'>
         <span>SUMMARY</span>
       </div>
@@ -60,360 +57,355 @@ layout: resume.njk
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.work.length %}
-    <div id='workBlock' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.work.length %}
+    <div id='workBlock' class='sectionBlock'>
       <div class='sectionName'>
         <span>EXPERIENCE</span>
       </div>
       <div class='sectionContent'>
-        {% for work in resume.work %}
-          <div class="jobBlock">
+        {%- for work in resume.work %}
+          <div class='jobBlock'>
             <div class='blockHeader'>
               <span class='title'>
-                {% if work.company %}
+                {%- if work.company %}
                   {{ work.company }}
-                {% endif %}
-                {% if work.position %}
+                {%- endif %}
+                {%- if work.position %}
                   - {{ work.position }}
-                {% endif %}
+                {%- endif %}
               </span>
-              {% if work.startDate %}
+              {%- if work.startDate %}
                 <span class='date'>
                   {{ work.startDate }} &mdash;
-                  {% if work.endDate %}
+                  {%- if work.endDate %}
                     {{ work.endDate }}
-                    {% else %}Present{% endif %}
+                    {%- else %}Present{%- endif %}
                 </span>
-              {% endif %}
+              {%- endif %}
             </div>
             <div>
-              <a href='{{ work.website }}' target="_blank">{{ work.website }}</a>
+              <a href='{{ work.website }}' target='_blank'>{{ work.website }}</a>
             </div>
-            {% if work.summary %}
+            {%- if work.summary %}
               <div>
                 {{ work.summary }}
               </div>
-            {% endif %}
-            {% if work.highlights.length %}
+            {%- endif %}
+            {%- if work.highlights.length %}
               <ul class='highlights'>
-                {% for highlight in work.highlights %}
+                {%- for highlight in work.highlights %}
                   <li>{{ highlight }}</li>
-                {% endfor %}
+                {%- endfor %}
               </ul>
-            {% endif %}
-            {% if work.details.length %}
+            {%- endif %}
+            {%- if work.details.length %}
               <ul class='details'>
-                {% for detail in work.details %}
+                {%- for detail in work.details %}
                   <li>
-                    {% if detail.text %}
+                    {%- if detail.text %}
                       {{ detail.text }}
-                    {% endif %}
-                    {% if detail.comment %}
+                    {%- endif %}
+                    {%- if detail.comment %}
                       <em>[{{ detail.comment }}]</em>
-                    {% endif %}
+                    {%- endif %}
                   </li>
-                {% endfor %}
+                {%- endfor %}
               </ul>
-            {% endif %}
+            {%- endif %}
             {# Implement unless #}
             <div class='separator'></div>
           </div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.publications.length %}
+  {%- endif %}
+  {%- if resume.publications.length %}
     <div id='publications'>
       <div class='sectionName'>
         <span>PUBLICATIONS</span>
       </div>
       <div class='sectionContent'>
-        {% for publication in  resume.publications %}
+        {%- for publication in resume.publications %}
           <div class='blockHeader'>
             <span class='title'>
-              {% if publication.name %}
-                {% if publication.url %}
-                  <span class='website'>
-                    <a href='{{ publication.url }}' target="_blank">{{ publication.name }}</a>
-                  </span>
-                {% else %}
+              {%- if publication.name %}
+                {%- if publication.url %}
+                  <a href='{{ publication.url }}' target='_blank'>{{ publication.name }}</a>
+                {%- else %}
                   {{ publication.name }}
-                {% endif %}
-              {% endif %}
-              {% if publication.publisher %}, {{ publication.publisher }}
-              {% endif %}
+                {%- endif %}
+              {%- endif -%}
+              {{ ',' if resume.basics.label }}
+              {%- if publication.publisher %}
+                {{ publication.publisher }}
+              {%- endif -%}
             </span>
-            {% if publication.releaseDate %}
+            {%- if publication.releaseDate %}
               <div class='date'>
                 <span class='releaseDate'>{{ publication.releaseDate }}</span>
               </div>
-            {% endif %}
+            {%- endif %}
           </div>
-          {% if publication.highlights.length %}
+          {%- if publication.highlights.length %}
             <ul class='highlights'>
-              {% for highlight in highlights %}
+              {%- for highlight in highlights %}
                 <li>{{ highlight }}</li>
-              {% endfor %}
+              {%- endfor %}
             </ul>
-          {% endif %}
+          {%- endif %}
           {# Implement unless #}
           <div class='separator'></div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.awards.length %}
-    <div id='awards' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.awards.length %}
+    <div id='awards' class='sectionBlock'>
       <div class='sectionName'>
         <span>AWARDS</span>
       </div>
       <div class='sectionContent'>
-        {% for award in resume.awards %}
+        {%- for award in resume.awards %}
           <div class='blockHeader'>
             <span class='title'>
-              {% if award.title %}
+              {%- if award.title %}
                 {{ award.title }}
-              {% endif %}
-              {% if award.awarder %}, {{ award.awarder }}
-              {% endif %}
+              {%- endif %}
+              {%- if award.awarder %}, {{ award.awarder }}
+              {%- endif %}
             </span>
-            {% if award.date %}
+            {%- if award.date %}
               <span class='date'>
                 <span class='date'>{{ award.date }}</span>
               </span>
-            {% endif %}
+            {%- endif %}
           </div>
-          {% if award.highlights.length %}
+          {%- if award.highlights.length %}
             <ul class='highlights'>
-              {% for highlight in highlights %}
+              {%- for highlight in highlights %}
                 <li>{{ highlight }}</li>
-              {% endfor %}
+              {%- endfor %}
             </ul>
-          {% endif %}
+          {%- endif %}
           {# implement unless #}
           <div class='separator'></div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.volunteer.length %}
-    <div id='volunteer' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.volunteer.length %}
+    <div id='volunteer' class='sectionBlock'>
       <div class='sectionName'>
         <span>VOLUNTEERING</span>
       </div>
       <div class='sectionContent'>
-        {% for volunteer in resume.volunteer %}
+        {%- for volunteer in resume.volunteer %}
           <div class='blockHeader'>
             <span class='title'>
-              {% if volunteer.organization %}
+              {%- if volunteer.organization %}
                 {{ volunteer.organization }}
-              {% endif %}
-              {% if volunteer.position %}
+              {%- endif %}
+              {%- if volunteer.position %}
                 - {{ volunteer.position }}
-              {% endif %}
+              {%- endif %}
             </span>
-            {% if volunteer.startDate %}
+            {%- if volunteer.startDate %}
               <span class='date'>
-                {% if volunteer.startDate %}
+                {%- if volunteer.startDate %}
                   {{ volunteer.startDate }}
-                {% endif %}
+                {%- endif %}
                 &mdash;
-                {% if volunteer.endDate %}
+                {%- if volunteer.endDate %}
                   {{ volunteer.endDate }}
-                  {% else %}Present{% endif %}
+                  {%- else %}Present{%- endif %}
               </span>
-            {% endif %}
-            {% if volunteer.website %}
-              <div class='website'>
-                <a href='{{ website }}' target="_blank">{{ volunteer.website }}</a>
+            {%- endif %}
+            {%- if volunteer.website %}
+              <div>
+                <a href='{{ website }}' target='_blank'>{{ volunteer.website }}</a>
               </div>
-            {% endif %}
-            {% if volunteer.summary %}
+            {%- endif %}
+            {%- if volunteer.summary %}
               <div>
                 {{ volunteer.summary }}
               </div>
-            {% endif %}
-            {% if volunteer.highlights.length %}
+            {%- endif %}
+            {%- if volunteer.highlights.length %}
               <ul class='highlights'>
-                {% for highlight in highlights %}
+                {%- for highlight in highlights %}
                   <li>{{ highlight }}</li>
-                {% endfor %}
+                {%- endfor %}
               </ul>
-            {% endif %}
+            {%- endif %}
           </div>
           {# Implement unless #}
           <div class='separator'></div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.education.length %}
-    <div id='education' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.education.length %}
+    <div id='education' class='sectionBlock'>
       <div class='sectionName'>
         <span>EDUCATION</span>
       </div>
       <div class='sectionContent'>
-        {% for education in resume.education %}
+        {%- for education in resume.education %}
           <div class='educationBlock'>
             <span class='title'>
-              {% if education.institution %}
+              {%- if education.institution %}
                 {{ education.institution }}
-              {% endif %}
+              {%- endif %}
             </span>
-            {% if education.startDate %}
+            {%- if education.startDate %}
               <span class='date'>
-                {% if education.startDate %}
+                {%- if education.startDate %}
                   {{ education.startDate }}
-                {% endif %}&mdash;{% if education.endDate %}
+                {%- endif %}&mdash;{%- if education.endDate %}
                   {{ education.endDate }}
-                  {% else %}Present{% endif %}
+                  {%- else %}Present{%- endif %}
               </span>
-            {% endif %}
+            {%- endif %}
             <div class=''>
-              {% if education.studyType %}
+              {%- if education.studyType %}
                 {{ education.studyType }}
-              {% endif %}-{% if education.area %}
+              {%- endif %}-{%- if education.area %}
                 {{ education.area }}
-              {% endif %}
-              {% if education.score %}, CGPA: {{ education.score }}
-              {% endif %}
+              {%- endif %}
+              {%- if education.score %}, CGPA: {{ education.score }}
+              {%- endif %}
             </div>
-            {% if courses.length %}
+            {%- if courses.length %}
               <div id='coursesBlock'>
                 <ul class='coursesList'>
-                  {% for course in courses %}
+                  {%- for course in courses %}
                     <li class='course'>{{ course }}</li>
-                  {% endfor %}
+                  {%- endfor %}
                 </ul>
               </div>
-            {% endif %}
+            {%- endif %}
           </div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.certificates.length %}
-    <div class="sectionBlock">
-      <div class="sectionName">
+  {%- endif %}
+  {%- if resume.certificates.length %}
+    <div class='sectionBlock'>
+      <div class='sectionName'>
         <span>CERTIFICATES</span>
       </div>
-      <div class="sectionContent">
-        {% for certificate in resume.certificates %}
+      <div class='sectionContent'>
+        {%- for certificate in resume.certificates %}
           <div class='blockHeader'>
             <span class='title'>
-              {% if certificate.name %}
-                {% if certificate.url %}
-                  <span class='website'>
-                    <a href='{{ certificate.url }}' target="_blank">{{ certificate.name }}</a>
-                  </span>
-                {% else %}
+              {%- if certificate.name %}
+                {%- if certificate.url %}
+                  <a href='{{ certificate.url }}' target='_blank'>{{ certificate.name }}</a>
+                {%- else %}
                   {{ certificate.name }}
-                {% endif %}
-              {% endif %}
-              {% if certificate.issuer %}, {{ certificate.issuer }}
-              {% endif %}
+                {%- endif %}
+              {%- endif -%}
+              {{ ',' if certificate.issuer }}
+              {%- if certificate.issuer %}
+                {{ certificate.issuer }}
+              {%- endif %}
             </span>
-            {% if certificate.date %}
+            {%- if certificate.date %}
               <div class='date'>
                 <span class='releaseDate'>{{ certificate.date }}</span>
               </div>
-            {% endif %}
+            {%- endif %}
           </div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.skills.length %}
-    <div id='skills' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.skills.length %}
+    <div id='skills' class='sectionBlock'>
       <div class='sectionName'>
         <span>SKILLS</span>
       </div>
       <div class='sectionContent'>
-        {% for skill in resume.skills %}
+        {%- for skill in resume.skills %}
           <div class='skillBlock'>
             <span class='title'>
-              {% if skill.name %}
+              {%- if skill.name %}
                 {{ skill.name }}
-              {% endif %}
-              {% if skill.level %}
+              {%- endif %}
+              {%- if skill.level %}
                 <em>({{ skill.level }})</em>
-              {% endif %}:</span>
-            {% if skill.keywords.length %}
-              {% for keyword in skill.keywords %}
-                {% if loop.index0 !== 0 %}
-                  ,
-                {% endif %}
+              {%- endif %}:</span>
+            {%- if skill.keywords.length %}
+              {%- for keyword in skill.keywords -%}
+                {{ ',' if loop.index0 !==0 }}
                 <span>{{ keyword }}</span>
-              {% endfor %}
-            {% endif %}
-            {% if skill.details.length %}
-              {% for detail in skill.details %}
+              {%- endfor %}
+            {%- endif %}
+            {%- if skill.details.length %}
+              {%- for detail in skill.details %}
                 <span>
-                  {% if detail.text %}
+                  {%- if detail.text %}
                     {{ detail.text }}
-                  {% endif %}
-                  {% if detail.comment %}
+                  {%- endif %}
+                  {%- if detail.comment %}
                     <em>({{ detail.comment }})</em>
-                  {% endif %}
-                  ,
+                  {%- endif %},
                 </span>
-              {% endfor %}
-            {% endif %}
+              {%- endfor %}
+            {%- endif %}
           </div>
-        {% endfor %}
+        {%- endfor %}
       </div>
     </div>
     <div class='sectionLine'></div>
-  {% endif %}
-  {% if resume.languages.length %}
-    <div id='languages' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.languages.length %}
+    <div id='languages' class='sectionBlock'>
       <div class='sectionName'>
         <span>LANGUAGES</span>
       </div>
       <div class='sectionContent'>
-        {% for language in resume.languages %}
-          {% if loop.index0 !== 0 %},
-          {% endif %}
+        {%- for language in resume.languages -%}
+          {{ ',' if loop.index0 !==0 }}
           <span class='language'>{{ language.language }}</span>
-          {% if language.fluency %}
+          {%- if language.fluency %}
             <span class='fluency'>
               <em>({{ language.fluency }})</em>
             </span>
-          {% endif %}
-        {% endfor %}
+          {%- endif %}
+        {%- endfor %}
       </div>
     </div>
-  {% endif %}
-  {% if resume.interests.length %}
-    <div id='interests' class="sectionBlock">
+  {%- endif %}
+  {%- if resume.interests.length %}
+    <div id='interests' class='sectionBlock'>
       <div class='sectionName'>
         <span>INTERESTS</span>
       </div>
       <div class='sectionContent'>
-        {% for interest in resume.interests %}
-          <span class='name'>
-            {% if loop.index0 !== 0 %},
-            {% endif %}
-            {{ interest.name }}
-          </span>
-          <span class='keywords'>
-            <em>
-              {% for keyword in keywords %}
-                {% if loop.index0 !== 0 %},
-                {% endif %}
-                {{ keyword }}
-              {% endfor %}
-            </em>
-          </span>
-        {% endfor %}
+        {%- for interest in resume.interests -%}
+          {{ ',' if loop.index0 !== 0 }}
+          <span class='name'>{{ interest.name }}</span>
+          {%- if keywords.length %}
+            <span class='keywords'>
+              <em>
+                {%- for keyword in keywords -%}
+                  {{ ',' if loop.index0 !==0 }}
+                  {{ keyword }}
+                {%- endfor %}
+              </em>
+            </span>
+          {%- endif %}
+        {%- endfor %}
       </div>
       <div class='sectionLine'></div>
     </div>
-  {% endif %}
+  {%- endif %}
+</div>
