@@ -65,33 +65,36 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for work in resume.work %}
+          {% if loop.index0 !== 0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='jobBlock'>
             <div class='blockHeader'>
               <span class='title'>
-                {%- if work.company %}
+                {%- if work.company -%}
                   {{ work.company }}
                 {%- endif %}
                 {%- if work.position %}
                   - {{ work.position }}
-                {%- endif %}
+                {%- endif -%}
               </span>
               {%- if work.startDate %}
                 <span class='date'>
                   {{ work.startDate }} &mdash;
                   {%- if work.endDate %}
                     {{ work.endDate }}
-                    {%- else %}Present{%- endif %}
+                    {%- else %}Present{%- endif -%}
                 </span>
-              {%- endif %}
+              {%- endif -%}
             </div>
-            <div>
-              <a href='{{ work.website }}' target='_blank'>{{ work.website }}</a>
-            </div>
-            {%- if work.summary %}
+            {%- if work.website %}
               <div>
-                {{ work.summary }}
+                <a href='{{ work.website }}' target='_blank'>{{ work.website }}</a>
               </div>
-            {%- endif %}
+            {%- endif -%}
+            {%- if work.summary %}
+              <span>{{ work.summary }}</span>
+            {%- endif -%}
             {%- if work.highlights.length %}
               <ul class='highlights'>
                 {%- for highlight in work.highlights %}
@@ -113,8 +116,6 @@ layout: resume.njk
                 {%- endfor %}
               </ul>
             {%- endif %}
-            {# Implement unless #}
-            <div class='separator'></div>
           </div>
         {%- endfor %}
       </div>
@@ -128,6 +129,9 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for publication in resume.publications %}
+          {% if loop.index0 !==0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='blockHeader'>
             <span class='title'>
               {%- if publication.name %}
@@ -155,8 +159,6 @@ layout: resume.njk
               {%- endfor %}
             </ul>
           {%- endif %}
-          {# Implement unless #}
-          <div class='separator'></div>
         {%- endfor %}
       </div>
     </div>
@@ -169,6 +171,9 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for award in resume.awards %}
+          {% if loop.index0 !==0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='blockHeader'>
             <span class='title'>
               {%- if award.title %}
@@ -190,8 +195,6 @@ layout: resume.njk
               {%- endfor %}
             </ul>
           {%- endif %}
-          {# implement unless #}
-          <div class='separator'></div>
         {%- endfor %}
       </div>
     </div>
@@ -204,6 +207,9 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for volunteer in resume.volunteer %}
+          {% if loop.index0 !==0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='blockHeader'>
             <span class='title'>
               {%- if volunteer.organization %}
@@ -242,8 +248,6 @@ layout: resume.njk
               </ul>
             {%- endif %}
           </div>
-          {# Implement unless #}
-          <div class='separator'></div>
         {%- endfor %}
       </div>
     </div>
@@ -256,6 +260,9 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for education in resume.education %}
+          {% if loop.index0 !==0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='educationBlock'>
             <span class='title'>
               {%- if education.institution %}
@@ -302,6 +309,9 @@ layout: resume.njk
       </div>
       <div class='sectionContent'>
         {%- for certificate in resume.certificates %}
+          {% if loop.index0 !==0 %}
+            <div class='separator'></div>
+          {% endif %}
           <div class='blockHeader'>
             <span class='title'>
               {%- if certificate.name %}
@@ -383,6 +393,7 @@ layout: resume.njk
         {%- endfor %}
       </div>
     </div>
+    <div class='sectionLine'></div>
   {%- endif %}
   {%- if resume.interests.length %}
     <div id='interests' class='sectionBlock'>
