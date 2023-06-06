@@ -28,59 +28,49 @@ basics:
       url: https://mastodon.art/@dixita
 work:
   - company: Genea
-    position: Consultant
+    position: Web Developer Consultant
     startDate: 2021-05
-    summary: >
-      Contributed to access control features like visitor management, badge editor, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc. Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management. Interviewed various candidates. On-boarded & trained newly joined members. Contributed to DX and did code review.
     highlights:
-      - ReactJS, antd, SCSS
-      - Redux, Redux Saga, Redux toolkit
-      - NodeJS
-      - PostgreSQL
-      - SSR
+      - Developed and developing features like Interactive floor plans, RSVP for visitors, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc.
+      - Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management.
+      - Interviewing various candidates
+      - On-boarded & trained newly joined members.
+      - Managing the releases of front-end project
+      - Contributing to DX and did extensive code review."
+      - Using ReactJS, antd, SCSS, Redux, Redux Saga, Redux toolkit, NodeJS, PostgreSQL, primarily for development.
   - company: Technegic Software
     position: Consultant
     startDate: 2021-04
-    summary: Implemented cylinder tracking system between multiple facilities. Created wireframes and designs using Figma. Implemented openAPI specs, frontend, and backend. Hosted the project on AWS.
+    endDate: 2022-12
     highlights:
-      - Figma, Invision Studio, Affinity Designer
-      - ReactJS, antd
-      - Redux, Redux toolkit
-      - NodeJS
-      - PostgreSQL
-      - AWS
+      - Developed cylinder tracking system between multiple facilities.
+      - Created openapi specs, frontend, and backend using PostgreSQL, NodeJS, React, Redux, and antd.
+      - Created wireframes and designs using Figma, Invision Studio, and Affinity Designer.
+      - Deployed the app on AWS.
   - company: Codieslab
     position: Consultant
     startDate: 2019-10
     endDate: 2020-12
-    summary: Developed front-end of an E-commerce website/webapp. Contributed to APIs and implemented email schedule for subscription related updates. Integrated BTC Payment gateway for checkout.
     highlights:
-      - ReactJS, antd
-      - Redux, Redux Saga, Redux toolkit
-      - NodeJS
-      - MongoDB
-      - Next.js
+      - Developed Frontend of an E-commerce website/webapp using React, Next.JS, Redux, Redux Saga, antd, NodeJS, MongoDB.
+      - Implemented scheduled emails for renewal of subscriptions.
+      - Integrated BTC Payment gateway for checkout.
   - company: Simform
     position: Senior React Developer
     startDate: 2019-12
     endDate: 2020-05
-    summary: Developed web applications related to auction and healthcare domains. Worked with a custom component library. Created features like reordering around 10,000 items in a Grid view, Showing & Updating real-time data in a table with infinite scroll.
     highlights:
-      - ReactJS, Custom components, Storybook, SCSS
-      - Redux, Redux Saga, MobX
-      - Next.js
+      - Developed web applications like Auction management and Hospital management.
+      - Maintained an internal component library.
+      - Developed features like re-ordering upto 10,000 items in an a grid, Showing & updating real-time data in a table having infinite scroll.
+      - Used ReactJS, Custom components, Storybook, SCSS, Redux, Redux Saga, MobX, Next.js for developing mentioned projects.
   - company: PoshaQ
     position: Web Developer
     startDate: 2018-07
     endDate: 2018-10
-    summary: Designed and developed full-stack web applications for internal teams.
     highlights:
-      - Angular, Apollo GraphQL, React
-      - HTML Canvas API
-      - NodeJS
-      - MongoDB
-      - GraphQL
-      - Docker
+      - Designed and developed a web applications which calculates the actual measurements of clothes by placing them on canvas and placing markers on them.
+      - Used Angular, Apollo GraphQL, React, HTML Canvas API, NodeJS, MongoDB, GraphQL, Docker to develop and deploy the application.
   - company: Quintet IN
     position: Frontend Developer
     startDate: 2015-08
