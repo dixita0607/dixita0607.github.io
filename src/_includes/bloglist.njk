@@ -2,8 +2,7 @@
   {%- for blog in collections.blogs -%}
     <a href={{ blog.url }}>
       <li>
-        {{ blog.data.title }} -
-        <i>{{ blog.data.date | htmlDateString }}</i>
+        {{ blog.data.title }} - {{ blog.data.date | htmlDateString }}
       </li>
     </a>
   {%- endfor -%}

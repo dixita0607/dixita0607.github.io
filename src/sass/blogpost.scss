@@ -1,0 +1,18 @@
+@import './theme/variables.scss';
+
+body {
+  .container {
+    .blogpost {
+      p {
+        >pre, >code {
+          background-color: #242b35;
+          font-size: smaller;
+          padding: 4px;
+        }
+          img {
+              max-width: 200px;
+          }
+      }
+  }
+  }
+}
