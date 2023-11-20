@@ -1,0 +1,10 @@
+<ul>
+  {%- for blog in collections.blogs -%}
+    <a href={{ blog.url }}>
+      <li>
+        {{ blog.data.title }} -
+        <i>{{ blog.data.date | htmlDateString }}</i>
+      </li>
+    </a>
+  {%- endfor -%}
+</ul>

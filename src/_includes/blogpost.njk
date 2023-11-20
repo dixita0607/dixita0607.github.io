@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+<i>
+  <time datetime="{{ page.date }}">{{ page.date | htmlDateString }}</time>
+</i>
+{# <h3>Tags</h3>
+<p>
+  {%- for tag in tags %}
+    {{ tag }}
+    {%- if not loop.last %},
+    {% endif %}
+  {%- endfor %}
+</p> #}
+{{ content | safe }}
