@@ -64,6 +64,16 @@ body {
         .section {
             margin-bottom: 1rem;
         }
+
+        .tag {
+            // background-color: pink;
+        }
+
+        .list-without-bullets {
+            padding: 0;
+            line-height: 32px;
+            list-style-type: none;
+        }
     }
 
     footer {

@@ -1,0 +1,8 @@
+---
+title: All Tags
+layout: base.njk
+permalink: /tags/
+---
+
+{% set tags = collections.posts | taglist %}
+{%include 'taglist.njk'%}

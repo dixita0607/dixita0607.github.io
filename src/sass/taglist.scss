@@ -1,0 +1,16 @@
+@import "./theme/variables.scss";
+
+body {
+  .container {
+    .taglist {
+      display: flex;
+      align-items: center;
+      div {
+        background-color: $secondary-color;
+        margin-right: 8px;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="taglist">
+  {%- for tag in tags | filterTagList -%}
+    <div>
+      {% set tagUrl = ["/tags/", tag] | join %}
+      <a href={{ tagUrl }}>
+        <span class="tag">#{{ tag }}</span>
+      </a>
+    </div>
+  {%- endfor -%}
+</div>

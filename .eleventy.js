@@ -10,12 +10,26 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addWatchTarget("./src/sass");
 
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    const date = new Date(dateObj);
-    return date.toISOString().slice(0, 10);
-  });
-
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    if (dateObj) {
+      const date = new Date(dateObj);
+      return date.toISOString().slice(0, 10);
+    }
+  });
+  eleventyConfig.addFilter("taglist", (collection) => {
+    let tagSet = new Set();
+    for (let item of collection) {
+      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+    }
+    return Array.from(tagSet);
+  });
+  eleventyConfig.addFilter("filterTagList", (tags) =>
+    (tags || []).filter(
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+    )
+  );
 
   return {
     dir: {
