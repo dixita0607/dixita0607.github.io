@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Books
+---
+
+{% macro bookList(books) %}
+  <ul class="booklist">
+    {%- for book in books -%}
+      <li>
+        <span class="title">{{ book.title }}</span>
+        <i>by</i>
+        <span class="author">{{ book.author }}</span>
+      </li>
+    {%- endfor -%}
+  </ul>
+{% endmacro %}
+<div class="books">
+  <h2>Currently Reading</h2>
+  {{ bookList(books.reading) }}
+  <h2>Read</h2>
+  <ul class="list-without-bullets">
+    {% for readBooks in books.read | dictsort | reverse %}
+      <li>
+        {% set year = readBooks[0] %}
+        {% set books = readBooks[1] %}
+        <h3>{{ year }}</h3>
+        {{ bookList(books) }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

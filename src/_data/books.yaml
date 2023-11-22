@@ -1,0 +1,25 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+reading:
+  - title: "Foundation"
+    author: "Isaac Asimov"
+read:
+  2023:
+    - title: "Prelude to Foundation"
+      author: "Isaac Asimov"
+    - title: "Forward the Foundation"
+      author: "Isaac Asimov"
+  2021:
+    - title: "Harry Potter and the Methods of Rationality"
+      author: "Eliezer Yudkowsky"
+  2020:
+    - title: "Pride and Prejudice"
+      author: "Jane Austen"
+    - title: "Little Women"
+      author: "Louisa May Alcott"
+    - title: "Anne of Green Gables"
+      author: "L.M. Montgomery"
+  2018:
+    - title: "Diary of a Wimpy Kid - The Getaway"
+      author: "Jeff Kinney"
+    - title: "Harry Potter and the Philosopher’s Stone"
+      author: "J.K. Rowling"
