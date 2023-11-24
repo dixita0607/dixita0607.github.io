@@ -86,8 +86,6 @@ Now whenever you save your changes, exported assets will be updated continuously
 
 ![Continuous export](../../assets/images/blog/2018-03-09-exporting-assets-for-android-from-affinity-designer/14-continuous-export.gif)
 
-That's all folks. Contact me if you have any ideas worth sharing. I would love to hear from you on twitter @dixita0607.
-
 ## Application Mockup
 
 You can download the mockup file used in this tutorial here 👇.
