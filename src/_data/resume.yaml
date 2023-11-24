@@ -3,17 +3,18 @@ basics:
   name: Dixita Ganatra
   label: Web Developer & Designer
   email: contact@dixita.dev
-  phone: +91 9638626684
   url: https://dixita.dev
   summary: >
     I’m a full stack web developer who's passionate about design and art.
     I can design and build web apps from the ground up.
-    I have explored roles where I am given responsibilities of leading a team or a project.
+    I have explored roles from being a developer in team to managing teams.
     I'm generally very flexible when investigating new roles and responsibilities, be it technical or managerial.
   location:
     city: Bangalore
     countryCode: IN
   profiles:
+    - network: Website
+      url: https://dixita.dev
     - network: GitHub
       username: dixita0607
       url: https://github.com/dixita0607
@@ -30,31 +31,33 @@ work:
   - company: Genea
     position: Web Developer Consultant
     startDate: 2021-05
+    endDate: 2023-09
     highlights:
-      - Developed and developing features like Interactive floor plans, RSVP for visitors, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc.
+      - Developed features of an access control system like Interactive floor plans, RSVP for visitors, custom reporting, custom roles, access code generation, managing FIDO2 support for login, etc.
+      - Developed various POCs for custom widget dashboard.
       - Lead UI/UX, System improvements, Penetration testing projects and some features of Visitor Management.
-      - Interviewing various candidates
+      - Interviewed various candidates.
       - On-boarded & trained newly joined members.
-      - Managing the releases of front-end project
-      - Contributing to DX and did extensive code review."
-      - Using ReactJS, antd, SCSS, Redux, Redux Saga, Redux toolkit, NodeJS, PostgreSQL, primarily for development.
+      - Managed the releases of frontend deployments.
+      - Did extensive code review and worked on DX improvements.
+      - Technical documentation about the project, setups, deployment and releases.
+      - Used ReactJS, antd, SCSS, Redux, Redux Saga, Redux toolkit, NodeJS, PostgreSQL, Leaflet for development.
   - company: Technegic Software
-    position: Consultant
+    position: Web Developer Consultant
     startDate: 2021-04
-    endDate: 2022-12
     highlights:
-      - Developed cylinder tracking system between multiple facilities.
-      - Created openapi specs, frontend, and backend using PostgreSQL, NodeJS, React, Redux, and antd.
+      - Developed cylinder inventory tracking system for moving them in between various facilities.
+      - Created openapi specs, frontend, backend, and database migrations using PostgreSQL, NodeJS, React, Redux, and antd.
       - Created wireframes and designs using Figma, Invision Studio, and Affinity Designer.
       - Deployed the app on AWS.
   - company: Codieslab
-    position: Consultant
+    position: Web Developer Consultant
     startDate: 2019-10
     endDate: 2020-12
     highlights:
-      - Developed Frontend of an E-commerce website/webapp using React, Next.JS, Redux, Redux Saga, antd, NodeJS, MongoDB.
+      - Developed frontend and backend of an E-commerce website/webapp using React, Next.JS, Redux, Redux Saga, antd, NodeJS, MongoDB.
       - Implemented scheduled emails for renewal of subscriptions.
-      - Integrated BTC Payment gateway for checkout.
+      - Integrated BTC Payment gateway for checkout and purchase.
   - company: Simform
     position: Senior React Developer
     startDate: 2019-12
