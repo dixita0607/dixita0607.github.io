@@ -14,8 +14,12 @@ body {
     overflow-x: hidden;
 
     p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    ul {
+        line-height: 24px;
     }
 
     a {
@@ -65,13 +69,8 @@ body {
             margin-bottom: 1rem;
         }
 
-        .tag {
-            // background-color: pink;
-        }
-
         .list-without-bullets {
             padding: 0;
-            line-height: 32px;
             list-style-type: none;
         }
     }
