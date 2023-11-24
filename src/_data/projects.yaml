@@ -1,0 +1,32 @@
+fcc:
+  - title: FreeCodeCamp
+    description: Projects developed for FreeCodeCamp certification.
+    projects:
+      - title: Pinterest clone
+        description: A pinterest styled picture wall where people can link/unlink images of their choice.
+        code: https://github.com/dixita0607/fcc-pinterestclone-app
+      - title: Book Trading Club
+        description: A platform where people can post the books they own and exchange it with other people by sending requests.
+        code: https://github.com/dixita0607/fcc-booktrading-app
+      - title: Chart the stock market
+        description: A real-time stock visualization app using web sockets.
+        code: https://github.com/dixita0607/fcc-stockchart-app
+      - title: Nightlife app
+        description: A web app showing list of restaurants with details. Authenticated users can mark the restaurants as "going",or "not-going"
+        code: https://github.com/dixita0607/fcc-nightlife-app
+      - title: Voting app
+        description: A voting app where authenticated users can create polls and vote.
+        code: https://github.com/dixita0607/fcc-voting-app
+      - title: Markdown previewer
+        description: A basic markdown previewer built with React.
+        code: https://codepen.io/dixita0607/pen/mwWgLY
+other:
+  - title: Other Projects
+    description:
+    projects:
+      - title: countdown-timer
+        description: A web component for creating countdowns using Polymer.
+        code: https://github.com/dixita0607/countdown-timer/tree/master
+      - title: Udaan17 Messenger
+        description: A webapp for sending SMS to participants for an event using Polymer.
+        code: https://github.com/bvmites/udaan17-messenger

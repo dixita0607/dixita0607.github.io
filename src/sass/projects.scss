@@ -1,0 +1,16 @@
+body {
+  .container {
+    .projects {
+      .project {
+        margin-bottom: 12px;
+        list-style: disc;
+        .project-description {
+          line-height: 24px;
+        }
+        p, h3 {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
