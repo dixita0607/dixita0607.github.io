@@ -1,12 +1,16 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 reading:
-  - title: "Foundation"
+  - title: "Foundation and Empire"
     author: "Isaac Asimov"
 read:
   2023:
     - title: "Prelude to Foundation"
       author: "Isaac Asimov"
     - title: "Forward the Foundation"
+      author: "Isaac Asimov"
+    - title: "Didn’t Happen of the Year Awards"
+      author: "Harry Barnes"
+    - title: "Foundation"
       author: "Isaac Asimov"
   2021:
     - title: "Harry Potter and the Methods of Rationality"
