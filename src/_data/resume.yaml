@@ -30,6 +30,15 @@ basics:
 work:
   - company: Genea
     position: Web Developer Consultant
+    startDate: 2023-12
+    highlights:
+      - Developing various features of an access control system.
+      - Developed various POCs for custom widget dashboard.
+      - Writing technical and product documentation about the features.
+      - Collaborating with design team to create UIs for the features.
+      - Using ReactJS, antd, SCSS, Redux, Redux Saga, Redux toolkit, React Query, NodeJS, PostgreSQL, Leaflet for development.
+  - company: Genea
+    position: Web Developer Consultant
     startDate: 2021-05
     endDate: 2023-09
     highlights:
@@ -101,6 +110,9 @@ publications:
     publisher: Free Code Camp
     releaseDate: "2018-03-09"
     url: https://medium.com/free-code-camp/exporting-assets-for-android-using-affinity-designer-2564ecf53755
+  - name: Blogs
+    publisher: Personal website
+    url: https://dixita.dev/blog
 certificates:
   - name: Free Code Camp Legecy Certificates
     date: "2017-10-07"
