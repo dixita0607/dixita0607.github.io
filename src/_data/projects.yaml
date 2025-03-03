@@ -1,9 +1,4 @@
 current:
-  - title: Currently Working
-    projects:
-      - title: Resume Builder
-        description: A resume editor. Internally uses JSON Resume schema. Made with React.
-        code: https://github.com/dixita0607/resume-builder
 fcc:
   - title: FreeCodeCamp
     description: Projects developed for FreeCodeCamp certification.
@@ -30,6 +25,9 @@ other:
   - title: Other Projects
     description:
     projects:
+      - title: Resume Builder
+        description: A resume editor. Internally uses JSON Resume schema. Made with React.
+        code: https://github.com/dixita0607/resume-builder
       - title: countdown-timer
         description: A web component for creating countdowns using Polymer.
         code: https://github.com/dixita0607/countdown-timer/tree/master
