@@ -1,8 +1,19 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 reading:
-  - title: "Foundation and Empire"
-    author: "Isaac Asimov"
+  - title: "Come As You Are"
+    author: "Emily Nagoski"
+    started: "2025-01-30"
+  - title: "TS Essentials"
+    author: "Matt Pocock"
+    started: "2025-02-25"
 read:
+  2024:
+    - title: "Foundation and Empire"
+      author: "Isaac Asimov"
+    - title: "The Love Plot"
+      author: "Samantha Young"
+    - title: "Dune"
+      author: "Frank Herbert"
   2023:
     - title: "Prelude to Foundation"
       author: "Isaac Asimov"

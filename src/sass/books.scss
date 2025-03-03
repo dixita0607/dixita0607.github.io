@@ -11,6 +11,11 @@ body {
         .author {
           color: $secondary-text-color;
         }
+
+        .date {
+          font-size: 13px;
+          color: $secondary-text-color;
+        }
       }
     }
   }
