@@ -5,8 +5,8 @@ basics:
   email: contact@dixita.dev
   url: https://dixita.dev
   summary: >
-    I’m a full stack web developer who's passionate about design and art.
-    I can design and build web apps from the ground up.
+    I’m a front-end web developer who's passionate about design and art.
+    I can design and build web applications from the ground up.
     I have explored roles from being a developer in team to managing teams.
     I'm generally very flexible when investigating new roles and responsibilities, be it technical or managerial.
   location:
@@ -31,10 +31,11 @@ work:
   - company: Genea
     position: Web Developer Consultant
     startDate: 2023-12
+    endDate: 2024-12
     highlights:
-      - Developing various features of an access control system.
+      - Lead and developed various features of an access control system.
       - Developed various POCs for custom widget dashboard.
-      - Writing technical and product documentation about the features.
+      - Prepared and maintained technical and product documentation about the features.
       - Collaborating with design team to create UIs for the features.
       - Using ReactJS, antd, SCSS, Redux, Redux Saga, Redux toolkit, React Query, NodeJS, PostgreSQL, Leaflet for development.
   - company: Genea
@@ -74,7 +75,7 @@ work:
     highlights:
       - Developed web applications like Auction management and Hospital management.
       - Maintained an internal component library.
-      - Developed features like re-ordering upto 10,000 items in an a grid, Showing & updating real-time data in a table having infinite scroll.
+      - Developed features like re-ordering up to 10,000 items in an a grid, Showing & updating real-time data in a table having infinite scroll.
       - Used ReactJS, Custom components, Storybook, SCSS, Redux, Redux Saga, MobX, Next.js for developing mentioned projects.
   - company: PoshaQ
     position: Web Developer
@@ -114,6 +115,10 @@ publications:
     publisher: Personal website
     url: https://dixita.dev/blog
 certificates:
+  - name: "Docker Essentials: A Developer Introduction"
+    date: "2024-08-19"
+    issuer: IBM
+    url: https://courses.cognitiveclass.ai/certificates/fd5a94e0aabb486eb13573382a61ba95
   - name: Free Code Camp Legecy Certificates
     date: "2017-10-07"
     issuer: Free Code Camp
@@ -122,16 +127,14 @@ skills:
   - name: Web Development
     keywords:
       - Javascript
+      - Typescript
       - ReactJS
       - Redux
       - Redux Saga
-      - MobX
       - Next.JS
-      - Angular
-      - NodeJS
-      - MongoDB
-      - PostgreSQL
       - GraphQL
+      - Node.JS
+      - Express
   - name: Designing
     keywords:
       - UI/UX Design
@@ -147,7 +150,7 @@ projects:
   - name: Udaan17 Messenger
     description: SMS sending app for events
     highlights:
-      - Designed and developed a web application, that was used by event organisers to notify the participants using SMS
+      - Designed and developed a web application, that was used by event organizers to notify the participants using SMS
     type: Web application
 languages:
   - language: English
@@ -155,7 +158,7 @@ languages:
   - language: Gujarati
 interests:
   - name: Drawing
-  - name: Sketching
   - name: Gardening
+  - name: Reading
 meta:
   theme: onepage
