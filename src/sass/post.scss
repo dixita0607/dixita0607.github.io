@@ -3,15 +3,21 @@
 body {
   .container {
     .post {
-      p {
+      p, li {
         >pre, >code {
           background-color: #242b35;
-          font-size: smaller;
           padding: 4px;
         }
           img {
               max-width: 200px;
           }
+      }
+      blockquote {
+        padding: 4px 16px;
+        border-left: 3px solid $primary-color;
+        p {
+          margin: 0;
+        }
       }
   }
   }
