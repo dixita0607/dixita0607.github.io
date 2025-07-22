@@ -1,4 +1,13 @@
 current:
+  - title: Recent
+    description: Recently completed or in progress porjects
+    projects:
+      - title: Dart solutions on Exercism
+        description: Solutions that I submitted on exercism for dart language track.
+        code: https://exercism.org/profiles/dixita/solutions?track_slug=dart
+      - title: MarkMyWords
+        description: A chrome extension to highlight and save text on web pages. Basically a highlighter/annotator for web pages just like books.
+        code: https://codeberg.org/dixita/mark-my-words
 fcc:
   - title: FreeCodeCamp
     description: Projects developed for FreeCodeCamp certification.

@@ -11,7 +11,10 @@ title: Books
         <i>by</i>
         <span class="author">{{ book.author }}</span>
         {% if book.started %}
-          <span class="date">(Started: {{ book.started }})</span>
+          <span class="date">(Started: {{ book.started }}
+            {% if book.completed %}, Completed: {{ book.completed }}
+            {% endif %})
+          </span>
         {% endif %}
       </li>
     {%- endfor -%}
