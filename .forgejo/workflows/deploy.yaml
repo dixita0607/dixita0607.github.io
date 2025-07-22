@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: codeberg-tiny-lazy
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: setup-node
+        uses: actions/setup-node@v4
+      - name: install-dependencies
+        run: npm ci
+      - name: install-lftp
+        run: sudo apt-get update && sudo apt-get install lftp
+      - name: build
+        run: npm run build
+      - name: deploy
+        run: |
+          echo ${{ secrets.SFTP_HOST_KEYS }} >> $HOME/.ssh/known_hosts
+          lftp -c "open ${{ secrets.SFTP_URL }} && mirror -Rev public /"
