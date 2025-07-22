@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "./src/assets": "assets",
-    ".domains": ".domains",
+    ".htaccess": ".htaccess",
   });
   eleventyConfig.addWatchTarget("./src/sass");
 
