@@ -8,6 +8,22 @@ current:
       - title: MarkMyWords
         description: A chrome extension to highlight and save text on web pages. Basically a highlighter/annotator for web pages just like books.
         code: https://codeberg.org/dixita/mark-my-words
+currentContributions:
+  - title: Open source contributions
+    description: My small efforts for open source
+    projects:
+      - title: Flutter docs
+        description: Updated a tool to fix a broken example.
+        code: https://github.com/flutter/flutter/pulls?q=is%3Apr+author%3Adixita0607+is%3Aclosed
+      - title: Dartpad
+        description: Fixed minor bug on the websites.
+        code: https://github.com/dart-lang/dart-pad/pulls?q=is%3Apr+is%3Aclosed+author%3Adixita0607
+      - title: Flutter's website
+        description: Fixed some bugs and improved a couple of sections on the website.
+        code: https://github.com/flutter/website/pulls?q=is%3Apr+is%3Aclosed+author%3Adixita0607
+      - title: React's website
+        description: Updated an outdated example
+        code: https://github.com/reactjs/react.dev/pulls?q=is%3Apr+is%3Aclosed+author%3Adixita0607
 fcc:
   - title: FreeCodeCamp
     description: Projects developed for FreeCodeCamp certification.
