@@ -36,11 +36,24 @@ class MainLayout extends PageLayoutBase {
         ]),
         css('.container', [
           css('&').styles(
+            display: .flex,
+            justifyContent: .center,
             flex: Flex(grow: 1),
             width: 100.percent,
+            padding: .all(2.em),
+          ),
+        ]),
+        css('.container .content', [
+          css('&').styles(
             maxWidth: 1200.px,
-            margin: .symmetric(horizontal: .auto),
-            padding: .symmetric(vertical: 2.rem),
+            width: 100.percent,
+          ),
+        ]),
+        css('.container img', [
+          css('&').styles(
+            maxWidth: 100.percent,
+            maxHeight: 300.px,
+            height: .auto,
           ),
         ]),
       ],
