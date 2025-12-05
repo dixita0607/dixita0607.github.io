@@ -7,7 +7,7 @@ class Header extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return header([
-      div([
+      div(classes: 'header-content', [
         div(classes: 'title', [
           a(href: '/', [text('Dixita Ganatra')]),
         ]),
@@ -36,41 +36,40 @@ class Header extends StatelessComponent {
     css('header', [
       css('&').styles(
         display: .flex,
-        padding: .all(1.em),
+        padding: .fromLTRB(2.em, 3.em, 2.em, 0.em),
         justifyContent: .center,
       ),
-      css('nav', [
+      css('.header-content', [
         css('&').styles(
           display: .flex,
-          height: 3.em,
-          radius: .all(.circular(10.px)),
-          overflow: .clip,
-          justifyContent: .spaceBetween,
-          backgroundColor: Colors.black,
+          flexDirection: .column,
+          maxWidth: 1200.px,
+          width: 100.percent,
+        ),
+      ]),
+      css('.title', [
+        css('&').styles(
+          margin: .only(bottom: .em(1.5)),
         ),
         css('a', [
           css('&').styles(
-            display: .flex,
-            height: 100.percent,
-            padding: .symmetric(horizontal: 2.em),
-            alignItems: .center,
-            color: Colors.white,
-            fontWeight: .w700,
-            textDecoration: const TextDecoration(line: .none),
-          ),
-          css('&:hover').styles(
-            backgroundColor: const Color('#0005'),
+            fontSize: 2.5.em,
+            fontWeight: .w400,
+            textDecoration: TextDecoration(line: .none),
           ),
         ]),
-        css('div.active', [
-          css('&').styles(position: const .relative()),
-          css('&::before').styles(
-            content: '',
-            display: .block,
-            position: .absolute(bottom: 0.5.em, left: 20.px, right: 20.px),
-            height: 2.px,
-            radius: .circular(1.px),
-            backgroundColor: Colors.white,
+      ]),
+      css('nav', [
+        css('&').styles(
+          display: .flex,
+          alignItems: .center,
+        ),
+        css('a', [
+          css('&').styles(
+            fontSize: 1.1.em,
+            textDecoration: TextDecoration(line: .none),
+            fontWeight: .w400,
+            margin: .only(right: .em(1.5)),
           ),
         ]),
       ]),
