@@ -5,8 +5,6 @@ layout: main
 
 # Blog
 
-## Posts
-
 {% for page in pages %}
 {% if page.url contains "blog/" and page.url != "blog/index.md" %}
 

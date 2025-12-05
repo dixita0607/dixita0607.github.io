@@ -29,9 +29,9 @@ class MainLayout extends PageLayoutBase {
       styles: [
         css('.main-layout', [
           css('&').styles(
-            display: Display.flex,
+            display: .flex,
             minHeight: 100.vh,
-            flexDirection: FlexDirection.column,
+            flexDirection: .column,
           ),
         ]),
         css('.container', [
@@ -39,8 +39,8 @@ class MainLayout extends PageLayoutBase {
             flex: Flex(grow: 1),
             width: 100.percent,
             maxWidth: 1200.px,
-            margin: .symmetric(horizontal: Unit.auto),
-            padding: .all(2.rem),
+            margin: .symmetric(horizontal: .auto),
+            padding: .symmetric(vertical: 2.rem),
           ),
         ]),
       ],

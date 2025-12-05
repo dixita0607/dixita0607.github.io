@@ -15,7 +15,7 @@ class Header extends StatelessComponent {
           for (var route in [
             (label: 'Blog', path: '/blog'),
             (label: 'Projects', path: '/projects'),
-            (label: 'books', path: '/books'),
+            (label: 'Books', path: '/books'),
             (label: 'Contact', path: '/contact'),
             (label: 'Resume', path: '/resume'),
           ])
@@ -62,14 +62,15 @@ class Header extends StatelessComponent {
       css('nav', [
         css('&').styles(
           display: .flex,
+          flexWrap: .wrap,
           alignItems: .center,
+          gap: .all(.em(1.5)),
         ),
         css('a', [
           css('&').styles(
             fontSize: 1.1.em,
             textDecoration: TextDecoration(line: .none),
             fontWeight: .w400,
-            margin: .only(right: .em(1.5)),
           ),
         ]),
       ]),

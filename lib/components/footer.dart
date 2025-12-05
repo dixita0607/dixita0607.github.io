@@ -6,7 +6,7 @@ class Footer extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return footer([
-      div([
+      div(classes: 'footer-content', [
         a(
           href: 'https://jaspr.site',
           target: .blank,
@@ -19,4 +19,30 @@ class Footer extends StatelessComponent {
       ]),
     ]);
   }
+
+  @css
+  static List<StyleRule> get styles => [
+    css('footer', [
+      css('&').styles(
+        display: .flex,
+        justifyContent: .center,
+        padding: .symmetric(vertical: 2.rem, horizontal: 1.5.rem),
+      ),
+      css('.footer-content', [
+        css('&').styles(
+          display: .flex,
+          flexWrap: .wrap,
+          justifyContent: .center,
+          gap: .all(.em(0.5)),
+          textAlign: .center,
+          maxWidth: 1200.px,
+        ),
+        css('a', [
+          css('&').styles(
+            textDecoration: TextDecoration(line: .none),
+          ),
+        ]),
+      ]),
+    ]),
+  ];
 }

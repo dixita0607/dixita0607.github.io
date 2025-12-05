@@ -6,7 +6,8 @@
 
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_content/components/theme_toggle.dart' as prefix0;
-import 'package:jaspr_site/components/header.dart' as prefix1;
+import 'package:jaspr_site/components/footer.dart' as prefix1;
+import 'package:jaspr_site/components/header.dart' as prefix2;
 
 /// Default [JasprOptions] for use with your jaspr project.
 ///
@@ -30,5 +31,9 @@ JasprOptions get defaultJasprOptions => JasprOptions(
       'jaspr_content:components/theme_toggle',
     ),
   },
-  styles: () => [...prefix0.ThemeToggleState.styles, ...prefix1.Header.styles],
+  styles: () => [
+    ...prefix0.ThemeToggleState.styles,
+    ...prefix1.Footer.styles,
+    ...prefix2.Header.styles,
+  ],
 );
