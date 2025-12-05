@@ -1,4 +1,5 @@
 import 'package:jaspr/jaspr.dart';
+import 'package:jaspr_content/components/theme_toggle.dart';
 
 class Header extends StatelessComponent {
   const Header({super.key});
@@ -24,6 +25,7 @@ class Header extends StatelessComponent {
               classes: 'nav-item',
               [text(route.label)],
             ),
+          ThemeToggle(),
         ]),
       ]),
     ]);
