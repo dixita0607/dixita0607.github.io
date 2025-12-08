@@ -15,13 +15,10 @@ class Header extends StatelessComponent {
           for (var route in [
             (label: 'Blog', path: '/blog'),
             (label: 'Projects', path: '/projects'),
-            (label: 'Books', path: '/books'),
-            (label: 'Contact', path: '/contact'),
-            (label: 'Resume', path: '/resume'),
+            (label: 'What else?', path: '/not-much'),
           ])
             a(
               href: route.path,
-              target: route.path == '/resume' ? Target.blank : null,
               classes: 'nav-item',
               [text(route.label)],
             ),

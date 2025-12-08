@@ -7,14 +7,26 @@ layout: main
 
 # Hi! I am Dixita
 
-I am a developer who's passionate about UI design and art. I live in Bangalore, India. I develop websites, web apps, and mobile apps. I also design UIs and wire frames. I'm currently learning Flutter and interested in building cross-platform apps in the future. Feel free to [contact](/contact) me for consultancy work.
+I'm a developer who is passionate about UI design and art, based in Bangalore, India.
 
-Recently, I contributed to DartPad and Flutter docs — examples and small fixes. Find more about it [here](/projects).
+I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">**Resume**</a>.
 
-So far, I have worked with the fine people at [Genea](https://www.getgenea.com), Technegic Software, [Simform](https://www.simform.com), and [Meditab](https://www.meditab.com).
+## Work
 
-I am happily married to my college sweetheart, Dhruvin. I like plants, cats, coffee, and meeting new people. In my free time, I draw, read, or watch seasons or movies.
+- Recently contributed to a few **Dart** and **Flutter** repositories (fixes, UI changes and examples). Find more about it <a href="/projects">here</a>
+- Previously worked with: <a href="https://www.getgenea.com" target="_blank">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank">Simform</a>, <a href="https://www.meditab.com" target="_blank">Meditab</a>
+
+## About
+
+When I'm not coding, I enjoy drawing, reading, and meeting new people. I love trying different coffees. We are a cozy family of three—my husband Dhruvin, our cat, and me.
 
 ---
 
-[GitHub](https://github.com/dixita0607) | [Codepen](https://codepen.io/dixita0607) | [Art](https://mastodon.art/@dixita) | [Designs](https://dribbble.com/dixita0607) | [Buy me a Coffee](https://www.buymeacoffee.com/dixita)
+## Get in touch
+
+Interested in working together?
+
+- Email: <a href="mailto:contact@dixita.dev" target="_blank">contact@dixita.dev</a>
+- <a href="https://github.com/dixita0607" target="_blank">GitHub</a>
+- <a href="https://bsky.app/profile/dixita0607.bsky.social" target="_blank">Bluesky</a>
+- <a href="https://matrix.to/#/@dixita:matrix.org" target="_blank">Matrix</a>
