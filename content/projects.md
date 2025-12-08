@@ -15,7 +15,7 @@ layout: main
 
 {% for project in collection.projects %}
 
-- [**{{ project.title }}**]({{ project.code }}): {{ project.description }}
+- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
 {% endfor %}
 {% endfor %}
 
@@ -29,7 +29,7 @@ layout: main
 
 {% for project in collection.projects %}
 
-- [**{{ project.title }}**]({{ project.code }}): {{ project.description }}
+- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
 {% endfor %}
 {% endfor %}
 
@@ -43,7 +43,7 @@ layout: main
 
 {% for project in collection.projects %}
 
-- [**{{ project.title }}**]({{ project.code }}): {{ project.description }}
+- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
 {% endfor %}
 {% endfor %}
 
@@ -53,6 +53,6 @@ layout: main
 
 {% for project in collection.projects %}
 
-- [**{{ project.title }}**]({{ project.code }}): {{ project.description }}
+- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
 {% endfor %}
 {% endfor %}

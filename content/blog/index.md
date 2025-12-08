@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blog - Dixita Ganatra
 layout: main
 ---
 
