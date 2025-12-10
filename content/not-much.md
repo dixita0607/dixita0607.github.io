@@ -15,9 +15,9 @@ A peek into what I do outside of work. You can call them my ABCs ;)
 
 - List of my current and past reads: [/books](/books).
 
-### Coffee Journal (brewing soon)
+### Coffee Journal
 
-- My coffee finds; coming soon on [/coffee](/coffee).
+- My coffee finds: [/coffee](/coffee).
 
 ### Communities where I am active
 
