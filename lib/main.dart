@@ -25,11 +25,6 @@ void main() {
         ],
         typography: ContentTypography.base.apply(
           rules: [
-            css('a:visited').styles(
-              color: ThemeColor(
-                ThemeColors.violet.$600,
-              ),
-            ),
             css('pre, code').styles(
               backgroundColor: Color.variable('--content-hr'),
               padding: .all(0.2.em),
