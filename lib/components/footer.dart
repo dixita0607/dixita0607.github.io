@@ -1,4 +1,5 @@
 import 'package:jaspr/jaspr.dart';
+import 'package:jaspr_content/theme.dart';
 
 class Footer extends StatelessComponent {
   const Footer({super.key});
@@ -15,7 +16,7 @@ class Footer extends StatelessComponent {
           ],
         ),
         text(' · '),
-        a(href: 'https://github.com/dixita0607/dixita0607.github.io', [text('Source code')]),
+        a(href: 'https://github.com/dixita0607/dixita0607.github.io', target: .blank, [text('Source code')]),
       ]),
     ]);
   }
@@ -39,6 +40,7 @@ class Footer extends StatelessComponent {
         ),
         css('a', [
           css('&').styles(
+            color: ThemeColor(ThemeColors.violet.$400),
             textDecoration: TextDecoration(line: .none),
           ),
         ]),
