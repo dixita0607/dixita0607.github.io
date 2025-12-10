@@ -1,0 +1,139 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Dixita Ganatra
+  label: Web Developer, Designer & Flutter Developer
+  email: contact@dixita.dev
+  url: https://dixita.dev
+  summary: >
+    I'm a frontend developer passionate about design and user interfaces.
+    I design and build web applications from concept to production.
+    I've worked as an individual contributor and team lead, and I'm open to exploring new technical and leadership roles.
+    Currently learning Dart and Flutter while contributing to open source projects.
+  location:
+    city: Bangalore
+    countryCode: IN
+  profiles:
+    - network: Website
+      url: https://dixita.dev
+    - network: GitHub
+      username: dixita0607
+      url: https://github.com/dixita0607
+    - network: Codeberg
+      username: dixita
+      url: https://codeberg.org/dixita
+work:
+  - company: Genea
+    position: Web Developer Consultant
+    startDate: 2021-05
+    endDate: 2024-12
+    highlights:
+      - Developed and maintained features of an access control system including interactive floor plans, visitor RSVP, custom reporting, access code generation, and FIDO2 authentication support.
+      - Led UI/UX improvements, features of Visitor Management module, and yearly penetration testing projects.
+      - Built custom widget dashboard POCs for different use cases.
+      - Conducted code reviews, mentored team members, and managed frontend deployments.
+      - Prepared technical documentation for features, system setup, and deployment processes.
+      - Tech stack - ReactJS, Redux, Redux Saga, Redux Toolkit, React Query, antd, SCSS, NodeJS, PostgreSQL, Leaflet
+  - company: Technegic Software
+    position: Web Developer Consultant
+    startDate: 2021-04
+    endDate: 2023-11
+    highlights:
+      - Developed cylinder inventory tracking system for facility management and logistics.
+      - Created OpenAPI specifications, frontend, backend, and database architecture using PostgreSQL, NodeJS, React, Redux, and antd.
+      - Designed wireframes and mockups using Figma, Invision Studio, and Affinity Designer.
+      - Deployed the development version of the web app on AWS.
+  - company: Codieslab
+    position: Web Developer Consultant
+    startDate: 2019-10
+    endDate: 2020-12
+    highlights:
+      - Developed frontend and backend of an e-commerce platform using React, Next.js, Redux, Redux Saga, antd, NodeJS, and MongoDB.
+      - Implemented automated email system for subscription renewals.
+      - Integrated Bitcoin payment gateway for checkout and purchase processing.
+  - company: Simform
+    position: Senior React Developer
+    startDate: 2019-12
+    endDate: 2020-05
+    highlights:
+      - Developed web applications for auction management and hospital administration systems.
+      - Maintained internal component library and documented reusable patterns.
+      - Built features like re-ordering up to 10,000 auction items in a grid UI having real-time data and infinite scroll.
+      - Tech stack - ReactJS, Storybook, SCSS, Redux, Redux Saga, MobX, Next.js
+  - company: PoshaQ
+    position: Web Developer
+    startDate: 2018-07
+    endDate: 2018-10
+    highlights:
+      - Designed and developed a web application for garment measurement analysis by placing clothing on canvas and marking key points.
+      - Leveraged HTML Canvas API for interactive measurement visualization.
+      - Tech stack - Angular, Apollo GraphQL, React, NodeJS, MongoDB, Docker
+  - company: Quintet IN
+    position: Frontend Developer
+    startDate: 2015-08
+    endDate: 2017-06
+    summary: Developed and maintained website for a college using WordPress.
+volunteer:
+  - organization: ReactNexus
+    position: Live Stream Coordinator
+    date: 2025
+    summary: Managed live streaming operations for ReactNexus 2025 conference.
+  - organization: GDG Ahmedabad
+    position: Volunteer - Design Team
+    date: 2019
+    summary: Designed social media graphics, posters, and promotional materials for GDG Ahmedabad events.
+education:
+  - institution: Birla Vishwakarma Mahavidhyalaya
+    area: Computer Engineering
+    studyType: Bachelor
+    startDate: 2013-07
+    endDate: 2017-07
+    score: "8.06"
+publications:
+  - name: "CSS Units for font-size: px | em | rem"
+    publisher: Code Better
+    releaseDate: "2018-02-12"
+    url: https://medium.com/@dixita0607/css-units-for-font-size-px-em-rem-79f7e592bb97
+  - name: Exporting assets for Android using Affinity Designer
+    publisher: Free Code Camp
+    releaseDate: "2018-03-09"
+    url: https://medium.com/free-code-camp/exporting-assets-for-android-using-affinity-designer-2564ecf53755
+  - name: Blog
+    publisher: Personal website
+    url: https://dixita.dev/blog
+certificates:
+  - name: "Docker Essentials: A Developer Introduction"
+    date: "2024-08-19"
+    issuer: IBM
+    url: https://courses.cognitiveclass.ai/certificates/fd5a94e0aabb486eb13573382a61ba95
+  - name: Free Code Camp Legecy Certificates
+    date: "2017-10-07"
+    issuer: Free Code Camp
+    url: https://www.freecodecamp.org/dixita0607
+skills:
+  - name: Development
+    keywords:
+      - Dart & Flutter
+      - JavaScript
+      - TypeScript
+      - ReactJS
+      - Redux & Redux Saga
+      - Next.js
+      - GraphQL
+      - Node.js & Express
+      - HTML & CSS/SCSS
+  - name: Tools & Design
+    keywords:
+      - Figma
+      - Affinity Designer
+      - Git
+      - AI-assisted development - Github Copilot, Kiro, Antigravity.
+languages:
+  - language: English
+  - language: Hindi
+  - language: Gujarati
+interests:
+  - name: Drawing
+  - name: Gardening
+  - name: Reading
+meta:
+  theme: onepage

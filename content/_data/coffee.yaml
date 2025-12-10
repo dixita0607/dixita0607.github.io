@@ -1,0 +1,238 @@
+coffees:
+  - date: "2025-10-24"
+    name: "Kilpauk Standard"
+    origin: "Yercaud and Coorg"
+    roasters: "Kāpi Kotai"
+    url: "https://kapikottai.coffee/products/kilpauk-standard"
+    price: 650
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium-Dark"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Smells addictive—instant mood lift with one sniff :p"
+    acidity: "Medium-High"
+    body: "-"
+    notes:
+      - "Hazelnut"
+      - "Chocolate"
+      - "Hints of fruit"
+    aftertaste:
+      - "Fruity-tangy but not too much"
+      - "A little bitter, in a good way"
+    rating: 4.5
+    note: "Subscribed to 3 coffees on their site and got a discount. Enjoying it as my daily morning brew. Definitely recommend."
+
+  - date: "2025-10-06"
+    name: "Bahār"
+    origin: "Unakki estate, Chikmagalur"
+    roasters: "Kāpi Kotai"
+    url: "https://kapikottai.coffee"
+    price: 700
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium-Light"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Smells like fresh, nice and strong coffee."
+    acidity: "Medium-High"
+    body: "-"
+    notes:
+      - "Candied Sweetlime"
+      - "Apricot"
+      - "Almond"
+    aftertaste:
+      - "Tangy fruity"
+      - "A bit sweet"
+      - "Fresh coffee"
+    rating: 5
+    note: "First time trying medium-light roast. I love this coffee—great daily cup, except when I want a darker roast. Second brew lost most of its flavor."
+
+  - date: "2025-09-09"
+    name: "Swell Blend"
+    origin: "Chikmangalur"
+    roasters: "Tulum Coffee (Mumbai)"
+    url: "https://www.tulum.coffee/products/the-swell-blend-specialty-blend"
+    price: 625
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Classic coffee aroma"
+    acidity: "Medium-High"
+    body: "Full"
+    notes:
+      - "Chocolatey"
+      - "Nutty"
+      - "Fruity"
+    aftertaste:
+      - "Tea like bit bitter"
+      - "Slightly tangy sweet"
+    rating: 3.5
+    note: "It's an okay coffee. I can manage it when fewer options are available."
+
+  - date: "2025-08-10"
+    name: "Naturals"
+    origin: "Nagaland"
+    roasters: "Brewed Awakening"
+    price: 650
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "04:00"
+    grind_size: "Fine"
+    water_temperature: "100"
+    aroma: "A bit bold, closer to wine"
+    acidity: "Medium-Low"
+    body: "-"
+    notes:
+      - "Winey"
+      - "Mandarin"
+      - "Soft Florals"
+    aftertaste:
+      - "A bit tangy like wine"
+      - "Slightly bitter, like a floral tea"
+    rating: 5
+    note: "Liked the roast. Great when I don't want a very acidic coffee. Definitely a repurchase! Bought at Nerlu Cafe, Indiranagar. Couldn't find a link online."
+
+  - date: "2025-07-12"
+    name: "M.S. Estate"
+    origin: "Chikmangalur"
+    roasters: "Blue Tokai"
+    url: "https://bluetokaicoffee.com/collections/roasted-and-ground-coffee-beans/products"
+    price: 750
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "A little acidic like fruit and hinting bitterness"
+    acidity: "Medium-High"
+    body: "Medium"
+    notes:
+      - "Orange Marmalade"
+      - "Dried Date"
+      - "Earl Grey Tea"
+    aftertaste:
+      - "Sweet-bitter"
+    rating: 4
+    note: "Good strong coffee. Not a big fan."
+
+  - date: "2025-06-15"
+    name: "Halli Berri"
+    origin: "Kambihalli Estate, Baba Budangiri, Chikmagalur"
+    roasters: "Half Light"
+    url: "https://halflightcoffee.com/"
+    price: 700
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "3:00"
+    grind_size: "Coarse"
+    water_temperature: "100°F"
+    aroma: "Coffee like"
+    acidity: "Medium"
+    body: "High"
+    notes:
+      - "Lemon peel"
+      - "Black tea"
+      - "Areca"
+    aftertaste:
+      - "Fruity tangy"
+      - "Sweet"
+      - "Slightly bitter but good one"
+    rating: 4
+    note: "Recommend. First coffee that felt fresh and acidic, which I liked a lot—it nudged me toward lighter roasts. Can't find its picture or a link online."
+
+  - date: "2025-05-25"
+    name: "Araku - Selection"
+    origin: "Araku"
+    roasters: "Araku"
+    url: "https://www.arakucoffee.in/products/selection"
+    price: 590
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - French Press: "8:00"
+      - Aeropress: "3:00"
+    grind_size: "Coarse"
+    water_temperature: "100°F"
+    aroma: "Coffee like"
+    acidity: "Low"
+    body: "High"
+    notes:
+      - "Honey"
+      - "Sugarcane"
+      - "Dark chocolate"
+      - "Caramel"
+    aftertaste:
+      - "Bitter"
+      - "Sweet"
+    rating: 4
+    note: "Recommend. French press: 4:00 in water, stir, then 4:00 more minutes. Aeropress: 2:00 in water, stir, keep for 30 seconds, press."
+
+  - date: "2025-04-26"
+    name: "Araku - Signature"
+    origin: "Araku"
+    roasters: "Araku"
+    url: "https://www.arakucoffee.in/products/signature"
+    price: 540
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - French Press: "8:00"
+    grind_size: "Coarse"
+    water_temperature: "100°F"
+    aroma: "Coffee like"
+    acidity: "Low-Medium"
+    body: "Medium"
+    notes:
+      - "Green pepper"
+      - "Cherry"
+      - "Dark chocolate"
+    aftertaste:
+      - "Coffee like"
+      - "Chocolate like"
+      - "Good bitter"
+    rating: 5
+    note: "Recommend for daily coffee. French press: 4:00 in water, stir, then 4:00 more minutes."
+
+  - date: "2025-04-02"
+    name: "Araku - Micro Climate"
+    origin: "Araku"
+    roasters: "Araku"
+    url: "https://www.arakucoffee.in/products/micro-climate"
+    price: 630
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - French Press: "4:00"
+    grind_size: "Coarse"
+    water_temperature: "100°F"
+    aroma: "Fruity"
+    acidity: "Medium"
+    body: "Medium"
+    notes:
+      - "Olives"
+      - "Honey"
+      - "Grapes"
+      - "Dried Berries"
+    aftertaste:
+      - "Citrus"
+      - "Coffee like a little bit"
+    rating: 3.5
+    note: "Recommend"
