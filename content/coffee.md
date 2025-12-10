@@ -11,9 +11,30 @@ I use an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropr
 
 _Disclaimer: I describe what I taste in my own words, which may sound nothing like those fancy coffee reviews._
 
----
+<style>
+.coffee-grid {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 1.5rem;
+}
 
+@media (max-width: 860px) {
+ .coffee-grid {
+  grid-template-columns: 1fr;
+ }
+}
+
+.coffee-card {
+  padding: 1rem;
+  border: 1px solid var(--content-hr);
+  border-radius: 1rem;
+}
+
+</style>
+
+<div class="coffee-grid">
 {% for coffee in coffee.coffees %}
+<div class="coffee-card">
 
 #### {% if coffee.url %}<a href="{{ coffee.url }}" target="_blank" rel="noreferrer">{{ coffee.name }}</a>{% else %}{{ coffee.name }}{% endif %}
 
@@ -35,5 +56,6 @@ _Disclaimer: I describe what I taste in my own words, which may sound nothing li
 
 **Tried on:** {{ coffee.date }}
 
----
+</div>
 {% endfor %}
+</div>
