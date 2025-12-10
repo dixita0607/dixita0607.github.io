@@ -13,7 +13,7 @@ class MainLayout extends PageLayoutBase {
   @override
   Component buildBody(Page page, Component child) {
     return div(classes: 'main-layout', [
-      const Header(),
+      Header(currentPath: page.url),
       main_(classes: 'container', [
         child,
       ]),

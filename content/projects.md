@@ -3,8 +3,6 @@ title: Projects - Dixita Ganatra
 layout: main
 ---
 
-# Projects
-
 {% for collection in projects.current %}
 
 ## {{ collection.title }}

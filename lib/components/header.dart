@@ -1,15 +1,22 @@
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_content/components/theme_toggle.dart';
+import 'package:jaspr_content/theme.dart';
 
 class Header extends StatelessComponent {
-  const Header({super.key});
+  final String? currentPath;
+
+  const Header({this.currentPath, super.key});
 
   @override
   Component build(BuildContext context) {
     return header([
       div(classes: 'header-content', [
         div(classes: 'title', [
-          a(href: '/', [text('Dixita Ganatra')]),
+          a(
+            href: '/',
+            classes: _isActive('/') ? 'active' : null,
+            [text('Dixita Ganatra')],
+          ),
         ]),
         nav([
           for (var route in [
@@ -19,13 +26,22 @@ class Header extends StatelessComponent {
           ])
             a(
               href: route.path,
-              classes: 'nav-item',
+              classes: _isActive(route.path) ? 'nav-item active' : 'nav-item',
               [text(route.label)],
             ),
           ThemeToggle(),
         ]),
       ]),
     ]);
+  }
+
+  bool _isActive(String href) {
+    if (currentPath == null) return false;
+    if (href == '/') return currentPath == '/';
+    if (href == '/not-much') {
+      return currentPath == '/coffee' || currentPath == '/books' || currentPath!.startsWith('/not-much');
+    }
+    return currentPath!.startsWith(href);
   }
 
   @css
@@ -53,6 +69,7 @@ class Header extends StatelessComponent {
             fontSize: 2.5.em,
             fontWeight: .w400,
             textDecoration: TextDecoration(line: .none),
+            color: ThemeColor(ThemeColors.violet.$400),
           ),
         ]),
       ]),
@@ -68,6 +85,13 @@ class Header extends StatelessComponent {
             fontSize: 1.1.em,
             textDecoration: TextDecoration(line: .none),
             fontWeight: .w400,
+          ),
+        ]),
+        css('a.active', [
+          css('&').styles(
+            color: ThemeColor(ThemeColors.violet.$400),
+            fontWeight: .w600,
+            textDecoration: TextDecoration(line: .underline),
           ),
         ]),
       ]),

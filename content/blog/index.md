@@ -3,8 +3,6 @@ title: Blog - Dixita Ganatra
 layout: main
 ---
 
-# Blog
-
 {% assign blogs_by_date = pages | sort_natural: "date" | reverse %}
 
 {% for page in blogs_by_date %}
