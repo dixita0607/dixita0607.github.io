@@ -21,15 +21,20 @@ void main() {
       ],
       templateEngine: LiquidTemplateEngine(),
       theme: ContentTheme(
+        colors: [
+          ContentColors.links.apply(ThemeColor(ThemeColors.violet.$400)),
+        ],
         typography: ContentTypography.base.apply(
           rules: [
-            css('a').styles(
-              color: ThemeColor(ThemeColors.violet.$400),
-            ),
             css('a:visited').styles(
               color: ThemeColor(
                 ThemeColors.violet.$600,
               ),
+            ),
+            css('pre, code').styles(
+              backgroundColor: Color.variable('--content-hr'),
+              padding: .all(0.2.em),
+              radius: BorderRadius.circular(0.5.em),
             ),
           ],
         ),
