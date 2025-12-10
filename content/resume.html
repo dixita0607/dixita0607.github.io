@@ -215,15 +215,11 @@ layout: resume
                 - {{ volunteer.position }}
               {% endif %}
             </span>
-            {% if volunteer.startDate %}
+            {% if volunteer.date %}
               <span class='date'>
-                {% if volunteer.startDate %}
-                  {{ volunteer.startDate }}
+                {% if volunteer.date %}
+                  {{ volunteer.date }}
                 {% endif %}
-                &mdash;
-                {% if volunteer.endDate %}
-                  {{ volunteer.endDate }}
-                {% else %}Present{% endif %}
               </span>
             {% endif %}
             {% if volunteer.website %}

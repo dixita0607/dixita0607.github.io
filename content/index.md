@@ -9,7 +9,7 @@ layout: main
 
 I'm a developer who is passionate about UI design and art, based in Bangalore, India.
 
-I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">**Resume**</a>.
+I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">Resume</a>.
 
 ## Work
 
