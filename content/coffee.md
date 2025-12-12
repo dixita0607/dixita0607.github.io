@@ -5,7 +5,7 @@ layout: main
 
 # Coffee Journal
 
-I use an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> with a metal filter. My go-to websites for recipes are <a href="https://aeroprecipe.com" target="_blank" rel="noreferrer">aeroprecipe</a> and <a href="https://aeromatic.app" target="_blank" rel="noreferrer">aeromatic</a>. Initially, I subscribed to <a href="https://aramse.coffee" target="_blank" rel="noreferrer">Aaramse</a> and got some great coffees.
+I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and metal filter. My go-to recipe sites are <a href="https://aeroprecipe.com" target="_blank" rel="noreferrer">aeroprecipe</a> and <a href="https://aeromatic.app" target="_blank" rel="noreferrer">aeromatic</a>. I started with a subscription to <a href="https://aramse.coffee" target="_blank" rel="noreferrer">Aaramse</a>, which introduced me to some great coffees.
 
 ### Coffees I've tried
 

@@ -1,6 +1,6 @@
 current:
   - title: Recent
-    description: Recently completed or in progress porjects
+    description: Recently completed or in progress projects
     projects:
       - title: Dart solutions on Exercism
         description: Solutions that I submitted on exercism for dart language track.
