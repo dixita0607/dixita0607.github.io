@@ -2,6 +2,9 @@ current:
   - title: Recent
     description: Recently completed or in progress projects
     projects:
+      - title: Framatic
+        description: A flutter application for artists to capture the subject in different aspect ratios. It mimics the cutouts they traditionally use for composition.
+        code: https://github.com/dixita0607/framatic
       - title: Dart solutions on Exercism
         description: Solutions that I submitted on exercism for dart language track.
         code: https://exercism.org/profiles/dixita/solutions?track_slug=dart
