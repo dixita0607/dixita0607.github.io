@@ -1,4 +1,54 @@
 coffees:
+  - date: "2026-02-15"
+    name: "Parama - Luxury blend"
+    origin: "Coorg"
+    roasters: "Mavrick & Farmer Coffee"
+    url: "https://www.maverickandfarmer.com/products/parama"
+    price: 650
+    beans:
+      - Arabica: "92"
+      - Robusta: "8"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Smells like a bit darker roast. Addictive smell as usual."
+    acidity: "Medium-High"
+    body: "-"
+    notes:
+      - "Chocolate"
+      - "Caramel"
+    aftertaste:
+      - "A bit fruity when it's closer to room temperature but still has that roast-like taste."
+    rating: 5
+    note: "This has Robusta beans. I was looking for a mix of beans in India for a very long time. The website says it tastes good with milk. I haven't tried that yet. But I think it will be a good choice to make cà phê việt nam due to its Robusta beans."
+
+  - date: "2026-01-23"
+    name: "Rohan Bopanna's Masterblend - 90% wet processed, 10% dry processed"
+    origin: "Coorg"
+    roasters: "Mavrick & Farmer Coffee"
+    url: "https://www.maverickandfarmer.com/products/rohan-bopannas-masterblend-1"
+    price: 680
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium-Dark"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Amazing strong smell. You know how good a roast this is just from a sniff."
+    acidity: "Medium-High"
+    body: "-"
+    notes:
+      - "Mild sweet"
+      - "Toffee"
+    aftertaste:
+      - "Bitter sweet"
+      - "Closer to a light roast if the coffee temperature comes down a little bit."
+    rating: 5
+    note: "The coffee's taste is unique as the packet says 10% of it is dry processed. This is my new favorite and I recommend it for a morning coffee treat ;)"
+
   - date: "2025-10-24"
     name: "Kilpauk Standard"
     origin: "Yercaud and Coorg"
