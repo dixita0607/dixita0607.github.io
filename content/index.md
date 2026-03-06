@@ -18,7 +18,7 @@ I build websites, web apps, and mobile apps — from design to deployment. Curre
 
 ## About
 
-When I'm not coding, I enjoy drawing, reading, and meeting new people. I love trying different coffees. We are a cozy family of three—my husband Dhruvin, our cat, and me.
+When I'm not coding, I enjoy drawing, reading, and meeting new people. I enjoy trying different coffees. <a href="/coffee">Coffees I tried</a>.
 
 ---
 

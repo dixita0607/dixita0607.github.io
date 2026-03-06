@@ -9,7 +9,7 @@ A peek into what I do outside of work. You can call them my ABCs ;)
 
 ### Art
 
-- I share my artworks on <a href="https://mastodon.art/@dixita" target="_blank">Mastodon</a> and <a href="https://bsky.app/profile/dixita0607.bsky.social" target="_blank">Bluesky</a>. I used to share my design work on <a href="https://dribbble.com/dixita0607" target="_blank">Dribbble</a>
+- I share my artworks on <a href="https://bsky.app/profile/dixita0607.bsky.social" target="_blank">Bluesky</a>. Some of my older UI designs are on <a href="https://dribbble.com/dixita0607" target="_blank">Dribbble</a>
 
 ### Books
 
