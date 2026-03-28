@@ -3,7 +3,10 @@ title: Dixita Ganatra
 layout: main
 ---
 
-![profile](/assets/profile.png)
+<figure>
+<img src="/assets/profile.png" alt="profile">
+<figcaption><a href="https://www.instagram.com/s.war.oop" target="_blank"><i>Portrait by Swaroop</i></a></figcaption>
+</figure>
 
 # Hi! I am Dixita
 

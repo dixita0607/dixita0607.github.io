@@ -50,11 +50,19 @@ class MainLayout extends PageLayoutBase {
             width: 100.percent,
           ),
         ]),
-        css('.container img', [
+        css('.container figure img', [
           css('&').styles(
-            maxWidth: 100.percent,
-            maxHeight: 300.px,
-            height: .auto,
+            width: 280.px,
+            height: 280.px,
+          ),
+        ]),
+        css('.container figcaption', [
+          css('&').styles(
+            color: Color('#707070'),
+            margin: .only(top: 6.px),
+          ),
+          css('a').styles(
+            color: Color.inherit,
           ),
         ]),
       ],
