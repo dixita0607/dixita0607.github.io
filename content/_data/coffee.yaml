@@ -1,4 +1,30 @@
 coffees:
+  - date: "2026-03-17"
+    name: "Banana Kents"
+    origin: "Balanoor Plantation, Chikmagalur"
+    roasters: "Half Light Coffee Roasters - Jaipur"
+    url: ""
+    price: 680
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Not too strong but really good."
+    acidity: "Medium"
+    body: "-"
+    notes:
+      - "Jaggery bites"
+      - "Plum"
+      - "Cocoa"
+    aftertaste:
+      - "While drinking, it tastes a bit acidic but then the after taste is a bit bitter (astringent but in a good way)."
+    rating: 4
+    note: "I think these were one of their last batches. It's a good coffee not too unique to miss out on anything."
+
+   
   - date: "2026-02-15"
     name: "Parama - Luxury blend"
     origin: "Coorg"
