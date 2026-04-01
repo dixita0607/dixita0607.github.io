@@ -31,5 +31,5 @@ Interested in working together?
 
 - Email: <a href="mailto:contact@dixita.dev" target="_blank">contact@dixita.dev</a>
 - <a href="https://github.com/dixita0607" target="_blank">GitHub</a>
-- <a href="https://bsky.app/profile/dixita0607.bsky.social" target="_blank">Bluesky</a>
+- <a href="https://bsky.app/profile/dixita.dev" target="_blank">Bluesky</a>
 - <a href="https://matrix.to/#/@dixita:matrix.org" target="_blank">Matrix</a>
