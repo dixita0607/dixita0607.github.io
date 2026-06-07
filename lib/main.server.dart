@@ -13,33 +13,50 @@ void main() {
     options: defaultServerOptions,
   );
   runApp(
-    ContentApp(
+    ContentApp.custom(
+      loaders: [
+        FilesystemLoader('content'),
+      ],
       eagerlyLoadAllPages: true,
-      parsers: [
-        HtmlParser(),
-        MarkdownParser(),
-      ],
-      templateEngine: LiquidTemplateEngine(),
-      theme: ContentTheme(
-        colors: [
-          ContentColors.links.apply(ThemeColor(ThemeColors.violet.$400)),
+      configResolver: PageConfig.all(
+        dataLoaders: [
+          FilesystemDataLoader('content/_data'),
         ],
-        typography: ContentTypography.base.apply(
-          rules: [
-            css('pre, code').styles(
-              backgroundColor: Color.variable('--content-hr'),
-              padding: .all(0.2.em),
-              radius: BorderRadius.circular(0.5.em),
-              fontWeight: .normal,
-            ),
+        parsers: [
+          HtmlParser(),
+          MarkdownParser(),
+        ],
+        templateEngine: LiquidTemplateEngine(),
+        secondaryOutputs: [
+          RSSOutput(
+            title: 'Dixita Ganatra',
+            description: 'Blogs by Dixita Ganatra',
+            siteUrl: 'https://dixita.dev',
+            language: 'en-US',
+            filter: RSSFilter.custom((page) => page.url.startsWith('/blog/')),
+          ),
+        ],
+        theme: ContentTheme(
+          colors: [
+            ContentColors.links.apply(ThemeColor(ThemeColors.violet.$400)),
           ],
+          typography: ContentTypography.base.apply(
+            rules: [
+              css('pre, code').styles(
+                backgroundColor: Color.variable('--content-hr'),
+                padding: .all(0.2.em),
+                radius: BorderRadius.circular(0.5.em),
+                fontWeight: .normal,
+              ),
+            ],
+          ),
         ),
+        layouts: [
+          CustomBlogLayout(),
+          const ResumeLayout(),
+          const MainLayout(),
+        ],
       ),
-      layouts: [
-        CustomBlogLayout(),
-        const ResumeLayout(),
-        const MainLayout(),
-      ],
     ),
   );
 }

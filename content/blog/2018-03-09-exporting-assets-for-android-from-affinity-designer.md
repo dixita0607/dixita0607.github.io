@@ -1,13 +1,13 @@
 ---
 title: Exporting assets for Android using Affinity Designer
-date: 2018-03-09
+publishDate: 2018-03-09
 tags:
   - design
 keywords: 
   - design
   - tool
   - affinity
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 [Affinity Designer](https://affinity.serif.com/en-gb/designer) has a rich feature, Export Persona. I was wondering if it could ease the process of exporting assets for an Android project. Here's what I found after delving into it.

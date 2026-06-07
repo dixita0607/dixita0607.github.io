@@ -1,6 +1,6 @@
 ---
 title: "Fineliner brushes for Procreate"
-date: 2026-01-28
+publishDate: 2026-01-28
 tags:
   - art
   - procreate
@@ -11,7 +11,7 @@ keywords:
   - brushes
   - digital art
   - fineliner
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 I created a set of fineliner brushes for Procreate that mimic the feel of real-life fineliner (aka uniball) pens.

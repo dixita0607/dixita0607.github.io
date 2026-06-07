@@ -2,10 +2,10 @@
 title: "My experience with Kiro"
 keywords: 
   - kiro
-date: 2025-10-02
+publishDate: 2025-10-02
 tags:
   - tools
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 I got off the Kiro waitlist and spent a couple of weeks trying it out. This is a messy, journal-style note about what I did, what worked, and what didn’t. I wanted to build a project with it to see how it fits into a real workflow and to compare it later with other IDEs and tools.

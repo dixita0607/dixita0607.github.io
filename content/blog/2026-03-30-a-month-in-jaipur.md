@@ -1,6 +1,6 @@
 ---
 title: "A month spent in Jaipur - March 2026"
-date: 2026-03-31
+publishDate: 2026-03-31
 tags:
   - travel
   - nomad
@@ -8,7 +8,7 @@ keywords:
   - travel
   - jaipur
   - nomad
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 Jaipur trip was full of surprises (good and bad ones). I had a very different image of the city before going there. Here's what I think about it and various experiences that I had.

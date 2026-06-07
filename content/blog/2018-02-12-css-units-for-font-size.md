@@ -1,12 +1,12 @@
 ---
 title: "CSS units for font-size: px | em | rem"
-date: 2018-02-12
+publishDate: 2018-02-12
 tags:
   - web
 keywords: 
   - web
   - css
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 When I started digging into CSS, I found various units for `font-size`. It was a bit confusing as to which one to use when, where and why. After investing some time, I found three units that I decided to use in my projects - `px`, `em` and `rem`.
