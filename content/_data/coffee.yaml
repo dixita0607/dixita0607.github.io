@@ -1,4 +1,26 @@
 coffees:
+  - date: "2026-04-13"
+    name: "Dylan's Toasted & Roasted"
+    origin: ""
+    roasters: "Dylan's Coffee House, Manali"
+    url: ""
+    price: 600
+    beans:
+      - Arabica: "100"
+    roast_level: "Medium-Dark"
+    brewing_method:
+      - Aeropress: "02:30"
+    grind_size: "Medium-Fine"
+    water_temperature: "100"
+    aroma: "Bitter due to dark roast."
+    acidity: "Low"
+    body: "-"
+    notes:
+    aftertaste:
+      - "Neutral like simple dark roast coffee. Neighter too bitter nor too acidic."
+    rating: 3.5
+    note: "This is the first locally roasted coffee that I tired. They only had medium to dark roast option. Usually I don't enjoy dark roasts but this one was a bit mild in terms of bitterness. Not recommended for people who need acidity in the flavor of coffee."
+
   - date: "2026-03-17"
     name: "Banana Kents"
     origin: "Balanoor Plantation, Chikmagalur"
