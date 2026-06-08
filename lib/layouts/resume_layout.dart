@@ -18,7 +18,7 @@ class ResumeLayout extends PageLayoutBase {
   Iterable<Component> buildHead(Page page) sync* {
     yield* super.buildHead(page);
 
-    yield raw('<style>$_resumeStyles</style>');
+    yield RawText('<style>$_resumeStyles</style>');
   }
 
   static const _resumeStyles = '''

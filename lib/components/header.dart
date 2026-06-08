@@ -16,7 +16,7 @@ class Header extends StatelessComponent {
           a(
             href: '/',
             classes: _isActive('/') ? 'active' : null,
-            [text('Dixita Ganatra')],
+            [Component.text('Dixita Ganatra')],
           ),
         ]),
         nav([
@@ -28,9 +28,9 @@ class Header extends StatelessComponent {
             a(
               href: route.path,
               classes: _isActive(route.path) ? 'nav-item active' : 'nav-item',
-              [text(route.label)],
+              [Component.text(route.label)],
             ),
-          ThemeToggle(),
+          const ThemeToggle(),
         ]),
       ]),
     ]);

@@ -13,13 +13,13 @@ class Footer extends StatelessComponent {
           href: 'https://jaspr.site',
           target: .blank,
           [
-            text('Built with Jaspr'),
+            Component.text('Built with Jaspr'),
           ],
         ),
-        text(' · '),
-        a(href: 'https://github.com/dixita0607/dixita0607.github.io', target: .blank, [text('Source code')]),
-        text(' · '),
-        a(href: '/rss.xml', target: .blank, [text('RSS Feed')]),
+        Component.text(' · '),
+        a(href: 'https://github.com/dixita0607/dixita0607.github.io', target: .blank, [Component.text('Source code')]),
+        Component.text(' · '),
+        a(href: '/rss.xml', target: .blank, [Component.text('RSS Feed')]),
       ]),
     ]);
   }
