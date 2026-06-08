@@ -1,5 +1,5 @@
 name: jaspr_site
-description: A new Jaspr project
+description: Dixita Ganatra's personal website
 version: 0.0.1
 
 environment:
@@ -18,4 +18,3 @@ dev_dependencies:
 
 jaspr:
   mode: static
-

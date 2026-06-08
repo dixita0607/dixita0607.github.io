@@ -32,7 +32,6 @@ jobs:
         run: rm -rf build/jaspr/.dart_tool build/jaspr/packages
 
       - name: Upload artifact
-        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: build/jaspr/
