@@ -1,5 +1,6 @@
 ---
 title: "CSS units for font-size: px | em | rem"
+layout: blog
 publishDate: 2018-02-12
 tags:
   - web

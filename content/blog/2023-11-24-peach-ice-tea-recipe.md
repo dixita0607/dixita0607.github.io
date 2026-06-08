@@ -1,5 +1,6 @@
 ---
 title: "Peach ice tea recipe"
+layout: blog
 publishDate: 2023-11-24
 tags:
   - cooking

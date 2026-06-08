@@ -1,5 +1,6 @@
 ---
 title: "Fineliner brushes for Procreate"
+layout: blog
 publishDate: 2026-01-28
 tags:
   - art

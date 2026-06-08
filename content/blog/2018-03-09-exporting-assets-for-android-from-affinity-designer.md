@@ -1,5 +1,6 @@
 ---
 title: Exporting assets for Android using Affinity Designer
+layout: blog
 publishDate: 2018-03-09
 tags:
   - design

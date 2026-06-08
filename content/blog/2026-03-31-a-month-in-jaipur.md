@@ -1,5 +1,6 @@
 ---
 title: "A month spent in Jaipur - March 2026"
+layout: blog
 publishDate: 2026-03-31
 tags:
   - travel

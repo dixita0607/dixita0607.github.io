@@ -1,5 +1,6 @@
 ---
 title: "A month and a half in Goa - Jan-Feb 2026"
+layout: blog
 publishDate: 2026-03-06
 tags:
   - travel

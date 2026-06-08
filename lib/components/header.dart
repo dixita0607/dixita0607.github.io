@@ -40,9 +40,9 @@ class Header extends StatelessComponent {
     if (currentPath == null) return false;
     if (href == '/') return currentPath == '/';
     if (href == '/not-much') {
-      return currentPath == '/coffee' || currentPath == '/books' || currentPath!.startsWith('/not-much');
+      return currentPath == '/coffee' || currentPath == '/books' || currentPath == '/not-much';
     }
-    return currentPath!.startsWith(href);
+    return currentPath == href;
   }
 
   @css

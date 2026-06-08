@@ -1,5 +1,6 @@
 ---
 title: "My experience with Kiro"
+layout: blog
 keywords: 
   - kiro
 publishDate: 2025-10-02

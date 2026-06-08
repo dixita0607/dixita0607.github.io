@@ -1,5 +1,6 @@
 ---
 title: "Jest Matchers Cheat sheet"
+layout: blog
 publishDate: 2025-02-27
 tags:
   - web
