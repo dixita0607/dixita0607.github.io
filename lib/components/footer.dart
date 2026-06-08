@@ -18,6 +18,8 @@ class Footer extends StatelessComponent {
         ),
         text(' · '),
         a(href: 'https://github.com/dixita0607/dixita0607.github.io', target: .blank, [text('Source code')]),
+        text(' · '),
+        a(href: '/rss.xml', target: .blank, [text('RSS Feed')]),
       ]),
     ]);
   }
