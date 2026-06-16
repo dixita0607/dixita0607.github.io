@@ -1,13 +1,14 @@
 ---
 title: "Jest Matchers Cheat sheet"
-date: 2025-02-27
+layout: blog
+publishDate: 2025-02-27
 tags:
   - web
 keywords: 
   - web
   - jest
   - testing
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 A quick reference for commonly used jest matchers. A full list can be found on their [docs page](https://jestjs.io/docs/expect#matchers)

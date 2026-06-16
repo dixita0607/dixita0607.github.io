@@ -14,14 +14,12 @@ I'm a developer who is passionate about UI design and art, based in Bangalore, I
 
 I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">Resume</a>.
 
+When I'm not coding, I enjoy drawing, reading, and meeting new people. I like to try different coffees. <a href="/coffee">Coffees I tried</a>.
+
 ## Work
 
 - Recently contributed to a few **Dart** and **Flutter** repositories (fixes, UI changes and examples). Find more about it <a href="/projects">here</a>
 - Previously worked with: <a href="https://www.getgenea.com" target="_blank">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank">Simform</a>, <a href="https://www.meditab.com" target="_blank">Meditab</a>
-
-## About
-
-When I'm not coding, I enjoy drawing, reading, and meeting new people. I enjoy trying different coffees. <a href="/coffee">Coffees I tried</a>.
 
 ---
 

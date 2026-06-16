@@ -1,13 +1,14 @@
 ---
 title: "Peach ice tea recipe"
-date: 2023-11-24
+layout: blog
+publishDate: 2023-11-24
 tags:
   - cooking
 keywords: 
   - cooking
   - tea
   - drink
-author: ""
+author: "contact@dixita.dev (Dixita Ganatra)"
 ---
 
 The contents are for making 350ml peach ice tea.

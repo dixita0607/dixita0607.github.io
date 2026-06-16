@@ -8,8 +8,8 @@ Copyright: 2022 Dixita Ganatra <contact@dixita.dev>
 License: MIT
 
 Files:
-  src/_includes/resume.njk
-  src/sass/resume.scss
+  content/resume.html
+  lib/layouts/resume_layout.dart
 Copyright:
   2015 Ainsley Chong
   2022 Dixita Ganatra <contact@dixita.dev>

@@ -5,7 +5,7 @@ import 'package:jaspr_content/jaspr_content.dart';
 import '../components/header.dart';
 
 class CustomBlogLayout extends BlogLayout {
-  CustomBlogLayout() : super(header: const Header());
+  CustomBlogLayout() : super(header: const Header(currentPath: '/blog'));
 
   @override
   Iterable<Component> buildHead(Page page) sync* {

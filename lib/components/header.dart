@@ -16,7 +16,7 @@ class Header extends StatelessComponent {
           a(
             href: '/',
             classes: _isActive('/') ? 'active' : null,
-            [text('Dixita Ganatra')],
+            [Component.text('Dixita Ganatra')],
           ),
         ]),
         nav([
@@ -28,9 +28,9 @@ class Header extends StatelessComponent {
             a(
               href: route.path,
               classes: _isActive(route.path) ? 'nav-item active' : 'nav-item',
-              [text(route.label)],
+              [Component.text(route.label)],
             ),
-          ThemeToggle(),
+          const ThemeToggle(),
         ]),
       ]),
     ]);
@@ -40,9 +40,9 @@ class Header extends StatelessComponent {
     if (currentPath == null) return false;
     if (href == '/') return currentPath == '/';
     if (href == '/not-much') {
-      return currentPath == '/coffee' || currentPath == '/books' || currentPath!.startsWith('/not-much');
+      return currentPath == '/coffee' || currentPath == '/books' || currentPath == '/not-much';
     }
-    return currentPath!.startsWith(href);
+    return currentPath == href;
   }
 
   @css

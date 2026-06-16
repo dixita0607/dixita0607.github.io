@@ -1,7 +1,4 @@
 .dart_tool/
-.packages
 /build/
 *.log
 .DS_Store
-.flutter-plugins
-.flutter-plugins-dependencies
