@@ -8,7 +8,6 @@ body { margin:0; color:var(--ink); background-color:var(--paper); background-ima
 body.is-drawing { user-select:none; -webkit-user-select:none; }
 a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
 a:hover { color:#4268df; }
-mark { padding:.05em .16em; background:var(--green); color:#13151a; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
 .skip-link { position:absolute; left:-999px; }
 .skip-link:focus { left:1rem; top:1rem; z-index:4; padding:.5rem; background:var(--milk); }
 .site-header { position:relative; z-index:1; max-width:1440px; margin:auto; padding:1.1rem 2rem; display:grid; grid-template-columns:34px 1fr auto auto auto; gap:1rem; align-items:center; border-bottom:1px solid var(--ink); background:var(--header); backdrop-filter:blur(12px); }
@@ -78,7 +77,7 @@ mark { padding:.05em .16em; background:var(--green); color:#13151a; box-decorati
 .prose h3 { margin-top:2rem; font-size:1rem; }
 .prose img { width:100%; border-radius:12px; }
 .prose a { color:#4268df; }
-.hero h1::after { content:""; display:block; width:4.2rem; margin-top:.26rem; border-bottom:3px solid var(--green); transform:rotate(-1.2deg); }.hero mark { background:var(--green); }
+.hero h1::after { content:""; display:block; width:4.2rem; margin-top:.26rem; border-bottom:3px solid var(--green); transform:rotate(-1.2deg); }
 .resume-page { max-width:1000px; margin:auto; padding:4rem 2rem; }
 .site-footer { position:relative; z-index:1; max-width:1440px; margin:auto; padding:1.5rem 2rem; display:flex; justify-content:space-between; border-top:1px solid var(--line); font:.72rem "DM Mono",monospace; text-transform:uppercase; }
 .page,.hero,.selected,.home-notes,.note,.resume-page { position:relative; z-index:1; }
