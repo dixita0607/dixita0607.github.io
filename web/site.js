@@ -1,5 +1,6 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.site-nav');
+const themeButton = document.querySelector('.theme-toggle');
 
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') === 'true';
@@ -10,6 +11,16 @@ menuButton?.addEventListener('click', () => {
 document.querySelectorAll('.site-nav a').forEach((link) => {
   if (link.pathname === window.location.pathname) link.setAttribute('aria-current', 'page');
 });
+
+function setTheme(theme) {
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+  themeButton?.setAttribute('aria-pressed', String(theme === 'dark'));
+  localStorage.setItem('theme', theme);
+}
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) setTheme(savedTheme);
+themeButton?.addEventListener('click', () => setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'));
 
 const canvas = document.createElement('canvas');
 canvas.id = 'draw-layer';
@@ -59,8 +70,10 @@ function draw(timestamp) {
 window.addEventListener('pointerdown', (event) => {
   if (event.pointerType !== 'mouse') return;
   if (!canDrawOn(event.target)) return;
+  event.preventDefault();
+  document.body.classList.add('is-drawing');
   previousPoint = { x: event.clientX, y: event.clientY, width: 3.8, time: performance.now() };
-});
+}, { passive: false });
 window.addEventListener('pointermove', (event) => {
   if (event.pointerType !== 'mouse') return;
   const drawingSurface = canDrawOn(event.target);
@@ -76,7 +89,7 @@ window.addEventListener('pointermove', (event) => {
   strokes.push({ fromX: previousPoint.x, fromY: previousPoint.y, toX: event.clientX, toY: event.clientY, fromWidth: previousPoint.width, toWidth: width, created: now });
   previousPoint = { x: event.clientX, y: event.clientY, width, time: now };
 });
-window.addEventListener('pointerup', () => { previousPoint = null; });
+window.addEventListener('pointerup', () => { previousPoint = null; document.body.classList.remove('is-drawing'); });
 window.addEventListener('mouseout', (event) => {
   if (!event.relatedTarget) {
     document.body.classList.remove('is-drawing-surface');
@@ -86,3 +99,18 @@ window.addEventListener('mouseout', (event) => {
 window.addEventListener('resize', sizeCanvas);
 sizeCanvas();
 requestAnimationFrame(draw);
+
+function addDemoStroke() {
+  if (previousPoint || strokes.length > 0) return;
+  const fromX = window.innerWidth * (.08 + Math.random() * .72);
+  const fromY = window.innerHeight * (.18 + Math.random() * .62);
+  const length = 38 + Math.random() * 46;
+  const angle = -0.7 + Math.random() * 1.4;
+  const toX = fromX + Math.cos(angle) * length;
+  const toY = fromY + Math.sin(angle) * length;
+  const now = performance.now();
+  strokes.push({ fromX, fromY, toX, toY, fromWidth: 1.1, toWidth: 2.8, created: now - 350 });
+}
+
+setTimeout(addDemoStroke, 1800);
+setInterval(addDemoStroke, 8500);
