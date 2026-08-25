@@ -53,10 +53,9 @@ a:hover { color:#4268df; }
 .note-card:last-child { border-right:0; }
 .note-card:nth-child(2) { background:var(--blue-pale); }.note-card:nth-child(3) { background:var(--green); }
 .note-card h3 { max-width:14ch; margin:1rem 0; font:700 1.6rem/.98 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
-.social-grid { display:grid; grid-template-columns:repeat(2,1fr); border:1px solid var(--ink); border-radius:10px; overflow:hidden; background:var(--milk); }
-.social-grid a { min-height:125px; padding:1.25rem; display:grid; grid-template-columns:1fr auto; align-content:space-between; gap:.6rem; border-right:1px solid var(--ink); border-bottom:1px solid var(--ink); text-decoration:none; }
-.social-grid a:nth-child(2n) { border-right:0; }.social-grid a:nth-last-child(-n+2) { border-bottom:0; }
-.social-grid a:hover { color:var(--ink); background:var(--green); }.social-grid span { grid-column:1/-1; font:.68rem "DM Mono",monospace; text-transform:uppercase; }.social-grid strong { font:600 1.05rem "Space Grotesk",sans-serif; letter-spacing:-.04em; }.social-grid i { font-style:normal; font-size:1.2rem; }
+.social-grid { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--ink); border-radius:10px; overflow:hidden; background:var(--milk); }
+.social-grid a { min-height:125px; padding:1.25rem; display:grid; grid-template-columns:1fr auto; align-content:space-between; gap:.6rem; border-right:1px solid var(--ink); text-decoration:none; }
+.social-grid a:last-child { border-right:0; }.social-grid a:hover { color:var(--ink); background:var(--green); }.social-icon { width:2rem; height:2rem; display:grid; place-items:center; grid-column:1/-1; border:1px solid var(--ink); border-radius:50%; font:1rem/1 "DM Mono",monospace; }.social-icon--github { border-radius:6px; font-size:.62rem; font-weight:500; }.social-grid strong { font:600 1.05rem "Space Grotesk",sans-serif; letter-spacing:-.04em; }.social-grid i { font-style:normal; font-size:1.2rem; }
 .page { max-width:1060px; margin:auto; padding:5rem 2rem 7rem; }
 .page-header { max-width:700px; margin-bottom:4rem; }
 .page-header h1,.note-header h1 { margin:.6rem 0 1rem; font:700 clamp(3.2rem,7vw,6.2rem)/.86 "Space Grotesk",sans-serif; letter-spacing:-.1em; }
