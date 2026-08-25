@@ -82,7 +82,7 @@ a:hover { color:#4268df; }
 .site-footer { position:relative; z-index:1; max-width:1440px; margin:auto; padding:1.5rem 2rem; display:flex; justify-content:space-between; border-top:1px solid var(--line); font:.72rem "DM Mono",monospace; text-transform:uppercase; }
 .page,.hero,.selected,.home-notes,.note,.resume-page { position:relative; z-index:1; }
 .site-pet { --pet-direction:1; position:fixed; z-index:2; left:calc(100vw - 82px); bottom:.35rem; width:64px; height:96px; margin:0; pointer-events:none; filter:drop-shadow(0 3px 0 rgba(19,21,26,.14)); transform:scaleX(var(--pet-direction)); transition:left 4.6s linear; }
-.site-pet-sprite { display:block; width:64px; height:96px; background:url('/assets/pets/pip-sprite.png') 0 0/256px 96px no-repeat; image-rendering:pixelated; animation:pet-loaf 3.8s steps(1,end) infinite; }
+.site-pet-sprite { display:block; width:64px; height:96px; background:url('/assets/pets/pip-sprite.png') 0 0/256px 96px no-repeat; filter:sepia(.1) hue-rotate(165deg) saturate(.78); image-rendering:pixelated; animation:pet-loaf 3.8s steps(1,end) infinite; }
 .site-pet.is-walking .site-pet-sprite { animation:pet-walk .52s steps(1,end) infinite; }
 .site-pet.is-playing .site-pet-sprite { animation:pet-play .78s steps(1,end) 4; }
 @keyframes pet-loaf { 0%,88% { background-position:0 0; } 89%,100% { background-position:-192px 0; } }
