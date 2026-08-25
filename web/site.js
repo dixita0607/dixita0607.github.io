@@ -52,6 +52,29 @@ function draw(timestamp) {
     const age = timestamp - stroke.created;
     const opacity = 1 - age / 1250;
     if (opacity <= 0) { strokes.splice(index, 1); continue; }
+    if (stroke.shape === 'circle') {
+      context.beginPath();
+      context.arc(stroke.x, stroke.y, stroke.radius, 0, Math.PI * 2);
+      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .68})`;
+      context.lineWidth = 2.5;
+      context.stroke();
+      continue;
+    }
+    if (stroke.shape === 'star') {
+      context.beginPath();
+      for (let point = 0; point < 9; point += 1) {
+        const angle = -Math.PI / 2 + point * Math.PI * .5;
+        const radius = point % 2 === 0 ? stroke.radius : stroke.radius * .42;
+        const x = stroke.x + Math.cos(angle) * radius;
+        const y = stroke.y + Math.sin(angle) * radius;
+        if (point === 0) context.moveTo(x, y); else context.lineTo(x, y);
+      }
+      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .68})`;
+      context.lineWidth = 2.5;
+      context.lineJoin = 'round';
+      context.stroke();
+      continue;
+    }
     const angle = Math.atan2(stroke.toY - stroke.fromY, stroke.toX - stroke.fromX);
     const offsetX = Math.cos(angle + Math.PI / 2);
     const offsetY = Math.sin(angle + Math.PI / 2);
@@ -100,17 +123,14 @@ window.addEventListener('resize', sizeCanvas);
 sizeCanvas();
 requestAnimationFrame(draw);
 
-function addDemoStroke() {
+let demoShape = 0;
+function addDemoShape() {
   if (previousPoint || strokes.length > 0) return;
-  const fromX = window.innerWidth * (.08 + Math.random() * .72);
-  const fromY = window.innerHeight * (.18 + Math.random() * .62);
-  const length = 38 + Math.random() * 46;
-  const angle = -0.7 + Math.random() * 1.4;
-  const toX = fromX + Math.cos(angle) * length;
-  const toY = fromY + Math.sin(angle) * length;
-  const now = performance.now();
-  strokes.push({ fromX, fromY, toX, toY, fromWidth: 1.1, toWidth: 2.8, created: now - 350 });
+  const circle = demoShape++ % 2 === 0;
+  strokes.push(circle
+    ? { shape: 'circle', x: 76, y: window.innerHeight - 100, radius: 31, created: performance.now() }
+    : { shape: 'star', x: window.innerWidth - 78, y: 128, radius: 27, created: performance.now() });
 }
 
-setTimeout(addDemoStroke, 1800);
-setInterval(addDemoStroke, 8500);
+setTimeout(addDemoShape, 1800);
+setInterval(addDemoShape, 8500);
