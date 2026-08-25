@@ -3,31 +3,9 @@ title: Dixita Ganatra
 layout: main
 ---
 
-<figure>
-<img src="/assets/profile.png" alt="profile">
-<figcaption><a href="https://www.instagram.com/s.war.oop" target="_blank"><i>Portrait by Swaroop</i></a></figcaption>
-</figure>
-
-# Hi! I am Dixita
-
-I'm a developer who is passionate about UI design and art, based in Bangalore, India.
-
-I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">Resume</a>.
-
-When I'm not coding, I enjoy drawing, reading, and meeting new people. I like to try different coffees. <a href="/coffee">Coffees I tried</a>.
-
-## Work
-
-- Recently contributed to a few **Dart** and **Flutter** repositories (fixes, UI changes and examples). Find more about it <a href="/projects">here</a>
-- Previously worked with: <a href="https://www.getgenea.com" target="_blank">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank">Simform</a>, <a href="https://www.meditab.com" target="_blank">Meditab</a>
-
----
-
-## Get in touch
-
-Interested in working together?
-
-- Email: <a href="mailto:contact@dixita.dev" target="_blank">contact@dixita.dev</a>
-- <a href="https://github.com/dixita0607" target="_blank">GitHub</a>
-- <a href="https://bsky.app/profile/dixita.dev" target="_blank">Bluesky</a>
-- <a href="https://matrix.to/#/@dixita:matrix.org" target="_blank">Matrix</a>
+<section class="hero">
+  <div class="hero-copy"><div><p class="kicker">Developer / Bangalore, India</p><h1>I build digital things.<br><em>I also draw.</em></h1><p class="hero-intro">I’m Dixita, a developer who likes making calm, useful interfaces. I work across web and mobile, care about the small UI details, and keep a sketchbook nearby.</p></div><div class="hero-meta"><span>Open to good work</span><span>↓ Scroll to look around</span></div></div>
+  <div class="hero-side"><div class="portrait-card"><p>Portrait by Swaroop</p></div><div class="mini-grid"><a class="mini-card" href="/projects/"><span>Selected work</span><strong>Apps, experiments, and open source.</strong><span>Take a look →</span></a><a class="mini-card" href="/not-much/"><span>Elsewhere</span><strong>Drawing, books, and coffee.</strong><span>Browse around →</span></a></div></div>
+</section>
+<section class="selected"><div class="section-heading"><p class="section-label">Selected work</p><div><h2>A few things I’ve made or helped make.</h2><p>Some are useful tools, some are learning projects, and some are small fixes that made their way into open source.</p></div></div><div class="project-list">{% for project in projects.current[0].projects limit:3 %}<a class="project-row" href="{{ project.code }}"><span class="project-index">0{{ forloop.index }}</span><strong>{{ project.title }}</strong><p>{{ project.description }}</p><span class="project-arrow">↗</span></a>{% endfor %}</div></section>
+<section class="home-notes"><div class="section-heading"><p class="section-label">Notes from the side table</p><div><h2>Not just code.</h2><p>I write down things I want to keep: a place I stayed, a tool I tried, a coffee I liked, or something I learned the hard way.</p></div></div><div class="note-grid"><a class="note-card" href="/blog/2026-01-28-fineliner-brushes-procreate/"><span class="section-label">Art tools</span><h3>Fineliner brushes for Procreate</h3><span>Read note →</span></a><a class="note-card" href="/blog/2026-03-06-a-month-in-goa/"><span class="section-label">Travel</span><h3>A month and a half in Goa</h3><span>Read note →</span></a><a class="note-card" href="/coffee/"><span class="section-label">Coffee journal</span><h3>What I’ve been brewing lately.</h3><span>See coffees →</span></a></div></section>

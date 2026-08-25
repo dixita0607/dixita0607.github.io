@@ -3,11 +3,10 @@ title: Coffee Journal - Dixita Ganatra
 layout: main
 ---
 
-# Coffee Journal
+<article class="page content-list">
+<header class="page-header"><p class="section-label">Coffee journal</p><h1>Coffees I’ve tried.</h1><p>I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and a metal filter. These are just my notes, not expert reviews.</p></header>
 
-I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and metal filter. My go-to recipe sites are <a href="https://aeroprecipe.com" target="_blank" rel="noreferrer">aeroprecipe</a> and <a href="https://aeromatic.app" target="_blank" rel="noreferrer">aeromatic</a>. I started with a subscription to <a href="https://aramse.coffee" target="_blank" rel="noreferrer">Aaramse</a>, which introduced me to some great coffees.
-
-### Coffees I've tried
+<h2>Coffee shelf</h2>
 
 _Disclaimer: I describe what I taste in my own words, which may sound nothing like those fancy coffee reviews._
 
@@ -59,3 +58,4 @@ _Disclaimer: I describe what I taste in my own words, which may sound nothing li
 </div>
 {% endfor %}
 </div>
+</article>

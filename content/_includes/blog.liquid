@@ -1,0 +1,11 @@
+---
+layout: main
+---
+<article class="note">
+  <header class="note-header">
+    <p class="section-label">Field note{% if tags %} · {{ tags | join: ", " }}{% endif %}</p>
+    <h1>{{ title }}</h1>
+    {% if publishDate %}<p class="note-date">{{ publishDate }}</p>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

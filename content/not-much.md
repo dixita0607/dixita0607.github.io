@@ -3,22 +3,4 @@ title: Not Much - Dixita Ganatra
 layout: main
 ---
 
-# Not Much
-
-A peek into what I do outside of work. You can call them my ABCs ;)
-
-### Art
-
-- I share my artworks on <a href="https://bsky.app/profile/dixita.dev" target="_blank">Bluesky</a>. Some of my older UI designs are on <a href="https://dribbble.com/dixita0607" target="_blank">Dribbble</a>
-
-### Books
-
-- List of my current and past reads: [/books](/books).
-
-### Coffee Journal
-
-- My coffee finds: [/coffee](/coffee).
-
-### Communities where I am active
-
-- <a href="https://penciljam.com" target="_blank">PencilJam</a>
+<article class="page content-list"><header class="page-header"><p class="section-label">Away from work</p><h1>The things that fill the gaps.</h1><p>Drawing, books, coffee, and a few corners of the internet I enjoy being part of.</p></header><section><h2>Drawing</h2><p>I share artworks on <a href="https://bsky.app/profile/dixita.dev">Bluesky</a>. Some older UI work is on <a href="https://dribbble.com/dixita0607">Dribbble</a>.</p></section><section><h2>Books</h2><p>A running list of <a href="/books/">what I’m reading and what I’ve finished</a>.</p></section><section><h2>Coffee</h2><p>My <a href="/coffee/">coffee journal</a> has the non-expert notes from things I’ve brewed.</p></section><section><h2>Community</h2><p>I’m active in <a href="https://penciljam.com">PencilJam</a>.</p></section></article>

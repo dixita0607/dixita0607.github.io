@@ -1,13 +1,5 @@
 ---
-title: Blog - Dixita Ganatra
+title: Notes — Dixita Ganatra
 layout: main
 ---
-
-{% assign blogs_by_date = pages | sort_natural: "publishDate" | reverse %}
-
-{% for page in blogs_by_date %}
-{% if page.url contains "/blog/" %}
-
-- *{{ page.publishDate }}* - [{{ page.title }}]({{ page.url }})
-{% endif %}
-{% endfor %}
+<article class="page content-list"><header class="page-header"><p class="section-label">Field notes</p><h1>Things I wanted to remember.</h1><p>Notes about development, drawing, coffee, and travelling around.</p></header><ul>{% assign notes = collections.all | reverse %}{% for note in notes %}{% if note.data.layout == "blog" %}<li><a href="{{ note.url }}">{{ note.data.title }}</a><br><small>{{ note.data.publishDate }}</small></li>{% endif %}{% endfor %}</ul></article>
