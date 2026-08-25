@@ -6,8 +6,8 @@ html.dark { --ink:#f2f4f8; --paper:#11141b; --milk:#1a1f2a; --blue:#6382ff; --bl
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background-color:var(--paper); background-image:var(--paper-texture),linear-gradient(var(--rule) 1px,transparent 1px),radial-gradient(var(--paper-fleck) .5px,transparent .7px),radial-gradient(var(--paper-fleck) .45px,transparent .65px); background-position:0 0,0 5px,2px 3px,7px 11px; background-size:auto,100% 32px,13px 17px,19px 23px; font:16px/1.5 "Space Grotesk",sans-serif; }
 body.is-drawing { user-select:none; -webkit-user-select:none; }
-.book-margin { position:fixed; z-index:1; top:7rem; bottom:2rem; left:max(.7rem,calc((100vw - 1440px) / 2 - 3rem)); width:2rem; display:flex; flex-direction:column; align-items:center; justify-content:space-around; border-right:1px solid var(--blue); color:var(--blue); opacity:.7; pointer-events:none; }
-.book-margin::before { content:""; position:absolute; top:0; right:-3px; width:5px; height:100%; background:repeating-linear-gradient(to bottom,var(--blue) 0 2px,transparent 2px 28px); }.book-margin span { position:relative; z-index:1; display:grid; place-items:center; width:1.5rem; height:1.5rem; background:var(--paper); font:1rem/1 "DM Mono",monospace; }
+.book-margin { position:fixed; z-index:1; top:7rem; bottom:2rem; left:max(1rem,calc((100vw - 1440px) / 2 + 1.5rem)); width:3.5rem; display:flex; flex-direction:column; align-items:center; justify-content:space-around; border-right:1px solid var(--blue); color:var(--blue); opacity:.7; pointer-events:none; }
+.book-margin span { position:relative; z-index:1; display:grid; place-items:center; width:1.5rem; height:1.5rem; background:var(--paper); font:1rem/1 "DM Mono",monospace; }
 a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
 a:hover { color:#4268df; }
 .skip-link { position:absolute; left:-999px; }
@@ -107,3 +107,4 @@ html.dark .mini-card:nth-child(2):hover,html.dark .note-card:nth-child(3):hover 
 @media (max-width:720px) { .hero-copy{min-height:460px}.hero h1{font-size:3.9rem} }
 @media (max-width:720px) { .selected,.home-notes,.home-socials{padding:3rem 1rem}.site-footer{display:flex;justify-content:center}.site-footer div{margin-top:0} }
 @media (max-width:720px) { .selected{padding-bottom:2rem}.home-notes{padding-block:2rem}.home-socials{padding-top:2rem} }
+@media (min-width:721px) { .site-header,.hero,.selected,.home-notes,.home-socials,.page,.note,.resume-page,.site-footer{padding-left:clamp(5.5rem,9vw,10rem)} }
