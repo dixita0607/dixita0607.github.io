@@ -22,6 +22,33 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme) setTheme(savedTheme);
 themeButton?.addEventListener('click', () => setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'));
 
+const sitePet = document.querySelector('.site-pet');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function wanderPet() {
+  if (!sitePet || reducedMotion) return;
+  const maximum = Math.max(20, window.innerWidth - 86);
+  const current = Number.parseFloat(sitePet.style.left) || window.innerWidth - 82;
+  const next = 18 + Math.random() * (maximum - 18);
+  const direction = next < current ? -1 : 1;
+  const duration = 2800 + Math.random() * 3000;
+  sitePet.style.setProperty('--pet-direction', direction);
+  sitePet.style.transitionDuration = `${duration}ms`;
+  sitePet.classList.remove('is-playing');
+  sitePet.classList.add('is-walking');
+  sitePet.style.left = `${next}px`;
+  window.setTimeout(() => {
+    sitePet.classList.remove('is-walking');
+    if (Math.random() > .45) {
+      sitePet.classList.add('is-playing');
+      window.setTimeout(() => sitePet.classList.remove('is-playing'), 3200);
+    }
+  }, duration);
+  window.setTimeout(wanderPet, duration + 8000 + Math.random() * 9000);
+}
+
+if (!reducedMotion) window.setTimeout(wanderPet, 5500 + Math.random() * 6500);
+
 const canvas = document.createElement('canvas');
 canvas.id = 'draw-layer';
 canvas.setAttribute('aria-hidden', 'true');
