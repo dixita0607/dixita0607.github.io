@@ -4,7 +4,7 @@ layout: main
 ---
 
 <section class="hero">
-  <div class="hero-copy"><div><h1>I make apps.<br><em>And draw in the margins.</em></h1><p class="hero-intro">I build websites, web apps, and mobile apps — from design to deployment.</p></div></div>
+  <div class="hero-copy"><div><h1>I make apps.<br><em>And draw in the margins.</em></h1><p class="hero-intro">I’m a developer and hobby artist. I make mobile apps, websites, and web apps, with an interest in design. I’m currently learning Swift and building for Apple platforms.</p></div></div>
   <div class="hero-side"><div class="portrait-card"><p><a href="https://www.instagram.com/s.war.oop" target="_blank" rel="noreferrer">Portrait by Swaroop</a></p></div><div class="mini-grid"><a class="mini-card" href="/projects/"><strong>Apps, experiments, and open source.</strong><span>Take a look →</span></a><a class="mini-card" href="/not-much/"><strong>Drawing, books, and coffee.</strong><span>Browse around →</span></a></div></div>
 </section>
 <section class="selected"><div class="section-heading"><div><h2>Take a look at my work.</h2></div></div><div class="work-summary"><p>Recently contributed to a few open-source repositories — fixes, UI changes, and examples. Find more about it <a href="/projects/">here</a>.</p><p>Previously worked with <a href="https://www.getgenea.com" target="_blank" rel="noreferrer">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank" rel="noreferrer">Simform</a>, and <a href="https://www.meditab.com" target="_blank" rel="noreferrer">Meditab</a>.</p></div></section>

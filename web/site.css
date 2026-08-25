@@ -22,18 +22,18 @@ a:hover { color:#4268df; }
 .nav-hello { padding:.55rem .75rem; border:1px solid var(--ink); background:var(--green); color:#13151a; }
 .menu-button { display:none; border:0; background:none; color:var(--ink); font:500 .78rem "DM Mono",monospace; text-transform:uppercase; }
 .theme-toggle { width:2rem; height:2rem; display:grid; place-items:center; padding:0; border:1px solid var(--ink); border-radius:50%; background:var(--milk); color:var(--ink); cursor:pointer; font-size:1rem; }.theme-toggle:hover { background:var(--green); color:#13151a; }
-.hero { min-height:calc(100vh - 72px); max-width:1440px; margin:auto; padding:2rem; display:grid; grid-template-columns:1.08fr .92fr; gap:1.5rem; align-items:stretch; }
-.hero-copy { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:620px; padding:2.5rem; background:var(--blue); color:var(--paper); border-radius:10px; overflow:hidden; }
+.hero { min-height:0; max-width:1440px; margin:auto; padding:2rem; display:grid; grid-template-columns:1.08fr .92fr; gap:1.5rem; align-items:stretch; }
+.hero-copy { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:520px; padding:2rem; background:var(--blue); color:var(--paper); border-radius:10px; overflow:hidden; }
 .hero-copy::before { content:""; position:absolute; right:-5rem; top:-6rem; width:20rem; height:20rem; border:1px solid rgba(255,255,255,.28); border-radius:48% 52% 62% 38%; transform:rotate(22deg); }
-.hero-copy::after { content:"learning Swift + Apple platforms"; position:absolute; right:1.6rem; bottom:1.5rem; color:#13151a; background:var(--green); padding:.55rem .7rem; font:500 .68rem/1 "DM Mono",monospace; letter-spacing:-.04em; transform:rotate(-3deg); }
+.hero-copy::after { content:"open to work"; position:absolute; right:1.6rem; bottom:1.5rem; color:#13151a; background:var(--green); padding:.55rem .7rem; font:500 .68rem/1 "DM Mono",monospace; letter-spacing:-.04em; transform:rotate(-3deg); }
 .kicker,.section-label { margin:0; color:#4268df; font:500 .72rem "DM Mono",monospace; letter-spacing:.04em; text-transform:uppercase; }
 .hero .kicker { color:var(--green); }
-.hero h1 { max-width:760px; margin:2rem 0; font:700 clamp(3.45rem,7.4vw,6.7rem)/.91 "Space Grotesk",sans-serif; letter-spacing:-.09em; }
+.hero h1 { max-width:760px; margin:1.6rem 0; font:700 clamp(3rem,6.3vw,5.7rem)/.91 "Space Grotesk",sans-serif; letter-spacing:-.09em; }
 .hero h1 em { color:var(--green); font-style:normal; }
 .hero-intro { max-width:500px; margin:0; font-size:1.05rem; }
 .hero-meta { position:relative; z-index:1; display:flex; justify-content:space-between; gap:1rem; font:.72rem "DM Mono",monospace; text-transform:uppercase; color:#c7c3bc; }
 .hero-side { display:grid; grid-template-rows:1fr auto; gap:1.5rem; }
-.portrait-card { min-height:390px; display:flex; flex-direction:column; justify-content:end; padding:2rem; background:var(--blue) url('/assets/home-window-art.png') left bottom/210% auto no-repeat; border-radius:10px; overflow:hidden; }
+.portrait-card { min-height:330px; display:flex; flex-direction:column; justify-content:end; padding:2rem; background:var(--blue) url('/assets/home-window-art.png') left bottom/210% auto no-repeat; border-radius:10px; overflow:hidden; }
 .portrait-card p { width:max-content; max-width:100%; margin:0; padding:.45rem .65rem; background:var(--milk); font:.7rem "DM Mono",monospace; text-transform:uppercase; }
 .mini-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
 .mini-card { min-height:170px; padding:1.25rem; border-radius:10px; background:var(--milk); display:flex; flex-direction:column; justify-content:space-between; text-decoration:none; }
@@ -98,3 +98,4 @@ html.dark .mini-card:nth-child(2), html.dark .note-card:nth-child(3), html.dark 
 .site-footer p { margin:0; }.site-footer div { display:flex; gap:1rem; }
 @media (max-width:720px) { .site-header{padding:1rem;grid-template-columns:34px 1fr auto auto}.menu-button{display:block}.site-nav{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;padding-top:1rem}.site-nav.is-open{display:flex}.site-nav a{padding:.6rem 0}.hero{min-height:0;padding:1rem;grid-template-columns:1fr}.hero-copy{min-height:520px;padding:1.5rem}.hero h1{font-size:4.6rem}.hero-meta{flex-wrap:wrap}.portrait-card{min-height:280px}.selected,.home-notes,.home-socials{padding:4rem 1rem}.section-heading{grid-template-columns:1fr}.project-row{grid-template-columns:42px 1fr 20px}.project-row p{display:none}.note-grid,.mini-grid,.social-grid{grid-template-columns:1fr}.note-card{border-right:0;border-bottom:1px solid var(--ink)}.note-card:last-child{border-bottom:0}.social-grid a,.social-grid a:nth-child(2n){border-right:0;border-bottom:1px solid var(--ink)}.social-grid a:last-child{border-bottom:0}.page,.note{padding:3.5rem 1rem 5rem}.site-footer{padding:1.25rem 1rem;display:block}.site-footer div{margin-top:.8rem}.coffee-grid{grid-template-columns:1fr} }
 @media (max-width:720px) { .note-card,.social-grid a,.social-grid a:nth-child(2n){border:0} }
+@media (max-width:720px) { .hero-copy{min-height:460px}.hero h1{font-size:3.9rem} }
