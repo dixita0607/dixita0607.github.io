@@ -30,7 +30,7 @@ a:hover { color:#4268df; }
 .hero-copy::after { content:"open to work"; position:absolute; right:1.6rem; bottom:1.5rem; color:#13151a; background:var(--green); padding:.55rem .7rem; font:500 .68rem/1 "DM Mono",monospace; letter-spacing:-.04em; transform:rotate(-3deg); }
 .kicker,.section-label { margin:0; color:#4268df; font:500 .72rem "DM Mono",monospace; letter-spacing:.04em; text-transform:uppercase; }
 .hero .kicker { color:var(--green); }
-.hero h1 { max-width:760px; margin:1.6rem 0; font:700 clamp(3rem,6.3vw,5.7rem)/.91 "Space Grotesk",sans-serif; letter-spacing:-.09em; }
+.hero h1 { max-width:760px; margin:1.6rem 0; font:700 clamp(2.8rem,5.4vw,5rem)/.91 "Space Grotesk",sans-serif; letter-spacing:-.09em; }
 .hero h1 em { color:var(--green); font-style:normal; }
 .hero-intro { max-width:500px; margin:0; font-size:1.05rem; }
 .hero-meta { position:relative; z-index:1; display:flex; justify-content:space-between; gap:1rem; font:.72rem "DM Mono",monospace; text-transform:uppercase; color:#c7c3bc; }
@@ -45,7 +45,7 @@ a:hover { color:#4268df; }
 .selected,.home-notes,.home-socials { max-width:1440px; margin:auto; padding:5rem 2rem; }
 .selected { padding-bottom:2.5rem; }.home-notes { padding-block:2.5rem; }.home-socials { padding-top:2.5rem; }
 .section-heading { display:grid; grid-template-columns:1fr 2fr; gap:2rem; padding-bottom:1.25rem; }
-.section-heading h2 { max-width:15ch; margin:0; font:700 clamp(2.4rem,4vw,4.6rem)/.9 "Space Grotesk",sans-serif; letter-spacing:-.085em; }
+.section-heading h2 { max-width:15ch; margin:0; font:700 clamp(2.2rem,3.4vw,4rem)/.9 "Space Grotesk",sans-serif; letter-spacing:-.085em; }.home-socials .section-heading h2 { max-width:none; white-space:nowrap; }
 .section-heading p { margin:0; max-width:42ch; }
 .project-list { margin-top:1rem; }
 .work-summary { max-width:680px; margin-top:2rem; font-size:1.05rem; }
@@ -64,9 +64,9 @@ a:hover { color:#4268df; }
 .social-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
 .social-grid a { min-width:0; padding:.75rem .85rem; display:flex; align-items:center; gap:.65rem; border-radius:8px; background:var(--milk); text-decoration:none; }
 .social-grid a:hover { color:#4268df; background:var(--green); }.social-icon { width:1.7rem; height:1.7rem; flex:none; display:grid; place-items:center; border:1px solid var(--ink); border-radius:50%; font:.82rem/1 "DM Mono",monospace; }.social-icon--github { border-radius:5px; font-size:.55rem; font-weight:500; }.social-grid strong { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:600 .88rem "Space Grotesk",sans-serif; letter-spacing:-.04em; }.social-grid i { margin-left:auto; font-style:normal; font-size:1rem; }
-.page { max-width:1060px; margin:auto; padding:5rem 2rem 7rem; }
+.page { max-width:1440px; margin:auto; padding:5rem 2rem 7rem; }
 .page-header { max-width:700px; margin-bottom:4rem; }
-.page-header h1,.note-header h1 { margin:.6rem 0 1rem; font:700 clamp(3.2rem,7vw,6.2rem)/.86 "Space Grotesk",sans-serif; letter-spacing:-.1em; }
+.page-header h1,.note-header h1 { margin:.6rem 0 1rem; font:700 clamp(2.8rem,5.8vw,5.3rem)/.86 "Space Grotesk",sans-serif; letter-spacing:-.1em; }
 .page-header h1::after,.note-header h1::after { content:""; display:block; width:42%; min-width:4rem; margin-top:.28rem; border-bottom:3px solid var(--blue); transform:rotate(-1.2deg); }
 .page-header p { max-width:50ch; font-size:1.05rem; }
 .content-list h2 { margin:4rem 0 1rem; font:700 2rem/.95 "Space Grotesk",sans-serif; letter-spacing:-.07em; }
@@ -75,15 +75,15 @@ a:hover { color:#4268df; }
 .content-list li a { font-weight:600; }
 .coffee-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; }
 .coffee-card { padding:1.3rem; border-radius:10px; background:var(--milk); }
-.note { max-width:800px; margin:auto; padding:5rem 2rem 7rem; }
+.note { max-width:1440px; margin:auto; padding:5rem 2rem 7rem; }
 .note-header { margin-bottom:3rem; padding-bottom:2rem; }
 .note-date { font:.76rem "DM Mono",monospace; color:#6e6a63; }
-.prose { font:1.08rem/1.75 "Space Grotesk",sans-serif; }.prose h2 { margin:3rem 0 1rem; font:700 2rem/.95 "Space Grotesk",sans-serif; letter-spacing:-.07em; }
+.prose { max-width:800px; font:1.08rem/1.75 "Space Grotesk",sans-serif; }.prose h2 { margin:3rem 0 1rem; font:700 2rem/.95 "Space Grotesk",sans-serif; letter-spacing:-.07em; }
 .prose h3 { margin-top:2rem; font-size:1rem; }
 .prose img { width:100%; border-radius:12px; }
 .prose a { color:#4268df; }
 .hero h1::after { content:""; display:block; width:4.2rem; margin-top:.26rem; border-bottom:3px solid var(--green); transform:rotate(-1.2deg); }
-.resume-page { max-width:1000px; margin:auto; padding:4rem 2rem; }
+.resume-page { max-width:1440px; margin:auto; padding:4rem 2rem; }
 .site-footer { position:relative; z-index:1; max-width:1440px; margin:auto; padding:1.5rem 2rem; display:flex; justify-content:center; font:.72rem "DM Mono",monospace; text-transform:uppercase; }
 .page,.hero,.selected,.home-notes,.note,.resume-page { position:relative; z-index:1; }
 #draw-layer { position:fixed; inset:0; z-index:0; width:100%; height:100%; pointer-events:none; }
