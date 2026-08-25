@@ -42,7 +42,7 @@ const backgroundClouds = [
 ];
 
 function canDrawOn(target) {
-  return !target.closest('a, button, input, textarea, img, .hero-copy, .portrait-card, .mini-card, .note-card, .project-row, .social-grid, .site-header, .site-footer');
+  return !target.closest('a, button, input, textarea, img, .hero-copy, .portrait-card, .mini-card, .note-card, .project-row, .social-grid, .site-header, .site-footer, .site-pet');
 }
 
 function sizeCanvas() {
