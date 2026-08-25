@@ -57,12 +57,14 @@ function draw(timestamp) {
     if (stroke.shape === 'cloud') {
       const progress = Math.min(1, age / 650);
       const r = stroke.radius;
+      const x = stroke.x + age * .025;
+      const y = stroke.y + Math.sin(age / 260) * 3;
       context.beginPath();
-      context.moveTo(stroke.x - r * 1.35, stroke.y + r * .3);
-      context.bezierCurveTo(stroke.x - r * 1.35, stroke.y - r * .28, stroke.x - r * .88, stroke.y - r * .7, stroke.x - r * .32, stroke.y - r * .4);
-      context.bezierCurveTo(stroke.x - r * .1, stroke.y - r * 1.05, stroke.x + r * .55, stroke.y - r * 1.02, stroke.x + r * .58, stroke.y - r * .36);
-      context.bezierCurveTo(stroke.x + r * 1.2, stroke.y - r * .34, stroke.x + r * 1.3, stroke.y + r * .23, stroke.x + r * .85, stroke.y + r * .35);
-      context.bezierCurveTo(stroke.x + r * .48, stroke.y + r * .75, stroke.x - r * .58, stroke.y + r * .75, stroke.x - r * 1.35, stroke.y + r * .3);
+      context.moveTo(x - r * 1.35, y + r * .3);
+      context.bezierCurveTo(x - r * 1.35, y - r * .28, x - r * .88, y - r * .7, x - r * .32, y - r * .4);
+      context.bezierCurveTo(x - r * .1, y - r * 1.05, x + r * .55, y - r * 1.02, x + r * .58, y - r * .36);
+      context.bezierCurveTo(x + r * 1.2, y - r * .34, x + r * 1.3, y + r * .23, x + r * .85, y + r * .35);
+      context.bezierCurveTo(x + r * .48, y + r * .75, x - r * .58, y + r * .75, x - r * 1.35, y + r * .3);
       context.setLineDash([420]);
       context.lineDashOffset = 420 * (1 - progress);
       context.strokeStyle = `rgba(66, 104, 223, ${opacity * .7})`;
@@ -122,9 +124,18 @@ sizeCanvas();
 requestAnimationFrame(draw);
 
 function addDemoCloud() {
-  if (previousPoint || strokes.length > 0) return;
-  strokes.push({ shape: 'cloud', x: window.innerWidth - 118, y: window.innerHeight - 115, radius: 34, created: performance.now() });
+  if (previousPoint || strokes.filter((stroke) => stroke.shape === 'cloud').length >= 5) return;
+  const anchors = [
+    { x: .1, y: .18, radius: 25 },
+    { x: .82, y: .13, radius: 32 },
+    { x: .2, y: .62, radius: 38 },
+    { x: .74, y: .7, radius: 27 },
+    { x: .44, y: .84, radius: 31 },
+  ];
+  const anchor = anchors[cloudIndex++ % anchors.length];
+  strokes.push({ shape: 'cloud', x: window.innerWidth * anchor.x, y: window.innerHeight * anchor.y, radius: anchor.radius, created: performance.now() });
 }
 
-setTimeout(addDemoCloud, 1800);
-setInterval(addDemoCloud, 4600);
+let cloudIndex = 0;
+setTimeout(addDemoCloud, 450);
+setInterval(addDemoCloud, 560);
