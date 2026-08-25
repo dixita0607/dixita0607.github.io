@@ -34,8 +34,11 @@ const context = canvas.getContext('2d');
 let previousPoint = null;
 const strokes = [];
 const backgroundClouds = [
-  { y: .19, radius: 30, offset: 0 },
-  { y: .72, radius: 42, offset: .52 },
+  { y: .13, radius: 24, offset: .08 },
+  { y: .29, radius: 36, offset: .44 },
+  { y: .48, radius: 28, offset: .76 },
+  { y: .67, radius: 42, offset: .2 },
+  { y: .84, radius: 31, offset: .61 },
 ];
 
 function canDrawOn(target) {
