@@ -82,6 +82,25 @@ function draw(timestamp) {
       context.stroke();
       continue;
     }
+    if (stroke.shape === 'cloud') {
+      const progress = Math.min(1, age / 650);
+      const r = stroke.radius;
+      context.beginPath();
+      context.moveTo(stroke.x - r * 1.35, stroke.y + r * .3);
+      context.bezierCurveTo(stroke.x - r * 1.35, stroke.y - r * .28, stroke.x - r * .88, stroke.y - r * .7, stroke.x - r * .32, stroke.y - r * .4);
+      context.bezierCurveTo(stroke.x - r * .1, stroke.y - r * 1.05, stroke.x + r * .55, stroke.y - r * 1.02, stroke.x + r * .58, stroke.y - r * .36);
+      context.bezierCurveTo(stroke.x + r * 1.2, stroke.y - r * .34, stroke.x + r * 1.3, stroke.y + r * .23, stroke.x + r * .85, stroke.y + r * .35);
+      context.bezierCurveTo(stroke.x + r * .48, stroke.y + r * .75, stroke.x - r * .58, stroke.y + r * .75, stroke.x - r * 1.35, stroke.y + r * .3);
+      context.setLineDash([420]);
+      context.lineDashOffset = 420 * (1 - progress);
+      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .7})`;
+      context.lineWidth = 4;
+      context.lineCap = 'round';
+      context.lineJoin = 'round';
+      context.stroke();
+      context.setLineDash([]);
+      continue;
+    }
     const angle = Math.atan2(stroke.toY - stroke.fromY, stroke.toX - stroke.fromX);
     const offsetX = Math.cos(angle + Math.PI / 2);
     const offsetY = Math.sin(angle + Math.PI / 2);
@@ -133,10 +152,12 @@ requestAnimationFrame(draw);
 let demoShape = 0;
 function addDemoShape() {
   if (previousPoint || strokes.length > 0) return;
-  const circle = demoShape++ % 2 === 0;
-  strokes.push(circle
+  const type = demoShape++ % 3;
+  strokes.push(type === 0
     ? { shape: 'circle', x: 76, y: window.innerHeight - 100, radius: 31, created: performance.now() }
-    : { shape: 'star', x: window.innerWidth - 78, y: 128, radius: 27, created: performance.now() });
+    : type === 1
+      ? { shape: 'star', x: window.innerWidth - 78, y: 128, radius: 27, created: performance.now() }
+      : { shape: 'cloud', x: window.innerWidth - 118, y: window.innerHeight - 115, radius: 34, created: performance.now() });
 }
 
 setTimeout(addDemoShape, 1800);
