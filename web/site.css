@@ -41,6 +41,7 @@ a:hover { color:#4268df; }
 .mini-card strong { max-width:13ch; font:700 1.55rem/.96 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
 .mini-card span { font:.68rem "DM Mono",monospace; text-transform:uppercase; }
 .selected,.home-notes,.home-socials { max-width:1440px; margin:auto; padding:5rem 2rem; }
+.selected { padding-bottom:1.5rem; }.home-notes { padding-block:1.5rem; }.home-socials { padding-top:1.5rem; }
 .section-heading { display:grid; grid-template-columns:1fr 2fr; gap:2rem; padding-bottom:1.25rem; }
 .section-heading h2 { max-width:15ch; margin:0; font:700 clamp(2.4rem,4vw,4.6rem)/.9 "Space Grotesk",sans-serif; letter-spacing:-.085em; }
 .section-heading p { margin:0; max-width:42ch; }
@@ -102,3 +103,4 @@ html.dark .mini-card:nth-child(2):hover,html.dark .note-card:nth-child(3):hover 
 @media (max-width:720px) { .portrait-card{background-size:210% auto} }
 @media (max-width:720px) { .hero-copy{min-height:460px}.hero h1{font-size:3.9rem} }
 @media (max-width:720px) { .selected,.home-notes,.home-socials{padding:3rem 1rem}.site-footer{display:flex;justify-content:center}.site-footer div{margin-top:0} }
+@media (max-width:720px) { .selected{padding-bottom:1.25rem}.home-notes{padding-block:1.25rem}.home-socials{padding-top:1.25rem} }
