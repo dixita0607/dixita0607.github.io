@@ -23,11 +23,12 @@ a:hover { color:#4268df; }
 .menu-button { display:none; border:0; background:none; font:500 .78rem "DM Mono",monospace; text-transform:uppercase; }
 .theme-toggle { width:2rem; height:2rem; display:grid; place-items:center; padding:0; border:1px solid var(--ink); border-radius:50%; background:var(--milk); color:var(--ink); cursor:pointer; font-size:1rem; }.theme-toggle:hover { background:var(--green); color:#13151a; }
 .hero { min-height:calc(100vh - 72px); max-width:1440px; margin:auto; padding:2rem; display:grid; grid-template-columns:1.08fr .92fr; gap:1.5rem; align-items:stretch; }
-.hero-copy { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:620px; padding:2.5rem; background-color:var(--blue); background-image:linear-gradient(rgba(255,255,255,.18) 1px, transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px, transparent 1px); background-size:34px 34px; color:var(--paper); border:1px solid var(--ink); border-radius:10px; overflow:hidden; }
-.hero-copy::after { content:"DG"; position:absolute; right:1.8rem; bottom:1.4rem; color:var(--green); font:700 clamp(4rem,9vw,8rem)/1 "DM Mono",monospace; letter-spacing:-.18em; opacity:.92; }
+.hero-copy { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:620px; padding:2.5rem; background:var(--blue); color:var(--paper); border:1px solid var(--ink); border-radius:10px; overflow:hidden; }
+.hero-copy::before { content:""; position:absolute; right:-5rem; top:-6rem; width:20rem; height:20rem; border:1px solid rgba(255,255,255,.28); border-radius:48% 52% 62% 38%; transform:rotate(22deg); }
+.hero-copy::after { content:"currently learning Flutter ↗"; position:absolute; right:1.6rem; bottom:1.5rem; color:#13151a; background:var(--green); padding:.55rem .7rem; font:500 .68rem/1 "DM Mono",monospace; letter-spacing:-.04em; transform:rotate(-3deg); }
 .kicker,.section-label { margin:0; color:#4268df; font:500 .72rem "DM Mono",monospace; letter-spacing:.04em; text-transform:uppercase; }
 .hero .kicker { color:var(--green); }
-.hero h1 { max-width:760px; margin:2rem 0; font:700 clamp(3.7rem,8vw,7.3rem)/.87 "Space Grotesk",sans-serif; letter-spacing:-.1em; }
+.hero h1 { max-width:760px; margin:2rem 0; font:700 clamp(3.45rem,7.4vw,6.7rem)/.91 "Space Grotesk",sans-serif; letter-spacing:-.09em; }
 .hero h1 em { color:var(--green); font-style:normal; }
 .hero-intro { max-width:500px; margin:0; font-size:1.05rem; }
 .hero-meta { position:relative; z-index:1; display:flex; justify-content:space-between; gap:1rem; font:.72rem "DM Mono",monospace; text-transform:uppercase; color:#c7c3bc; }
