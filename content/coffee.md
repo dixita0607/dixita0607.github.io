@@ -4,7 +4,7 @@ layout: main
 ---
 
 <article class="page content-list">
-<header class="page-header"><p class="section-label">Coffee journal</p><h1>Coffees I’ve tried.</h1><p>I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and a metal filter. These are just my notes, not expert reviews.</p></header>
+<header class="page-header"><p class="section-label">Coffee journal</p><span class="page-doodle" aria-hidden="true">☕</span><h1>Coffees I’ve tried.</h1><p>I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and a metal filter. These are just my notes, not expert reviews.</p></header>
 
 <h2>Coffee shelf</h2>
 
