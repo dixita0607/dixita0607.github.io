@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-:root { --ink:#13151a; --paper:#f7f8fa; --milk:#ffffff; --blue:#4268df; --blue-pale:#dce5ff; --green:#d8e9cf; --line:#cdd2dc; --content-hr:var(--line); }
+:root { --ink:#13151a; --paper:#f7f8fa; --milk:#ffffff; --blue:#4268df; --blue-pale:#dce5ff; --green:#e1f0a8; --line:#cdd2dc; --content-hr:var(--line); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background-color:var(--paper); background-image:radial-gradient(#d7dce5 1px, transparent 1px); background-size:16px 16px; font:16px/1.5 "Space Grotesk",sans-serif; }

@@ -33,13 +33,17 @@ function draw(timestamp) {
     const age = timestamp - stroke.created;
     const opacity = 1 - age / 1250;
     if (opacity <= 0) { strokes.splice(index, 1); continue; }
+    const angle = Math.atan2(stroke.toY - stroke.fromY, stroke.toX - stroke.fromX);
+    const offsetX = Math.cos(angle + Math.PI / 2);
+    const offsetY = Math.sin(angle + Math.PI / 2);
     context.beginPath();
-    context.moveTo(stroke.fromX, stroke.fromY);
-    context.lineTo(stroke.toX, stroke.toY);
-    context.strokeStyle = `rgba(66, 104, 223, ${opacity * .42})`;
-    context.lineWidth = 2.2;
-    context.lineCap = 'round';
-    context.stroke();
+    context.moveTo(stroke.fromX + offsetX * stroke.fromWidth / 2, stroke.fromY + offsetY * stroke.fromWidth / 2);
+    context.lineTo(stroke.toX + offsetX * stroke.toWidth / 2, stroke.toY + offsetY * stroke.toWidth / 2);
+    context.lineTo(stroke.toX - offsetX * stroke.toWidth / 2, stroke.toY - offsetY * stroke.toWidth / 2);
+    context.lineTo(stroke.fromX - offsetX * stroke.fromWidth / 2, stroke.fromY - offsetY * stroke.fromWidth / 2);
+    context.closePath();
+    context.fillStyle = `rgba(66, 104, 223, ${opacity * .44})`;
+    context.fill();
   }
   requestAnimationFrame(draw);
 }
@@ -47,13 +51,18 @@ function draw(timestamp) {
 window.addEventListener('pointerdown', (event) => {
   if (event.pointerType !== 'mouse') return;
   if (event.target.closest('a, button, input, textarea')) return;
-  previousPoint = { x: event.clientX, y: event.clientY };
+  previousPoint = { x: event.clientX, y: event.clientY, width: 3.8, time: performance.now() };
 });
 window.addEventListener('pointermove', (event) => {
   if (event.pointerType !== 'mouse') return;
   if (!previousPoint || event.buttons === 0) return;
-  strokes.push({ fromX: previousPoint.x, fromY: previousPoint.y, toX: event.clientX, toY: event.clientY, created: performance.now() });
-  previousPoint = { x: event.clientX, y: event.clientY };
+  const now = performance.now();
+  const distance = Math.hypot(event.clientX - previousPoint.x, event.clientY - previousPoint.y);
+  const speed = distance / Math.max(now - previousPoint.time, 1);
+  const penPressure = event.pointerType === 'pen' ? event.pressure : 0;
+  const width = penPressure > 0 ? 1.2 + penPressure * 5 : Math.max(1.15, Math.min(4.4, 4.6 - speed * .05));
+  strokes.push({ fromX: previousPoint.x, fromY: previousPoint.y, toX: event.clientX, toY: event.clientY, fromWidth: previousPoint.width, toWidth: width, created: now });
+  previousPoint = { x: event.clientX, y: event.clientY, width, time: now };
 });
 window.addEventListener('pointerup', () => { previousPoint = null; });
 window.addEventListener('resize', sizeCanvas);
