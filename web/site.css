@@ -107,4 +107,4 @@ html.dark .mini-card:nth-child(2):hover,html.dark .note-card:nth-child(3):hover 
 @media (max-width:720px) { .hero-copy{min-height:460px}.hero h1{font-size:3.9rem} }
 @media (max-width:720px) { .selected,.home-notes,.home-socials{padding:3rem 1rem}.site-footer{display:flex;justify-content:center}.site-footer div{margin-top:0} }
 @media (max-width:720px) { .selected{padding-bottom:2rem}.home-notes{padding-block:2rem}.home-socials{padding-top:2rem} }
-@media (min-width:721px) { .site-header,.hero,.selected,.home-notes,.home-socials,.page,.note,.resume-page,.site-footer{padding-left:clamp(5.5rem,9vw,10rem)} }
+@media (min-width:721px) { .site-header,.hero,.selected,.home-notes,.home-socials,.page,.note,.resume-page,.site-footer{padding-left:clamp(7rem,11vw,12rem)} }
