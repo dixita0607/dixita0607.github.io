@@ -6,6 +6,8 @@ html.dark { --ink:#f2f4f8; --paper:#11141b; --milk:#1a1f2a; --blue:#6382ff; --bl
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background-color:var(--paper); background-image:var(--paper-texture),linear-gradient(var(--rule) 1px,transparent 1px),radial-gradient(var(--paper-fleck) .5px,transparent .7px),radial-gradient(var(--paper-fleck) .45px,transparent .65px); background-position:0 0,0 5px,2px 3px,7px 11px; background-size:auto,100% 32px,13px 17px,19px 23px; font:16px/1.5 "Space Grotesk",sans-serif; }
 body.is-drawing { user-select:none; -webkit-user-select:none; }
+.book-margin { position:fixed; z-index:1; top:7rem; bottom:2rem; left:max(.7rem,calc((100vw - 1440px) / 2 - 3rem)); width:2rem; display:flex; flex-direction:column; align-items:center; justify-content:space-around; border-right:1px solid var(--blue); color:var(--blue); opacity:.7; pointer-events:none; }
+.book-margin::before { content:""; position:absolute; top:0; right:-3px; width:5px; height:100%; background:repeating-linear-gradient(to bottom,var(--blue) 0 2px,transparent 2px 28px); }.book-margin span { position:relative; z-index:1; display:grid; place-items:center; width:1.5rem; height:1.5rem; background:var(--paper); font:1rem/1 "DM Mono",monospace; }
 a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
 a:hover { color:#4268df; }
 .skip-link { position:absolute; left:-999px; }
@@ -41,7 +43,7 @@ a:hover { color:#4268df; }
 .mini-card strong { max-width:13ch; font:700 1.55rem/.96 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
 .mini-card span { font:.68rem "DM Mono",monospace; text-transform:uppercase; }
 .selected,.home-notes,.home-socials { max-width:1440px; margin:auto; padding:5rem 2rem; }
-.selected { padding-bottom:1.5rem; }.home-notes { padding-block:1.5rem; }.home-socials { padding-top:1.5rem; }
+.selected { padding-bottom:2.5rem; }.home-notes { padding-block:2.5rem; }.home-socials { padding-top:2.5rem; }
 .section-heading { display:grid; grid-template-columns:1fr 2fr; gap:2rem; padding-bottom:1.25rem; }
 .section-heading h2 { max-width:15ch; margin:0; font:700 clamp(2.4rem,4vw,4.6rem)/.9 "Space Grotesk",sans-serif; letter-spacing:-.085em; }
 .section-heading p { margin:0; max-width:42ch; }
@@ -100,7 +102,8 @@ html.dark .mini-card:nth-child(2):hover,html.dark .note-card:nth-child(3):hover 
 .site-footer p { margin:0; }.site-footer div { display:flex; gap:1rem; }
 @media (max-width:720px) { .site-header{padding:1rem;grid-template-columns:34px 1fr auto auto}.menu-button{display:block}.site-nav{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;padding-top:1rem}.site-nav.is-open{display:flex}.site-nav a{padding:.6rem 0}.hero{min-height:0;padding:1rem;grid-template-columns:1fr}.hero-copy{min-height:520px;padding:1.5rem}.hero h1{font-size:4.6rem}.hero-meta{flex-wrap:wrap}.portrait-card{min-height:280px}.selected,.home-notes,.home-socials{padding:4rem 1rem}.section-heading{grid-template-columns:1fr}.project-row{grid-template-columns:42px 1fr 20px}.project-row p{display:none}.note-grid,.mini-grid,.social-grid{grid-template-columns:1fr}.note-card{border-right:0;border-bottom:1px solid var(--ink)}.note-card:last-child{border-bottom:0}.social-grid a,.social-grid a:nth-child(2n){border-right:0;border-bottom:1px solid var(--ink)}.social-grid a:last-child{border-bottom:0}.page,.note{padding:3.5rem 1rem 5rem}.site-footer{padding:1.25rem 1rem;display:block}.site-footer div{margin-top:.8rem}.coffee-grid{grid-template-columns:1fr} }
 @media (max-width:720px) { .note-card,.social-grid a,.social-grid a:nth-child(2n){border:0} }
+@media (max-width:720px) { .book-margin{display:none} }
 @media (max-width:720px) { .portrait-card{background-size:210% auto} }
 @media (max-width:720px) { .hero-copy{min-height:460px}.hero h1{font-size:3.9rem} }
 @media (max-width:720px) { .selected,.home-notes,.home-socials{padding:3rem 1rem}.site-footer{display:flex;justify-content:center}.site-footer div{margin-top:0} }
-@media (max-width:720px) { .selected{padding-bottom:1.25rem}.home-notes{padding-block:1.25rem}.home-socials{padding-top:1.25rem} }
+@media (max-width:720px) { .selected{padding-bottom:2rem}.home-notes{padding-block:2rem}.home-socials{padding-top:2rem} }
