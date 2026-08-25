@@ -15,9 +15,17 @@ const canvas = document.createElement('canvas');
 canvas.id = 'draw-layer';
 canvas.setAttribute('aria-hidden', 'true');
 document.body.append(canvas);
+const cursorDot = document.createElement('span');
+cursorDot.id = 'cursor-dot';
+cursorDot.setAttribute('aria-hidden', 'true');
+document.body.append(cursorDot);
 const context = canvas.getContext('2d');
 let previousPoint = null;
 const strokes = [];
+
+function canDrawOn(target) {
+  return !target.closest('a, button, input, textarea, .hero-copy, .portrait-card, .mini-card, .note-card, .project-row, .social-grid, .content-list, .site-header, .site-footer');
+}
 
 function sizeCanvas() {
   const scale = window.devicePixelRatio || 1;
@@ -50,11 +58,15 @@ function draw(timestamp) {
 
 window.addEventListener('pointerdown', (event) => {
   if (event.pointerType !== 'mouse') return;
-  if (event.target.closest('a, button, input, textarea')) return;
+  if (!canDrawOn(event.target)) return;
   previousPoint = { x: event.clientX, y: event.clientY, width: 3.8, time: performance.now() };
 });
 window.addEventListener('pointermove', (event) => {
   if (event.pointerType !== 'mouse') return;
+  const drawingSurface = canDrawOn(event.target);
+  document.body.classList.toggle('is-drawing-surface', drawingSurface);
+  cursorDot.classList.toggle('is-visible', drawingSurface);
+  cursorDot.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
   if (!previousPoint || event.buttons === 0) return;
   const now = performance.now();
   const distance = Math.hypot(event.clientX - previousPoint.x, event.clientY - previousPoint.y);
@@ -65,6 +77,12 @@ window.addEventListener('pointermove', (event) => {
   previousPoint = { x: event.clientX, y: event.clientY, width, time: now };
 });
 window.addEventListener('pointerup', () => { previousPoint = null; });
+window.addEventListener('mouseout', (event) => {
+  if (!event.relatedTarget) {
+    document.body.classList.remove('is-drawing-surface');
+    cursorDot.classList.remove('is-visible');
+  }
+});
 window.addEventListener('resize', sizeCanvas);
 sizeCanvas();
 requestAnimationFrame(draw);
