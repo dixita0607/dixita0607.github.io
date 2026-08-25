@@ -36,7 +36,7 @@ a:hover { color:#4268df; }
 .mini-card:nth-child(2) { background:var(--green); }
 .mini-card strong { max-width:13ch; font:700 1.55rem/.96 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
 .mini-card span { font:.68rem "DM Mono",monospace; text-transform:uppercase; }
-.selected,.home-notes { max-width:1440px; margin:auto; padding:7rem 2rem; }
+.selected,.home-notes,.home-socials { max-width:1440px; margin:auto; padding:7rem 2rem; }
 .section-heading { display:grid; grid-template-columns:1fr 2fr; gap:2rem; padding-bottom:1.25rem; border-bottom:1px solid var(--ink); }
 .section-heading h2 { max-width:15ch; margin:0; font:700 clamp(2.4rem,4vw,4.6rem)/.9 "Space Grotesk",sans-serif; letter-spacing:-.085em; }
 .section-heading p { margin:0; max-width:42ch; }
@@ -52,6 +52,10 @@ a:hover { color:#4268df; }
 .note-card:last-child { border-right:0; }
 .note-card:nth-child(2) { background:var(--blue-pale); }.note-card:nth-child(3) { background:var(--green); }
 .note-card h3 { max-width:14ch; margin:1rem 0; font:700 1.6rem/.98 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
+.social-grid { display:grid; grid-template-columns:repeat(2,1fr); border:1px solid var(--ink); border-radius:10px; overflow:hidden; background:var(--milk); }
+.social-grid a { min-height:125px; padding:1.25rem; display:grid; grid-template-columns:1fr auto; align-content:space-between; gap:.6rem; border-right:1px solid var(--ink); border-bottom:1px solid var(--ink); text-decoration:none; }
+.social-grid a:nth-child(2n) { border-right:0; }.social-grid a:nth-last-child(-n+2) { border-bottom:0; }
+.social-grid a:hover { color:var(--ink); background:var(--green); }.social-grid span { grid-column:1/-1; font:.68rem "DM Mono",monospace; text-transform:uppercase; }.social-grid strong { font:600 1.05rem "Space Grotesk",sans-serif; letter-spacing:-.04em; }.social-grid i { font-style:normal; font-size:1.2rem; }
 .page { max-width:1060px; margin:auto; padding:5rem 2rem 7rem; }
 .page-header { max-width:700px; margin-bottom:4rem; }
 .page-header h1,.note-header h1 { margin:.6rem 0 1rem; font:700 clamp(3.2rem,7vw,6.2rem)/.86 "Space Grotesk",sans-serif; letter-spacing:-.1em; }
@@ -82,4 +86,4 @@ a:hover { color:#4268df; }
 .sketch-tile--note span { font:700 1.55rem/.95 "Space Grotesk",sans-serif; letter-spacing:-.07em; }
 .sketch-tile--note p { margin:.7rem 0 0; font-size:.9rem; }
 .site-footer p { margin:0; }.site-footer div { display:flex; gap:1rem; }
-@media (max-width:720px) { .site-header{padding:1rem;grid-template-columns:34px 1fr auto}.menu-button{display:block}.site-nav{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;padding-top:1rem}.site-nav.is-open{display:flex}.site-nav a{padding:.6rem 0}.hero{min-height:0;padding:1rem;grid-template-columns:1fr}.hero-copy{min-height:520px;padding:1.5rem}.hero h1{font-size:4.6rem}.portrait-card{min-height:280px}.selected,.home-notes{padding:4rem 1rem}.section-heading{grid-template-columns:1fr}.project-row{grid-template-columns:42px 1fr 20px}.project-row p{display:none}.note-grid,.mini-grid{grid-template-columns:1fr}.note-card{border-right:0;border-bottom:1px solid var(--ink)}.note-card:last-child{border-bottom:0}.page,.note{padding:3.5rem 1rem 5rem}.site-footer{padding:1.25rem 1rem;display:block}.site-footer div{margin-top:.8rem}.coffee-grid{grid-template-columns:1fr} }
+@media (max-width:720px) { .site-header{padding:1rem;grid-template-columns:34px 1fr auto}.menu-button{display:block}.site-nav{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;padding-top:1rem}.site-nav.is-open{display:flex}.site-nav a{padding:.6rem 0}.hero{min-height:0;padding:1rem;grid-template-columns:1fr}.hero-copy{min-height:520px;padding:1.5rem}.hero h1{font-size:4.6rem}.portrait-card{min-height:280px}.selected,.home-notes,.home-socials{padding:4rem 1rem}.section-heading{grid-template-columns:1fr}.project-row{grid-template-columns:42px 1fr 20px}.project-row p{display:none}.note-grid,.mini-grid,.social-grid{grid-template-columns:1fr}.note-card{border-right:0;border-bottom:1px solid var(--ink)}.note-card:last-child{border-bottom:0}.social-grid a,.social-grid a:nth-child(2n){border-right:0;border-bottom:1px solid var(--ink)}.social-grid a:last-child{border-bottom:0}.page,.note{padding:3.5rem 1rem 5rem}.site-footer{padding:1.25rem 1rem;display:block}.site-footer div{margin-top:.8rem}.coffee-grid{grid-template-columns:1fr} }
