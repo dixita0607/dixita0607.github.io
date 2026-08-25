@@ -26,6 +26,7 @@ const canvas = document.createElement('canvas');
 canvas.id = 'draw-layer';
 canvas.setAttribute('aria-hidden', 'true');
 document.body.append(canvas);
+const bookMargin = document.querySelector('.book-margin');
 const cursorDot = document.createElement('span');
 cursorDot.id = 'cursor-dot';
 cursorDot.setAttribute('aria-hidden', 'true');
@@ -34,8 +35,10 @@ const context = canvas.getContext('2d');
 let previousPoint = null;
 const strokes = [];
 
-function canDrawOn(target) {
-  return !target.closest('a, button, input, textarea, img, .hero-copy, .portrait-card, .mini-card, .note-card, .project-row, .social-grid, .site-header, .site-footer');
+function canDrawOn(target, x) {
+  const margin = bookMargin?.getBoundingClientRect();
+  const insideMargin = margin && x >= margin.left && x <= margin.right;
+  return insideMargin && !target.closest('a, button, input, textarea, img');
 }
 
 function sizeCanvas() {
@@ -71,17 +74,18 @@ function draw(timestamp) {
 
 window.addEventListener('pointerdown', (event) => {
   if (event.pointerType !== 'mouse') return;
-  if (!canDrawOn(event.target)) return;
+  if (!canDrawOn(event.target, event.clientX)) return;
   event.preventDefault();
   document.body.classList.add('is-drawing');
   previousPoint = { x: event.clientX, y: event.clientY, width: 3.8, time: performance.now() };
 }, { passive: false });
 window.addEventListener('pointermove', (event) => {
   if (event.pointerType !== 'mouse') return;
-  const drawingSurface = canDrawOn(event.target);
+  const drawingSurface = canDrawOn(event.target, event.clientX);
   document.body.classList.toggle('is-drawing-surface', drawingSurface);
   cursorDot.classList.toggle('is-visible', drawingSurface);
   cursorDot.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+  if (!drawingSurface && previousPoint) previousPoint = null;
   if (!previousPoint || event.buttons === 0) return;
   const now = performance.now();
   const distance = Math.hypot(event.clientX - previousPoint.x, event.clientY - previousPoint.y);
