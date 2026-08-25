@@ -20,7 +20,7 @@ a:hover { color:#4268df; }
 .site-nav a { text-decoration:none; }
 .site-nav a[aria-current="page"] { text-decoration:underline; text-underline-offset:6px; }
 .nav-hello { padding:.55rem .75rem; border:1px solid var(--ink); background:var(--green); color:#13151a; }
-.menu-button { display:none; border:0; background:none; font:500 .78rem "DM Mono",monospace; text-transform:uppercase; }
+.menu-button { display:none; border:0; background:none; color:var(--ink); font:500 .78rem "DM Mono",monospace; text-transform:uppercase; }
 .theme-toggle { width:2rem; height:2rem; display:grid; place-items:center; padding:0; border:1px solid var(--ink); border-radius:50%; background:var(--milk); color:var(--ink); cursor:pointer; font-size:1rem; }.theme-toggle:hover { background:var(--green); color:#13151a; }
 .hero { min-height:calc(100vh - 72px); max-width:1440px; margin:auto; padding:2rem; display:grid; grid-template-columns:1.08fr .92fr; gap:1.5rem; align-items:stretch; }
 .hero-copy { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:620px; padding:2.5rem; background:var(--blue); color:var(--paper); border-radius:10px; overflow:hidden; }
