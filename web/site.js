@@ -50,27 +50,34 @@ function draw(timestamp) {
   for (let index = strokes.length - 1; index >= 0; index -= 1) {
     const stroke = strokes[index];
     const age = timestamp - stroke.created;
-    const opacity = 1 - age / 1250;
+    const opacity = stroke.shape
+      ? (age < 1200 ? 1 : 1 - (age - 1200) / 1100)
+      : 1 - age / 1250;
     if (opacity <= 0) { strokes.splice(index, 1); continue; }
     if (stroke.shape === 'circle') {
+      const progress = Math.min(1, age / 520);
       context.beginPath();
-      context.arc(stroke.x, stroke.y, stroke.radius, 0, Math.PI * 2);
-      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .68})`;
-      context.lineWidth = 2.5;
+      context.arc(stroke.x, stroke.y, stroke.radius, 0, Math.PI * 2 * progress);
+      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .74})`;
+      context.lineWidth = 4;
+      context.lineCap = 'round';
       context.stroke();
       continue;
     }
     if (stroke.shape === 'star') {
+      const progress = Math.min(1, age / 520);
+      const points = Math.max(2, Math.ceil(8 * progress) + 1);
       context.beginPath();
-      for (let point = 0; point < 9; point += 1) {
-        const angle = -Math.PI / 2 + point * Math.PI * .5;
+      for (let point = 0; point < points; point += 1) {
+        const angle = -Math.PI / 2 + point * Math.PI / 4;
         const radius = point % 2 === 0 ? stroke.radius : stroke.radius * .42;
         const x = stroke.x + Math.cos(angle) * radius;
         const y = stroke.y + Math.sin(angle) * radius;
         if (point === 0) context.moveTo(x, y); else context.lineTo(x, y);
       }
-      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .68})`;
-      context.lineWidth = 2.5;
+      context.strokeStyle = `rgba(66, 104, 223, ${opacity * .74})`;
+      context.lineWidth = 4;
+      context.lineCap = 'round';
       context.lineJoin = 'round';
       context.stroke();
       continue;
@@ -133,4 +140,4 @@ function addDemoShape() {
 }
 
 setTimeout(addDemoShape, 1800);
-setInterval(addDemoShape, 8500);
+setInterval(addDemoShape, 4600);
