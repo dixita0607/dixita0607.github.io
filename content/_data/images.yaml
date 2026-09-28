@@ -1,0 +1,88 @@
+- name: Dream
+  image: /assets/sketchbook/originals/dream.jpg
+  alt: A person drawing on a tablet against a soft blue background.
+  tags: [originals]
+- name: Night
+  image: /assets/sketchbook/originals/night.jpg
+  alt: A person lying awake with a cat.
+  tags: [originals]
+- name: Overthink
+  image: /assets/sketchbook/originals/overthink.jpg
+  alt: A blue illustration about overthinking.
+  tags: [originals]
+- name: Working girl
+  image: /assets/sketchbook/originals/working-girl.jpg
+  alt: A person working at a laptop among plants.
+  tags: [originals]
+- name: 01 — Fish
+  image: /assets/sketchbook/inktober-2020/fish.jpg
+  alt: An ink illustration of a mermaid surrounded by fish.
+  tags: [inktober]
+- name: 02 — Wisp
+  image: /assets/sketchbook/inktober-2020/wisp.jpg
+  alt: An ink illustration of a person holding a friendly flame.
+  tags: [inktober]
+- name: 04 — Radio
+  image: /assets/sketchbook/inktober-2020/radio.jpg
+  alt: An ink illustration of a person drawing while wearing headphones.
+  tags: [inktober]
+- name: 14 — Armour
+  image: /assets/sketchbook/inktober-2020/armour.jpg
+  alt: An ink illustration of an armoured warrior.
+  tags: [inktober]
+- name: 18 — Trap
+  image: /assets/sketchbook/inktober-2020/trap.jpg
+  alt: An ink illustration of a reader and the word trap.
+  tags: [inktober]
+- name: 22 — Chef
+  image: /assets/sketchbook/inktober-2020/chef.jpg
+  alt: An ink illustration of a chef juggling cooking tools.
+  tags: [inktober]
+- name: 25 — Buddy
+  image: /assets/sketchbook/inktober-2020/buddy.jpg
+  alt: An ink illustration of two friends hugging.
+  tags: [inktober]
+- name: 27 — Music
+  image: /assets/sketchbook/inktober-2020/music.jpg
+  alt: An ink illustration of someone listening to music in the grass.
+  tags: [inktober]
+- name: Eyes study
+  image: /assets/sketchbook/gouache/eyes-study.jpg
+  alt: Painted eye-expression studies.
+  tags: [gouache]
+- name: Landscape practice
+  image: /assets/sketchbook/gouache/gouache-landscape.jpg
+  alt: A gouache landscape of a winding road through green hills.
+  tags: [gouache]
+- name: Figure study
+  image: /assets/sketchbook/gouache/lady-study.jpg
+  alt: A gouache figure study of a seated person.
+  tags: [gouache]
+- name: Still life
+  image: /assets/sketchbook/gouache/still-life.jpg
+  alt: A gouache still life with a glass jug and oranges.
+  tags: [gouache]
+- name: Book and feet study
+  image: /assets/sketchbook/practice/book-and-feet-study.jpg
+  alt: Red-pencil studies of a figure and feet.
+  tags: [studies]
+- name: Cat in the parking
+  image: /assets/sketchbook/practice/cat-in-the-parking.jpg
+  alt: A painted orange cat in a parking area.
+  tags: [studies]
+- name: Indian Music Experience
+  image: /assets/sketchbook/penciljam/ime-observations.jpg
+  alt: A sketchbook page of observations at the Indian Music Experience.
+  tags: [penciljam]
+- name: Freedom Park
+  image: /assets/sketchbook/penciljam/freedom-park.jpg
+  alt: Sketchbook notes from Freedom Park.
+  tags: [penciljam]
+- name: NGMA study
+  image: /assets/sketchbook/penciljam/ngma-study.jpg
+  alt: A sketch of a building at the National Gallery of Modern Art.
+  tags: [penciljam]
+- name: RBANM visit
+  image: /assets/sketchbook/penciljam/rbanm-visit.jpg
+  alt: A sketch of the RBANM building entrance.
+  tags: [penciljam]

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-label="Dixita signature">
+  <g fill="none" stroke="#13151a" stroke-linecap="round" stroke-linejoin="round" stroke-width="34">
+    <path d="M117 408C118 294 280 238 404 190"/>
+    <path d="M235 335L304 599C381 566 512 488 513 388C514 310 392 287 235 335Z"/>
+    <path d="M104 401L182 631C344 657 701 556 896 442C956 407 963 351 935 276L853 49L740 88"/>
+    <path d="M548 251L833 367M709 171L652 452"/>
+  </g>
+  <g fill="#13151a">
+    <ellipse cx="498" cy="114" rx="38" ry="49" transform="rotate(-19 498 114)"/>
+    <ellipse cx="635" cy="61" rx="38" ry="49" transform="rotate(-18 635 61)"/>
+  </g>
+</svg>

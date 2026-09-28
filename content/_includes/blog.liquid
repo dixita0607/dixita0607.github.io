@@ -3,9 +3,9 @@ layout: main
 ---
 <article class="note">
   <header class="note-header">
-    <p class="section-label">Field note{% if tags %} · {{ tags | join: ", " }}{% endif %}</p>
+    {% if tags %}<nav class="post-tags" aria-label="Post tags">{% for tag in tags %}<a class="blog-filter" href="/blog/#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}</nav>{% endif %}
     <h1>{{ title }}</h1>
-    {% if publishDate %}<p class="note-date">{{ publishDate }}</p>{% endif %}
+    {% if publishDate %}<p class="note-date"><time datetime="{{ publishDate | date: '%Y-%m-%d' }}">{{ publishDate | date: '%B %-d, %Y' }}</time></p>{% endif %}
   </header>
   <div class="prose">{{ content }}</div>
 </article>

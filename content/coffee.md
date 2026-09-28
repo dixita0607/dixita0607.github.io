@@ -4,57 +4,45 @@ layout: main
 ---
 
 <article class="page content-list">
-<header class="page-header"><p class="section-label">Coffee journal</p><span class="page-doodle" aria-hidden="true">☕</span><h1>Coffees I’ve tried.</h1><p>I brew with an <a href="https://aeropress.com" target="_blank" rel="noreferrer">Aeropress</a> and a metal filter. These are just my notes, not expert reviews.</p></header>
-
-<h2>Coffee journal</h2>
-
-_Disclaimer: I describe what I taste in my own words, which may sound nothing like those fancy coffee reviews._
-
-<style>
-.coffee-grid {
- display: grid;
- grid-template-columns: repeat(2, minmax(0, 1fr));
- gap: 1.5rem;
-}
-
-@media (max-width: 860px) {
- .coffee-grid {
-  grid-template-columns: 1fr;
- }
-}
-
-.coffee-card {
-  padding: 1rem;
-  border: 1px solid var(--content-hr);
-  border-radius: 1rem;
-}
-
-</style>
+<header class="page-header coffee-header">
+  <h1>Coffees I’ve tried.</h1>
+  <p>I brew with an <a href="https://aeropress.com/" target="_blank" rel="noreferrer">inverted Aeropress</a> and a metal filter. These are just my notes, not expert reviews.</p>
+  <p>I start by adding the coffee, then bloom it with hot water for about 30 seconds. I add the remaining water and stir, close the lid, and let it brew for 1½–2 minutes—depending on the cup I’m after—before flipping and pressing.</p>
+  <p><a href="https://aramse.coffee/collections/products" target="_blank" rel="noreferrer">Aaramse Coffee</a> shares excellent coffees from Indian roasteries. Highly recommended for beginners.</p>
+</header>
 
 <div class="coffee-grid">
-{% for coffee in coffee.coffees %}
+{% assign coffees_by_date = coffee.coffees | sort: "date" | reverse %}
+{% for coffee in coffees_by_date %}
 <div class="coffee-card">
-
-#### {% if coffee.url %}<a href="{{ coffee.url }}" target="_blank" rel="noreferrer">{{ coffee.name }}</a>{% else %}{{ coffee.name }}{% endif %}
-
-**Roaster:** {{ coffee.roasters }}  
-**Origin:** {{ coffee.origin }} | **Price:** ₹{{ coffee.price }}  
-**Roast Level:** {{ coffee.roast_level }} | **Beans:** {% for bean in coffee.beans %}{{ bean.Arabica }}% Arabica{% endfor %}
-
-**My Rating:** {{ coffee.rating }}/5
-
-**Brewing:** {% for method in coffee.brewing_method %}{% for pair in method %}{% assign key = pair[0] %}{% assign val = pair[1] %}{{ key }} ({{ val }}){% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %} | Grind: {{ coffee.grind_size }} | Water: {{ coffee.water_temperature }}°C
-
-**Aroma:** {{ coffee.aroma }}  
-**Acidity:** {{ coffee.acidity }} | **Body:** {{ coffee.body }}
-
-**Tasting Notes:** {{ coffee.notes | join: ", " }}  
-**Aftertaste:** {{ coffee.aftertaste | join: ", " }}
-
-**My Take:** {{ coffee.note }}
-
-**Tried on:** {{ coffee.date }}
-
+  <div class="coffee-card__visual">
+    {% if coffee.image %}
+    <img src="{{ coffee.image }}" alt="Coffee packet for {{ coffee.name }}" loading="lazy">
+    {% else %}
+    <span>Packet image</span>
+    <span class="coffee-card__visual-mark">☕</span>
+    {% endif %}
+  </div>
+  <div class="coffee-card__body">
+    <div class="coffee-card__heading">
+      <h2>{% if coffee.url != blank %}<a href="{{ coffee.url }}" target="_blank" rel="noreferrer">{{ coffee.name }}</a>{% else %}{{ coffee.name }}{% endif %}</h2>
+      {% if coffee.rating != blank %}
+      <span class="coffee-card__rating">{{ coffee.rating }}/5</span>
+      {% endif %}
+    </div>
+    <p class="coffee-card__roaster">{{ coffee.roasters }}</p>
+    <dl class="coffee-card__facts">
+      <div>{% if coffee.origin != blank %}<dt>Origin</dt><dd>{{ coffee.origin }}</dd>{% endif %}</div>
+      <div>{% if coffee.roast_level != blank %}<dt>Roast</dt><dd>{{ coffee.roast_level }}</dd>{% endif %}</div>
+      <div>{% if coffee.price != blank %}<dt>Price</dt><dd>₹{{ coffee.price }}</dd>{% endif %}</div>
+    </dl>
+    {% if coffee.date != blank %}
+    <p class="coffee-card__date">Tried {{ coffee.date }}</p>
+    {% endif %}
+    {% if coffee.note != blank %}
+    <p class="coffee-card__note"><span>Personal note</span>{{ coffee.note }}</p>
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
 </div>
