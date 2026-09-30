@@ -3,31 +3,10 @@ title: Dixita Ganatra
 layout: main
 ---
 
-<figure>
-<img src="/assets/profile.png" alt="profile">
-<figcaption><a href="https://www.instagram.com/s.war.oop" target="_blank"><i>Portrait by Swaroop</i></a></figcaption>
-</figure>
-
-# Hi! I am Dixita
-
-I'm a developer who is passionate about UI design and art, based in Bangalore, India.
-
-I build websites, web apps, and mobile apps — from design to deployment. Currently learning Flutter for cross-platform development. I'm open for contract work and here's my <a href="/resume" target="_blank">Resume</a>.
-
-When I'm not coding, I enjoy drawing, reading, and meeting new people. I like to try different coffees. <a href="/coffee">Coffees I tried</a>.
-
-## Work
-
-- Recently contributed to a few **Dart** and **Flutter** repositories (fixes, UI changes and examples). Find more about it <a href="/projects">here</a>
-- Previously worked with: <a href="https://www.getgenea.com" target="_blank">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank">Simform</a>, <a href="https://www.meditab.com" target="_blank">Meditab</a>
-
----
-
-## Get in touch
-
-Interested in working together?
-
-- Email: <a href="mailto:contact@dixita.dev" target="_blank">contact@dixita.dev</a>
-- <a href="https://github.com/dixita0607" target="_blank">GitHub</a>
-- <a href="https://bsky.app/profile/dixita.dev" target="_blank">Bluesky</a>
-- <a href="https://matrix.to/#/@dixita:matrix.org" target="_blank">Matrix</a>
+<section class="hero">
+  <div class="hero-copy"><div><h1>I make apps <span>and follow curious ideas.</span></h1><p class="hero-intro">I’m a developer and hobby artist. I make mobile apps, websites, and web apps, with an interest in design. I’m currently learning Swift and building for Apple platforms.</p></div></div>
+  <div class="hero-side"><div class="portrait-card"><p><a href="https://www.instagram.com/s.war.oop" target="_blank" rel="noreferrer">Portrait by Swaroop</a></p></div></div>
+</section>
+<section class="selected"><div class="section-heading"><div><h2>Previous work.</h2></div></div><div class="work-summary"><p>Recently contributed to a few open-source repositories — fixes, UI changes, and examples. Find more about it <a href="/projects/">here</a>.</p><p>Previously worked with <a href="https://www.getgenea.com" target="_blank" rel="noreferrer">Genea</a>, Technegic Software, <a href="https://www.simform.com" target="_blank" rel="noreferrer">Simform</a>, and <a href="https://www.meditab.com" target="_blank" rel="noreferrer">Meditab</a>.</p></div></section>
+<section class="home-notes"><div class="section-heading"><div><h2>Recent blogs.</h2></div></div><div class="note-grid"><a class="note-card" href="/blog/2026-06-16-mountain-life-in-manali-part-2/"><span class="section-label">Travel</span><h3>Mountain life in Manali — Part 2</h3><span>Read blog →</span></a><a class="note-card" href="/blog/2026-06-16-mountain-life-in-manali-part-1/"><span class="section-label">Travel</span><h3>Mountain life in Manali — Part 1</h3><span>Read blog →</span></a><a class="note-card" href="/blog/2026-03-31-a-month-in-jaipur/"><span class="section-label">Travel</span><h3>A month spent in Jaipur</h3><span>Read blog →</span></a></div></section>
+<section class="home-socials"><div class="section-heading"><div><h2>Find me online.</h2></div></div><div class="social-grid"><a href="mailto:contact@dixita.dev" aria-label="Email Dixita"><span class="social-icon social-icon--mail" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M2.8 5.4A2.4 2.4 0 0 1 5.2 3h13.6a2.4 2.4 0 0 1 2.4 2.4v13.2a2.4 2.4 0 0 1-2.4 2.4H5.2a2.4 2.4 0 0 1-2.4-2.4V5.4Zm2.1.5L12 11.3l7.1-5.4H4.9Zm14.3 12.9V8.2L12 13.7 4.8 8.2v10.6h14.4Z"/></svg></span><strong>contact@dixita.dev</strong></a><a href="https://github.com/dixita0607" target="_blank" rel="noreferrer" aria-label="Dixita on GitHub"><span class="social-icon social-icon--github" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.54 1.06 1.54 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.94c.85 0 1.7.12 2.47.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.59 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/></svg></span><strong>@dixita0607</strong></a><a href="https://bsky.app/profile/dixita.dev" target="_blank" rel="noreferrer" aria-label="Dixita on Bluesky"><span class="social-icon social-icon--bluesky" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 10.9C10.9 8.78 7.92 5.2 5.14 3.23 2.47 1.35 1.45 1.67.78 1.98.01 2.34.01 3.53.01 4.24c0 .72.4 5.94.66 6.8.88 2.89 4.03 3.87 6.93 3.54-4.25.63-8.02 2.16-3.07 7.66 5.44 5.53 7.46-1.18 7.47-4.62.01 3.44 1.61 9.91 7.41 4.62 4.48-4.58 1.29-7.02-2.96-7.66 2.9.33 6.05-.65 6.93-3.54.26-.86.66-6.08.66-6.8 0-.71 0-1.9-.77-2.26-.67-.31-1.69-.63-4.36 1.25C16.08 5.2 13.1 8.78 12 10.9Z"/></svg></span><strong>@dixita.dev</strong></a></div></section>

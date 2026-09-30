@@ -9,7 +9,7 @@ keywords:
   - travel
   - manali
   - nomad
-author: "contact@dixita.dev (Dixita Ganatra)"
+author: 'contact@dixita.dev (Dixita Ganatra)'
 ---
 
 We spent 2 months in Manali (April and May). I am going to write 2 parts for this experience. The first part mostly covers our experience and day-to-day life. The [second part](/blog/2026-06-16-mountain-life-in-manali-part-2) has details about the surroundings and places we visited.
@@ -33,6 +33,7 @@ To reach the homestay, one has to walk on a small trail of 100-200 meters. At th
 A note about accommodation there is that one can find monthly rentals by exploring locally. Some homestays are nicely equipped for a longer stay and are relatively cheaper than what you book online.
 
 ## Weather
+
 The weather is pleasant on sunny days. I would sit in the sun a lot while working. On those bright days, single-layer clothes felt sufficient. However, on rainy days, it was too cold and it was difficult for my body to retain heat without proper thermal wear. We also rented a heater for such days to feel more comfortable. It **is** unpredictable so I'd suggest planning your day around what the forecast says.
 
 We didn't see snow during our time there. But the spring season was amazing. It was lovely to see branches, flowers, and fruits grow in front of your eyes. There was an apple orchard garden right outside our room. And we saw tiny fruits before we left. The host had the prettiest rose bushes and they bloomed in the month of May with all kinds of colorful roses.

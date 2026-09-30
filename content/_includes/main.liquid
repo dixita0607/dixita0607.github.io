@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta
+      name='description'
+      content='Dixita Ganatra is a developer in Bangalore who likes making thoughtful interfaces and drawing.'
+    >
+    <link id='site-favicon' rel='icon' type='image/svg+xml' href='/assets/signature-purple.svg'>
+    <link rel='stylesheet' href='/site.css'>
+    <title>{{ title | default: 'Dixita Ganatra — Developer' }}</title>
+  </head>
+  <body>
+    <a class='skip-link' href='#content'>Skip to content</a>
+    <header class='site-header'>
+      <a class='maker-name' href='/' aria-label='Dixita Ganatra home'>Dixita</a>
+      <button class='menu-button' aria-expanded='false' aria-controls='site-nav'>Menu</button>
+      <nav id='site-nav' class='site-nav' aria-label='Primary navigation'>
+        <a href='/projects/'>Work</a>
+        <a href='/blog/'>Blog</a>
+        <a href='/sketchbook/'>Sketchbook</a>
+        <a href='/not-much/'>What else?</a>
+      </nav>
+      <button
+        class='theme-toggle'
+        type='button'
+        aria-pressed='false'
+        aria-label='Switch color theme'
+      >
+        <span class='theme-icon' aria-hidden='true'
+          ><span class='theme-icon__sun'>☀</span>
+          <svg class='theme-icon__moon' viewBox='0 0 24 24'>
+            <mask id='theme-moon-mask'>
+              <rect width='24' height='24' fill='white' />
+              <circle cx='15' cy='9' r='7' fill='black' />
+            </mask>
+            <circle cx='12' cy='12' r='8' mask='url(#theme-moon-mask)' />
+          </svg>
+        </span>
+      </button>
+    </header>
+    <main id='content'>{{ content }}</main>
+    <footer class='site-footer'>
+      <div>
+        <a
+          href='https://github.com/dixita0607/dixita0607.github.io'
+          target='_blank'
+          rel='noopener noreferrer'
+          >Source code</a
+        >
+        <a href='/rss.xml' target='_blank' rel='noopener noreferrer'>RSS</a>
+      </div>
+      <img class='footer-signature' src='/assets/signature-purple.svg' alt='Dixita'>
+    </footer>
+    <script src='/site.js'></script>
+  </body>
+</html>

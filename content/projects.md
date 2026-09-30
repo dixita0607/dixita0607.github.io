@@ -1,56 +1,72 @@
 ---
-title: Projects - Dixita Ganatra
+title: Work — Dixita Ganatra
 layout: main
 ---
 
-{% for collection in projects.current %}
+<article class='page content-list'>
+  <header class='page-header'>
+    <h1>Work.</h1>
+  </header>
 
-## {{ collection.title }}
-
-{% if collection.description %}
-{{ collection.description }}
-{% endif %}
-
-{% for project in collection.projects %}
-
-- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
-{% endfor %}
-{% endfor %}
-
-{% for collection in projects.currentContributions %}
-
-## {{ collection.title }}
-
-{% if collection.description %}
-{{ collection.description }}
-{% endif %}
-
-{% for project in collection.projects %}
-
-- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
-{% endfor %}
+{% for group in projects.current %}
+    <section>
+      <h2>{{ group.title }}</h2>
+      <p>{{ group.description }}</p>
+      <ul>
+        {% for project in group.projects %}
+          <li>
+            <a href='{{ project.code }}'>{{ project.title }}</a><br>
+            {{ project.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 {% endfor %}
 
-{% for collection in projects.fcc %}
-
-## {{ collection.title }}
-
-{% if collection.description %}
-{{ collection.description }}
-{% endif %}
-
-{% for project in collection.projects %}
-
-- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
+{% for group in projects.currentContributions %}
+    <section>
+      <h2>{{ group.title }}</h2>
+      <p>{{ group.description }}</p>
+      <ul>
+        {% for project in group.projects %}
+          <li>
+            <a href='{{ project.code }}'>{{ project.title }}</a><br>
+            {{ project.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 {% endfor %}
+
+{% for group in projects.fcc %}
+    <section>
+      <h2>{{ group.title }}</h2>
+      <p>{{ group.description }}</p>
+      <ul>
+        {% for project in group.projects %}
+          <li>
+            <a href='{{ project.code }}'>{{ project.title }}</a><br>
+            {{ project.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 {% endfor %}
 
-{% for collection in projects.other %}
-
-## {{ collection.title }}
-
-{% for project in collection.projects %}
-
-- <a href="{{ project.code }}" target="_blank">{{ project.title }}</a>: {{ project.description }}
+{% for group in projects.other %}
+    <section>
+      <h2>{{ group.title }}</h2>
+      {% if group.description %}
+        <p>{{ group.description }}</p>
+      {% endif %}
+      <ul>
+        {% for project in group.projects %}
+          <li>
+            <a href='{{ project.code }}'>{{ project.title }}</a><br>
+            {{ project.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 {% endfor %}
-{% endfor %}
+</article>
