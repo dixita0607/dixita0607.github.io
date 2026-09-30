@@ -18,6 +18,9 @@ eleventyExcludeFromCollections: true
   <link href='{{ site.url }}/' />
   <id>{{ site.url }}/</id>
   <updated>{{ latestPost.data.publishDate | date: '%Y-%m-%dT00:00:00Z' }}</updated>
+  <author>
+    <name>{{ site.title | escape }}</name>
+  </author>
   {% for post in posts -%}
     {%- if post.data.layout == 'blog' %}
       <entry>

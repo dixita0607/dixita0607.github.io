@@ -12,6 +12,7 @@
   --paper-fleck: rgba(19, 21, 26, 0.04);
   --paper-texture: none;
   --content-hr: var(--line);
+  --muted: #6e6a63;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,6 +25,7 @@
     --line: #475064;
     --rule: rgba(99, 130, 255, 0.08);
     --paper-fleck: rgba(242, 244, 248, 0.04);
+    --muted: #b8c0d0;
   }
 }
 html.light {
@@ -36,6 +38,7 @@ html.light {
   --line: #cdd2dc;
   --rule: rgba(66, 104, 223, 0.07);
   --paper-fleck: rgba(19, 21, 26, 0.04);
+  --muted: #6e6a63;
 }
 html.dark {
   --ink: #f2f4f8;
@@ -47,6 +50,7 @@ html.dark {
   --line: #475064;
   --rule: rgba(99, 130, 255, 0.08);
   --paper-fleck: rgba(242, 244, 248, 0.04);
+  --muted: #b8c0d0;
 }
 * {
   box-sizing: border-box;
@@ -538,7 +542,7 @@ html.dark .theme-icon__moon {
   font:
     0.76rem 'DM Mono',
     monospace;
-  color: #6e6a63;
+  color: var(--muted);
 }
 .book-list {
   margin: 0;
@@ -564,7 +568,7 @@ html.dark .theme-icon__moon {
   font:
     0.82rem 'DM Mono',
     monospace;
-  color: #6e6a63;
+  color: var(--muted);
 }
 .coffee-grid {
   display: grid;
@@ -656,7 +660,7 @@ html.dark .theme-icon__moon {
 }
 .coffee-card__roaster {
   margin: 0.6rem 0 1rem;
-  color: #6e6a63;
+  color: var(--muted);
   font-size: 0.88rem;
 }
 .coffee-card__facts {
@@ -684,7 +688,7 @@ html.dark .theme-icon__moon {
 }
 .coffee-card__date {
   margin: 1rem 0 0;
-  color: #6e6a63;
+  color: var(--muted);
   font:
     0.64rem 'DM Mono',
     monospace;
@@ -718,7 +722,7 @@ html.dark .theme-icon__moon {
   font:
     0.76rem 'DM Mono',
     monospace;
-  color: #6e6a63;
+  color: var(--muted);
 }
 .prose {
   max-width: none;
@@ -867,7 +871,7 @@ html.dark .theme-icon__moon {
     padding: 1rem;
     grid-template-columns: auto 1fr auto;
   }
-  .menu-button {
+  .js .menu-button {
     display: block;
     grid-column: 2;
     grid-row: 1;
@@ -876,7 +880,7 @@ html.dark .theme-icon__moon {
     grid-column: 3;
     grid-row: 1;
   }
-  .site-nav {
+  .js .site-nav {
     display: none;
     grid-column: 1/-1;
     grid-row: 2;
@@ -884,7 +888,7 @@ html.dark .theme-icon__moon {
     align-items: stretch;
     padding-top: 1rem;
   }
-  .site-nav.is-open {
+  .js .site-nav.is-open {
     display: flex;
   }
   .site-nav a {
