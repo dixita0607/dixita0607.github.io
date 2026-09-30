@@ -4,21 +4,31 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 {% assign posts = collections.all | reverse %}
-{% assign latestPost = "" %}
-{% for post in posts %}{% if post.data.layout == "blog" %}{% assign latestPost = post %}{% break %}{% endif %}{% endfor %}
-<feed xmlns="http://www.w3.org/2005/Atom">
+{% assign latestPost = '' %}
+{% for post in posts -%}
+  {%- if post.data.layout == 'blog' -%}
+    {%- assign latestPost = post -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor %}
+<feed xmlns='http://www.w3.org/2005/Atom'>
   <title>{{ site.title | escape }}</title>
   <subtitle>{{ site.description | escape }}</subtitle>
-  <link href="{{ site.url }}/rss.xml" rel="self"/>
-  <link href="{{ site.url }}/"/>
+  <link href='{{ site.url }}/rss.xml' rel='self' />
+  <link href='{{ site.url }}/' />
   <id>{{ site.url }}/</id>
-  <updated>{{ latestPost.data.publishDate | date: "%Y-%m-%dT00:00:00Z" }}</updated>
-  {% for post in posts %}{% if post.data.layout == "blog" %}
-  <entry>
-    <title>{{ post.data.title | escape }}</title>
-    <link href="{{ site.url }}{{ post.url }}"/>
-    <id>{{ site.url }}{{ post.url }}</id>
-    <updated>{{ post.data.publishDate | date: "%Y-%m-%dT00:00:00Z" }}</updated>
-  </entry>
-  {% endif %}{% endfor %}
+  <updated>{{ latestPost.data.publishDate | date: '%Y-%m-%dT00:00:00Z' }}</updated>
+  {% for post in posts -%}
+    {%- if post.data.layout == 'blog' %}
+      <entry>
+        <title>{{ post.data.title | escape }}</title>
+        <link href='{{ site.url }}{{ post.url }}' />
+        <id>
+          {{- site.url -}}
+          {{- post.url -}}
+        </id>
+        <updated>{{ post.data.publishDate | date: '%Y-%m-%dT00:00:00Z' }}</updated>
+      </entry>
+    {% endif -%}
+  {%- endfor %}
 </feed>

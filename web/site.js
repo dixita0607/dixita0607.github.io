@@ -9,8 +9,9 @@ menuButton?.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.site-nav a').forEach((link) => {
-  const isCurrentPage = link.pathname === window.location.pathname
-    || (link.pathname !== '/' && window.location.pathname.startsWith(link.pathname));
+  const isCurrentPage =
+    link.pathname === window.location.pathname ||
+    (link.pathname !== '/' && window.location.pathname.startsWith(link.pathname));
   if (isCurrentPage) link.setAttribute('aria-current', 'page');
 });
 
@@ -65,6 +66,9 @@ blogFilters.forEach((filter) => {
 });
 
 const initialBlogFilter = window.location.hash.slice(1);
-if (initialBlogFilter && [...blogFilters].some((filter) => filter.dataset.filter === initialBlogFilter)) {
+if (
+  initialBlogFilter &&
+  [...blogFilters].some((filter) => filter.dataset.filter === initialBlogFilter)
+) {
   selectBlogFilter(initialBlogFilter);
 }

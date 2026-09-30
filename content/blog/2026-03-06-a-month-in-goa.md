@@ -1,5 +1,5 @@
 ---
-title: "A month and a half in Goa - Jan-Feb 2026"
+title: 'A month and a half in Goa - Jan-Feb 2026'
 layout: blog
 publishDate: 2026-03-06
 tags:
@@ -9,7 +9,7 @@ keywords:
   - travel
   - goa
   - nomad
-author: "contact@dixita.dev (Dixita Ganatra)"
+author: 'contact@dixita.dev (Dixita Ganatra)'
 ---
 
 I spent January and half of February in Goa. I mostly stayed in North Goa but also spent a week or so in South Goa. These are my notes from that time.

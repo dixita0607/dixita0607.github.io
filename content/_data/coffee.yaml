@@ -1,401 +1,400 @@
 coffees:
-  - date: "2026-04-13"
+  - date: '2026-04-13'
     name: "Dylan's Toasted & Roasted"
-    image: "/assets/coffee/dylans-toasted-roasted.jpeg"
-    origin: ""
+    image: '/assets/coffee/dylans-toasted-roasted.jpeg'
+    origin: ''
     roasters: "Dylan's Coffee House, Manali"
-    url: ""
+    url: ''
     price: 600
     beans:
-      - Arabica: "100"
-    roast_level: "Medium-Dark"
+      - Arabica: '100'
+    roast_level: 'Medium-Dark'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Bitter due to dark roast."
-    acidity: "Low"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Bitter due to dark roast.'
+    acidity: 'Low'
+    body: '-'
     notes:
     aftertaste:
-      - "Neutral like simple dark roast coffee. Neighter too bitter nor too acidic."
+      - 'Neutral like simple dark roast coffee. Neighter too bitter nor too acidic.'
     rating: 3.5
     note: "This is the first locally roasted coffee that I tired. They only had medium to dark roast option. Usually I don't enjoy dark roasts but this one was a bit mild in terms of bitterness. Not recommended for people who need acidity in the flavor of coffee."
 
-  - date: "2026-03-17"
-    name: "Banana Kents"
-    image: "/assets/coffee/banana-kents.jpeg"
-    origin: "Balanoor Plantation, Chikmagalur"
-    roasters: "Half Light Coffee Roasters - Jaipur"
-    url: ""
+  - date: '2026-03-17'
+    name: 'Banana Kents'
+    image: '/assets/coffee/banana-kents.jpeg'
+    origin: 'Balanoor Plantation, Chikmagalur'
+    roasters: 'Half Light Coffee Roasters - Jaipur'
+    url: ''
     price: 680
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Not too strong but really good."
-    acidity: "Medium"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Not too strong but really good.'
+    acidity: 'Medium'
+    body: '-'
     notes:
-      - "Jaggery bites"
-      - "Plum"
-      - "Cocoa"
+      - 'Jaggery bites'
+      - 'Plum'
+      - 'Cocoa'
     aftertaste:
-      - "While drinking, it tastes a bit acidic but then the after taste is a bit bitter (astringent but in a good way)."
+      - 'While drinking, it tastes a bit acidic but then the after taste is a bit bitter (astringent but in a good way).'
     rating: 4
     note: "I think these were one of their last batches. It's a good coffee not too unique to miss out on anything."
 
-   
-  - date: "2026-02-15"
-    name: "Parama - Luxury blend"
-    image: "/assets/coffee/parama-luxury-blend.jpeg"
-    origin: "Coorg"
-    roasters: "Mavrick & Farmer Coffee"
-    url: "https://www.maverickandfarmer.com/products/parama"
+  - date: '2026-02-15'
+    name: 'Parama - Luxury blend'
+    image: '/assets/coffee/parama-luxury-blend.jpeg'
+    origin: 'Coorg'
+    roasters: 'Mavrick & Farmer Coffee'
+    url: 'https://www.maverickandfarmer.com/products/parama'
     price: 650
     beans:
-      - Arabica: "92"
-      - Robusta: "8"
-    roast_level: "Medium"
+      - Arabica: '92'
+      - Robusta: '8'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Smells like a bit darker roast. Addictive smell as usual."
-    acidity: "Medium-High"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Smells like a bit darker roast. Addictive smell as usual.'
+    acidity: 'Medium-High'
+    body: '-'
     notes:
-      - "Chocolate"
-      - "Caramel"
+      - 'Chocolate'
+      - 'Caramel'
     aftertaste:
       - "A bit fruity when it's closer to room temperature but still has that roast-like taste."
     rating: 5
     note: "This has Robusta beans. I was looking for a mix of beans in India for a very long time. The website says it tastes good with milk. I haven't tried that yet. But I think it will be a good choice to make cà phê việt nam due to its Robusta beans."
 
-  - date: "2026-01-23"
+  - date: '2026-01-23'
     name: "Rohan Bopanna's Masterblend - 90% wet processed, 10% dry processed"
-    image: "/assets/coffee/rohan-bopanna-masterblend.jpeg"
-    origin: "Coorg"
-    roasters: "Mavrick & Farmer Coffee"
-    url: "https://www.maverickandfarmer.com/products/rohan-bopannas-masterblend-1"
+    image: '/assets/coffee/rohan-bopanna-masterblend.jpeg'
+    origin: 'Coorg'
+    roasters: 'Mavrick & Farmer Coffee'
+    url: 'https://www.maverickandfarmer.com/products/rohan-bopannas-masterblend-1'
     price: 680
     beans:
-      - Arabica: "100"
-    roast_level: "Medium-Dark"
+      - Arabica: '100'
+    roast_level: 'Medium-Dark'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Amazing strong smell. You know how good a roast this is just from a sniff."
-    acidity: "Medium-High"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Amazing strong smell. You know how good a roast this is just from a sniff.'
+    acidity: 'Medium-High'
+    body: '-'
     notes:
-      - "Mild sweet"
-      - "Toffee"
+      - 'Mild sweet'
+      - 'Toffee'
     aftertaste:
-      - "Bitter sweet"
-      - "Closer to a light roast if the coffee temperature comes down a little bit."
+      - 'Bitter sweet'
+      - 'Closer to a light roast if the coffee temperature comes down a little bit.'
     rating: 5
     note: "The coffee's taste is unique as the packet says 10% of it is dry processed. This is my new favorite and I recommend it for a morning coffee treat ;)"
 
-  - date: "2025-10-24"
-    name: "Kilpauk Standard"
-    image: "/assets/coffee/kilpauk-standard.jpeg"
-    origin: "Yercaud and Coorg"
-    roasters: "Kāpi Kotai"
-    url: "https://kapikottai.coffee/products/kilpauk-standard"
+  - date: '2025-10-24'
+    name: 'Kilpauk Standard'
+    image: '/assets/coffee/kilpauk-standard.jpeg'
+    origin: 'Yercaud and Coorg'
+    roasters: 'Kāpi Kotai'
+    url: 'https://kapikottai.coffee/products/kilpauk-standard'
     price: 650
     beans:
-      - Arabica: "100"
-    roast_level: "Medium-Dark"
+      - Arabica: '100'
+    roast_level: 'Medium-Dark'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Smells addictive—instant mood lift with one sniff :p"
-    acidity: "Medium-High"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Smells addictive—instant mood lift with one sniff :p'
+    acidity: 'Medium-High'
+    body: '-'
     notes:
-      - "Hazelnut"
-      - "Chocolate"
-      - "Hints of fruit"
+      - 'Hazelnut'
+      - 'Chocolate'
+      - 'Hints of fruit'
     aftertaste:
-      - "Fruity-tangy but not too much"
-      - "A little bitter, in a good way"
+      - 'Fruity-tangy but not too much'
+      - 'A little bitter, in a good way'
     rating: 4.5
-    note: "Subscribed to 3 coffees on their site and got a discount. Enjoying it as my daily morning brew. Definitely recommend."
+    note: 'Subscribed to 3 coffees on their site and got a discount. Enjoying it as my daily morning brew. Definitely recommend.'
 
-  - date: "2025-10-06"
-    name: "Bahār"
-    image: "/assets/coffee/bahar.jpeg"
-    origin: "Unakki estate, Chikmagalur"
-    roasters: "Kāpi Kotai"
-    url: "https://kapikottai.coffee"
+  - date: '2025-10-06'
+    name: 'Bahār'
+    image: '/assets/coffee/bahar.jpeg'
+    origin: 'Unakki estate, Chikmagalur'
+    roasters: 'Kāpi Kotai'
+    url: 'https://kapikottai.coffee'
     price: 700
     beans:
-      - Arabica: "100"
-    roast_level: "Medium-Light"
+      - Arabica: '100'
+    roast_level: 'Medium-Light'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Smells like fresh, nice and strong coffee."
-    acidity: "Medium-High"
-    body: "-"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Smells like fresh, nice and strong coffee.'
+    acidity: 'Medium-High'
+    body: '-'
     notes:
-      - "Candied Sweetlime"
-      - "Apricot"
-      - "Almond"
+      - 'Candied Sweetlime'
+      - 'Apricot'
+      - 'Almond'
     aftertaste:
-      - "Tangy fruity"
-      - "A bit sweet"
-      - "Fresh coffee"
+      - 'Tangy fruity'
+      - 'A bit sweet'
+      - 'Fresh coffee'
     rating: 5
-    note: "First time trying medium-light roast. I love this coffee—great daily cup, except when I want a darker roast. Second brew lost most of its flavor."
+    note: 'First time trying medium-light roast. I love this coffee—great daily cup, except when I want a darker roast. Second brew lost most of its flavor.'
 
-  - date: "2025-09-09"
-    name: "Swell Blend"
-    image: "/assets/coffee/swell-blend.jpeg"
-    origin: "Chikmangalur"
-    roasters: "Tulum Coffee (Mumbai)"
-    url: "https://www.tulum.coffee/products/the-swell-blend-specialty-blend"
+  - date: '2025-09-09'
+    name: 'Swell Blend'
+    image: '/assets/coffee/swell-blend.jpeg'
+    origin: 'Chikmangalur'
+    roasters: 'Tulum Coffee (Mumbai)'
+    url: 'https://www.tulum.coffee/products/the-swell-blend-specialty-blend'
     price: 625
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "Classic coffee aroma"
-    acidity: "Medium-High"
-    body: "Full"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'Classic coffee aroma'
+    acidity: 'Medium-High'
+    body: 'Full'
     notes:
-      - "Chocolatey"
-      - "Nutty"
-      - "Fruity"
+      - 'Chocolatey'
+      - 'Nutty'
+      - 'Fruity'
     aftertaste:
-      - "Tea like bit bitter"
-      - "Slightly tangy sweet"
+      - 'Tea like bit bitter'
+      - 'Slightly tangy sweet'
     rating: 3.5
     note: "It's an okay coffee. I can manage it when fewer options are available."
 
-  - date: "2025-08-10"
-    name: "Naturals"
-    image: "/assets/coffee/naturals.jpeg"
-    origin: "Nagaland"
-    roasters: "Brewed Awakening"
+  - date: '2025-08-10'
+    name: 'Naturals'
+    image: '/assets/coffee/naturals.jpeg'
+    origin: 'Nagaland'
+    roasters: 'Brewed Awakening'
     price: 650
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "04:00"
-    grind_size: "Fine"
-    water_temperature: "100"
-    aroma: "A bit bold, closer to wine"
-    acidity: "Medium-Low"
-    body: "-"
+      - Aeropress: '04:00'
+    grind_size: 'Fine'
+    water_temperature: '100'
+    aroma: 'A bit bold, closer to wine'
+    acidity: 'Medium-Low'
+    body: '-'
     notes:
-      - "Winey"
-      - "Mandarin"
-      - "Soft Florals"
+      - 'Winey'
+      - 'Mandarin'
+      - 'Soft Florals'
     aftertaste:
-      - "A bit tangy like wine"
-      - "Slightly bitter, like a floral tea"
+      - 'A bit tangy like wine'
+      - 'Slightly bitter, like a floral tea'
     rating: 5
     note: "Liked the roast. Great when I don't want a very acidic coffee. Definitely a repurchase! Bought at Nerlu Cafe, Indiranagar. Couldn't find a link online."
 
-  - date: "2025-07-12"
-    name: "M.S. Estate"
-    image: "/assets/coffee/ms-estate.jpeg"
-    origin: "Chikmangalur"
-    roasters: "Blue Tokai"
-    url: "https://bluetokaicoffee.com/collections/roasted-and-ground-coffee-beans/products"
+  - date: '2025-07-12'
+    name: 'M.S. Estate'
+    image: '/assets/coffee/ms-estate.jpeg'
+    origin: 'Chikmangalur'
+    roasters: 'Blue Tokai'
+    url: 'https://bluetokaicoffee.com/collections/roasted-and-ground-coffee-beans/products'
     price: 750
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "100"
-    aroma: "A little acidic like fruit and hinting bitterness"
-    acidity: "Medium-High"
-    body: "Medium"
+      - Aeropress: '02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '100'
+    aroma: 'A little acidic like fruit and hinting bitterness'
+    acidity: 'Medium-High'
+    body: 'Medium'
     notes:
-      - "Orange Marmalade"
-      - "Dried Date"
-      - "Earl Grey Tea"
+      - 'Orange Marmalade'
+      - 'Dried Date'
+      - 'Earl Grey Tea'
     aftertaste:
-      - "Sweet-bitter"
+      - 'Sweet-bitter'
     rating: 4
-    note: "Good strong coffee. Not a big fan."
+    note: 'Good strong coffee. Not a big fan.'
 
-  - date: "2026-07-12"
-    name: "Attikan Estate"
-    image: "/assets/coffee/attikan-estate.jpeg"
-    origin: "Biligiriranga Hills, Karnataka"
-    roasters: "Blue Tokai"
-    url: "https://bluetokaicoffee.com/products/attikan-estate"
+  - date: '2026-07-12'
+    name: 'Attikan Estate'
+    image: '/assets/coffee/attikan-estate.jpeg'
+    origin: 'Biligiriranga Hills, Karnataka'
+    roasters: 'Blue Tokai'
+    url: 'https://bluetokaicoffee.com/products/attikan-estate'
     price: 700
     beans:
-      - Arabica: "S9"
-    roast_level: "Medium-Dark"
-    processing: "Washed"
-    altitude: "1200-1650 m"
+      - Arabica: 'S9'
+    roast_level: 'Medium-Dark'
+    processing: 'Washed'
+    altitude: '1200-1650 m'
     brewing_method:
-      - Aeropress: "02:00-02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "95°C"
-    aroma: "Dark, coffee-like and a bit chocolaty"
-    acidity: "Medium-Low"
-    body: "Medium"
+      - Aeropress: '02:00-02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '95°C'
+    aroma: 'Dark, coffee-like and a bit chocolaty'
+    acidity: 'Medium-Low'
+    body: 'Medium'
     notes:
-      - "Nutty"
-      - "Slightly bitter"
+      - 'Nutty'
+      - 'Slightly bitter'
     aftertaste:
-      - "Slightly tangy"
-      - "Mostly sweet"
+      - 'Slightly tangy'
+      - 'Mostly sweet'
     rating: 4.5
-    note: "This coffee has a great composition for a slightly darker roast. The cup feels refreshing, and it is one of my favorites in the medium-dark category."
+    note: 'This coffee has a great composition for a slightly darker roast. The cup feels refreshing, and it is one of my favorites in the medium-dark category.'
 
-  - date: "2026-08-31"
-    name: "Silver Oak Cafe Blend"
-    image: "/assets/coffee/silver-oak-cafe-blend.jpeg"
-    origin: "Southern Indian coffee plantations"
-    roasters: "Blue Tokai"
-    url: "https://bluetokaicoffee.com/products/silver-oak-cafe-blend"
+  - date: '2026-08-31'
+    name: 'Silver Oak Cafe Blend'
+    image: '/assets/coffee/silver-oak-cafe-blend.jpeg'
+    origin: 'Southern Indian coffee plantations'
+    roasters: 'Blue Tokai'
+    url: 'https://bluetokaicoffee.com/products/silver-oak-cafe-blend'
     price: 750
-    roast_level: "Medium"
-    processing: "Washed and unwashed blend"
+    roast_level: 'Medium'
+    processing: 'Washed and unwashed blend'
     brewing_method:
-      - Aeropress: "02:00-02:30"
-    grind_size: "Medium-Fine"
-    water_temperature: "95°C"
-    aroma: "Fruity"
-    acidity: "High"
-    body: "Low"
+      - Aeropress: '02:00-02:30'
+    grind_size: 'Medium-Fine'
+    water_temperature: '95°C'
+    aroma: 'Fruity'
+    acidity: 'High'
+    body: 'Low'
     notes:
-      - "Citrus fruit-like"
+      - 'Citrus fruit-like'
     aftertaste:
-      - "Tangy"
-      - "Slightly sweet"
+      - 'Tangy'
+      - 'Slightly sweet'
     rating: 4.5
-    note: "The bitterness is barely there, while the acidity is clearly noticeable without ever becoming too sour or citrus-fruit-like. It feels balanced and is a great fit for a daily morning coffee."
+    note: 'The bitterness is barely there, while the acidity is clearly noticeable without ever becoming too sour or citrus-fruit-like. It feels balanced and is a great fit for a daily morning coffee.'
 
-  - date: "2025-06-15"
-    name: "Halli Berri"
-    image: "/assets/coffee/halli-berri.jpeg"
-    origin: "Kambihalli Estate, Baba Budangiri, Chikmagalur"
-    roasters: "Half Light"
-    url: "https://halflightcoffee.com/"
+  - date: '2025-06-15'
+    name: 'Halli Berri'
+    image: '/assets/coffee/halli-berri.jpeg'
+    origin: 'Kambihalli Estate, Baba Budangiri, Chikmagalur'
+    roasters: 'Half Light'
+    url: 'https://halflightcoffee.com/'
     price: 700
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - Aeropress: "3:00"
-    grind_size: "Coarse"
-    water_temperature: "100°F"
-    aroma: "Coffee like"
-    acidity: "Medium"
-    body: "High"
+      - Aeropress: '3:00'
+    grind_size: 'Coarse'
+    water_temperature: '100°F'
+    aroma: 'Coffee like'
+    acidity: 'Medium'
+    body: 'High'
     notes:
-      - "Lemon peel"
-      - "Black tea"
-      - "Areca"
+      - 'Lemon peel'
+      - 'Black tea'
+      - 'Areca'
     aftertaste:
-      - "Fruity tangy"
-      - "Sweet"
-      - "Slightly bitter but good one"
+      - 'Fruity tangy'
+      - 'Sweet'
+      - 'Slightly bitter but good one'
     rating: 4
     note: "Recommend. First coffee that felt fresh and acidic, which I liked a lot—it nudged me toward lighter roasts. Can't find its picture or a link online."
 
-  - date: "2025-05-25"
-    name: "Araku - Selection"
-    image: "/assets/coffee/araku-selection.jpeg"
-    origin: "Araku"
-    roasters: "Araku"
-    url: "https://www.arakucoffee.in/products/selection"
+  - date: '2025-05-25'
+    name: 'Araku - Selection'
+    image: '/assets/coffee/araku-selection.jpeg'
+    origin: 'Araku'
+    roasters: 'Araku'
+    url: 'https://www.arakucoffee.in/products/selection'
     price: 590
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - French Press: "8:00"
-      - Aeropress: "3:00"
-    grind_size: "Coarse"
-    water_temperature: "100°F"
-    aroma: "Coffee like"
-    acidity: "Low"
-    body: "High"
+      - French Press: '8:00'
+      - Aeropress: '3:00'
+    grind_size: 'Coarse'
+    water_temperature: '100°F'
+    aroma: 'Coffee like'
+    acidity: 'Low'
+    body: 'High'
     notes:
-      - "Honey"
-      - "Sugarcane"
-      - "Dark chocolate"
-      - "Caramel"
+      - 'Honey'
+      - 'Sugarcane'
+      - 'Dark chocolate'
+      - 'Caramel'
     aftertaste:
-      - "Bitter"
-      - "Sweet"
+      - 'Bitter'
+      - 'Sweet'
     rating: 4
-    note: "Recommend. French press: 4:00 in water, stir, then 4:00 more minutes. Aeropress: 2:00 in water, stir, keep for 30 seconds, press."
+    note: 'Recommend. French press: 4:00 in water, stir, then 4:00 more minutes. Aeropress: 2:00 in water, stir, keep for 30 seconds, press.'
 
-  - date: "2025-04-26"
-    name: "Araku - Signature"
-    image: "/assets/coffee/araku-signature.jpeg"
-    origin: "Araku"
-    roasters: "Araku"
-    url: "https://www.arakucoffee.in/products/signature"
+  - date: '2025-04-26'
+    name: 'Araku - Signature'
+    image: '/assets/coffee/araku-signature.jpeg'
+    origin: 'Araku'
+    roasters: 'Araku'
+    url: 'https://www.arakucoffee.in/products/signature'
     price: 540
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - French Press: "8:00"
-    grind_size: "Coarse"
-    water_temperature: "100°F"
-    aroma: "Coffee like"
-    acidity: "Low-Medium"
-    body: "Medium"
+      - French Press: '8:00'
+    grind_size: 'Coarse'
+    water_temperature: '100°F'
+    aroma: 'Coffee like'
+    acidity: 'Low-Medium'
+    body: 'Medium'
     notes:
-      - "Green pepper"
-      - "Cherry"
-      - "Dark chocolate"
+      - 'Green pepper'
+      - 'Cherry'
+      - 'Dark chocolate'
     aftertaste:
-      - "Coffee like"
-      - "Chocolate like"
-      - "Good bitter"
+      - 'Coffee like'
+      - 'Chocolate like'
+      - 'Good bitter'
     rating: 5
-    note: "Recommend for daily coffee. French press: 4:00 in water, stir, then 4:00 more minutes."
+    note: 'Recommend for daily coffee. French press: 4:00 in water, stir, then 4:00 more minutes.'
 
-  - date: "2025-04-02"
-    name: "Araku - Micro Climate"
-    image: "/assets/coffee/araku-micro-climate.jpeg"
-    origin: "Araku"
-    roasters: "Araku"
-    url: "https://www.arakucoffee.in/products/micro-climate"
+  - date: '2025-04-02'
+    name: 'Araku - Micro Climate'
+    image: '/assets/coffee/araku-micro-climate.jpeg'
+    origin: 'Araku'
+    roasters: 'Araku'
+    url: 'https://www.arakucoffee.in/products/micro-climate'
     price: 630
     beans:
-      - Arabica: "100"
-    roast_level: "Medium"
+      - Arabica: '100'
+    roast_level: 'Medium'
     brewing_method:
-      - French Press: "4:00"
-    grind_size: "Coarse"
-    water_temperature: "100°F"
-    aroma: "Fruity"
-    acidity: "Medium"
-    body: "Medium"
+      - French Press: '4:00'
+    grind_size: 'Coarse'
+    water_temperature: '100°F'
+    aroma: 'Fruity'
+    acidity: 'Medium'
+    body: 'Medium'
     notes:
-      - "Olives"
-      - "Honey"
-      - "Grapes"
-      - "Dried Berries"
+      - 'Olives'
+      - 'Honey'
+      - 'Grapes'
+      - 'Dried Berries'
     aftertaste:
-      - "Citrus"
-      - "Coffee like a little bit"
+      - 'Citrus'
+      - 'Coffee like a little bit'
     rating: 3.5
-    note: "Recommend"
+    note: 'Recommend'

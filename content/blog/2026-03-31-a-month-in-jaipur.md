@@ -1,5 +1,5 @@
 ---
-title: "A month spent in Jaipur - March 2026"
+title: 'A month spent in Jaipur - March 2026'
 layout: blog
 publishDate: 2026-03-31
 tags:
@@ -9,7 +9,7 @@ keywords:
   - travel
   - jaipur
   - nomad
-author: "contact@dixita.dev (Dixita Ganatra)"
+author: 'contact@dixita.dev (Dixita Ganatra)'
 ---
 
 Jaipur trip was full of surprises (good and bad ones). I had a very different image of the city before going there. Here's what I think about it and various experiences that I had.
@@ -35,7 +35,7 @@ We would have breakfast, do our chores, work a little bit or play games, and exp
 
 I couldn't visit all the places from my list but whatever places I visited, I enjoyed them fully. I have a reason to go back to Jaipur and cover remaining places.
 
-*A tip: Some museums and places have combined passes at some discounted rates if you can visit them in a day. Entry fees for individual places are quite reasonable otherwise.*
+_A tip: Some museums and places have combined passes at some discounted rates if you can visit them in a day. Entry fees for individual places are quite reasonable otherwise._
 
 - ### Albert Hall Museum
 
@@ -100,12 +100,12 @@ I expected to eat lots of kachoris but couldn't quite manage it—fried food lef
 - ### [Cafe Kebab](https://maps.app.goo.gl/ESGRZwfzBd1dLNd68)
 
   Stumbled upon this place when my original restaurant had closed. Their butter chicken and lal mans with Khameeri roti are exceptional. The mutton seekh kabab was good too, but the curries were better. Definitely visiting again.
-  *Note: The curries are quite oily/buttery—I asked for less oil and butter for my next order.*
+  _Note: The curries are quite oily/buttery—I asked for less oil and butter for my next order._
 
 - ### [The Old Takeaway](https://maps.app.goo.gl/UbSSQcKX8R5DqRRN7)
 
   Right across from Cafe Kebab, this restaurant has the tastiest chicken tikkas and murgh hara dhaniya with Khameeri Roti. A must-visit.
-  *Note: There are other restaurants adjacent to it with similar name. But I am referring to "The old takeaway" only.*
+  _Note: There are other restaurants adjacent to it with similar name. But I am referring to "The old takeaway" only._
 
 - ### [Purohit Heritage Cafe & Restaurant](https://maps.app.goo.gl/CgwVD4xvJRoAjU3B8)
 
