@@ -245,11 +245,9 @@ html.dark .theme-icon__moon {
   border-radius: 48% 52% 62% 38%;
   transform: rotate(22deg);
 }
-.hero-copy::after {
-  content: 'open to work';
-  position: absolute;
-  right: 1.6rem;
-  bottom: 1.5rem;
+.availability {
+  align-self: flex-end;
+  margin: 0;
   color: #13151a;
   background: var(--green);
   padding: 0.55rem 0.7rem;
@@ -289,17 +287,28 @@ html.dark .theme-icon__moon {
   display: block;
 }
 .portrait-card {
+  position: relative;
   height: 100%;
   min-height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   padding: 1rem;
-  background: var(--blue) url('/assets/home-window-art.png') left bottom/170% auto no-repeat;
+  background: var(--blue);
   border-radius: 10px;
   overflow: hidden;
 }
+.portrait-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+}
 .portrait-card p {
+  position: relative;
+  z-index: 1;
   align-self: flex-end;
   width: max-content;
   max-width: 100%;
@@ -914,7 +923,6 @@ html.dark .note-card:nth-child(3):hover {
   }
   .portrait-card {
     min-height: 280px;
-    background-size: 210% auto;
   }
   .selected,
   .home-notes,
