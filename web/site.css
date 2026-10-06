@@ -906,13 +906,15 @@ html.dark .note-card:nth-child(3):hover {
     grid-column: 3;
     grid-row: 1;
   }
-  .js .site-nav {
-    display: none;
+  .site-nav {
     grid-column: 1/-1;
     grid-row: 2;
     flex-direction: column;
     align-items: stretch;
     padding-top: 1rem;
+  }
+  .js .site-nav {
+    display: none;
   }
   .js .site-nav.is-open {
     display: flex;
