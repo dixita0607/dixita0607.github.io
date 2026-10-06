@@ -12,5 +12,8 @@
     "@shopify/prettier-plugin-liquid": "1.11.1",
     "prettier": "3.9.9",
     "yaml": "^2.9.0"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.2"
   }
 }
