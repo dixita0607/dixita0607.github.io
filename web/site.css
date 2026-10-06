@@ -304,7 +304,9 @@ html.dark .theme-icon__moon {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left bottom;
+  object-position: 32% 80%;
+  transform: scale(2.5);
+  transform-origin: 8% bottom;
 }
 .portrait-card p {
   position: relative;
@@ -923,6 +925,10 @@ html.dark .note-card:nth-child(3):hover {
   }
   .portrait-card {
     min-height: 280px;
+  }
+  .portrait-card img {
+    transform: scale(1.25);
+    transform-origin: left bottom;
   }
   .selected,
   .home-notes,
