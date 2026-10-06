@@ -104,7 +104,7 @@ a {
   text-underline-offset: 3px;
 }
 a:hover {
-  color: #4268df;
+  color: var(--blue);
 }
 .skip-link {
   position: absolute;
@@ -182,7 +182,7 @@ a:hover {
 }
 .theme-toggle:hover {
   background: var(--green);
-  color: #4268df;
+  color: var(--blue);
 }
 .theme-icon {
   position: relative;
@@ -261,7 +261,7 @@ html.dark .theme-icon__moon {
 }
 .section-label {
   margin: 0;
-  color: #4268df;
+  color: var(--blue);
   font:
     500 0.72rem 'DM Mono',
     monospace;
@@ -405,7 +405,7 @@ html.dark .theme-icon__moon {
   text-decoration: none;
 }
 .social-grid a:hover {
-  color: #4268df;
+  color: var(--blue);
   background: var(--green);
 }
 .social-icon {
@@ -430,7 +430,7 @@ html.dark .theme-icon__moon {
   fill: currentColor;
 }
 .social-grid a:hover .social-icon {
-  color: #4268df;
+  color: var(--blue);
 }
 .social-grid strong {
   min-width: 0;
@@ -751,7 +751,7 @@ html.dark .theme-icon__moon {
   border-radius: 12px;
 }
 .prose a {
-  color: #4268df;
+  color: var(--blue);
 }
 .prose :not(pre) > code {
   padding: 0.12em 0.35em;
@@ -853,14 +853,14 @@ html.dark .theme-icon__moon {
     color: #13151a;
   }
   .note-card:nth-child(3):hover {
-    color: #4268df;
+    color: var(--blue);
   }
 }
 html.dark .note-card:nth-child(3) {
   color: #13151a;
 }
 html.dark .note-card:nth-child(3):hover {
-  color: #4268df;
+  color: var(--blue);
 }
 .site-footer p {
   margin: 0;
