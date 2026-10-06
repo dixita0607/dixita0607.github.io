@@ -42,6 +42,9 @@ layout: main
     {% if coffee.note != blank %}
     <p class="coffee-card__note"><span>Personal note</span>{{ coffee.note }}</p>
     {% endif %}
+    {% if coffee.aftertaste != blank %}
+    <p class="coffee-card__note"><span>Aftertaste</span>{{ coffee.aftertaste | join: ", " }}</p>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
