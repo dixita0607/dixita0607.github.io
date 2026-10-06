@@ -560,6 +560,15 @@ html.dark .theme-icon__moon {
   padding: 0;
   list-style: none;
 }
+.book-year h3 {
+  margin: 2rem 0 1rem;
+  color: var(--blue);
+  font:
+    500 0.72rem/1 'DM Mono',
+    monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 .book-list li {
   padding: 1rem 0;
 }
