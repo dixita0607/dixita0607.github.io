@@ -17,7 +17,8 @@ layout: main
 <div class="coffee-card">
   <div class="coffee-card__visual">
     {% if coffee.image %}
-    <img src="{{ coffee.image }}" alt="Coffee packet for {{ coffee.name }}" loading="lazy">
+    {% assign thumbnail = coffee.image | replace: '/assets/coffee/', '/assets/coffee/thumbnails/' %}
+    <img src="{{ thumbnail }}" alt="Coffee packet for {{ coffee.name }}" loading="lazy">
     {% else %}
     <span>Packet image</span>
     <span class="coffee-card__visual-mark">☕</span>
