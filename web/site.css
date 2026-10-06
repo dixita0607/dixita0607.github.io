@@ -856,6 +856,12 @@ html.dark .theme-icon__moon {
     color: #4268df;
   }
 }
+html.dark .note-card:nth-child(3) {
+  color: #13151a;
+}
+html.dark .note-card:nth-child(3):hover {
+  color: #4268df;
+}
 .site-footer p {
   margin: 0;
 }
