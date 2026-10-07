@@ -32,7 +32,7 @@ function applyTheme(theme) {
   themeButton?.setAttribute('aria-pressed', String(theme === 'dark'));
   themeButton?.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
   const favicon = document.querySelector('#site-favicon');
-  if (favicon) favicon.setAttribute('href', '/assets/signature-purple.svg');
+  if (favicon) favicon.setAttribute('href', '/favicon.svg?v=triangle-v2');
 }
 
 applyTheme(savedTheme || (systemPrefersDark.matches ? 'dark' : 'light'));

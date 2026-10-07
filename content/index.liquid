@@ -50,8 +50,7 @@ layout: main
     {%- assign post_count = 0 -%}
     {%- for post in recent_posts -%}
       {%- if post.data.layout == 'blog' and post_count < 3 -%}
-        <a class='note-card' href='{{ post.url }}'
-          ><span class='section-label'>{{ post.data.tags | first | default: 'Journal' }}</span>
+        <a class='note-card' href='{{ post.url }}'>
           <h3>{{ post.data.title }}</h3>
           <span>Read blog →</span></a
         >

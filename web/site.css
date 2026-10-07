@@ -6,8 +6,10 @@
   --milk: #ffffff;
   --blue: #4268df;
   --accent-foreground: #f7f8fa;
+  --card-ink: #13151a;
   --blue-pale: #dce5ff;
-  --green: #e1f0a8;
+  --note-card-secondary: #dce5ff;
+  --green: #daeb94;
   --line: #cdd2dc;
   --rule: rgba(66, 104, 223, 0.07);
   --paper-fleck: rgba(19, 21, 26, 0.04);
@@ -20,10 +22,11 @@
     --ink: #f2f4f8;
     --paper: #11141b;
     --milk: #1a1f2a;
-    --blue: #6382ff;
-    --accent-foreground: #13151a;
-    --blue-pale: #263860;
-    --green: #e1f0a8;
+    --blue: #4268df;
+    --accent-foreground: #f7f8fa;
+    --blue-pale: #afb9d1;
+    --note-card-secondary: #cbd8f7;
+    --green: #daeb94;
     --line: #475064;
     --rule: rgba(99, 130, 255, 0.08);
     --paper-fleck: rgba(242, 244, 248, 0.04);
@@ -37,7 +40,8 @@ html.light {
   --blue: #4268df;
   --accent-foreground: #f7f8fa;
   --blue-pale: #dce5ff;
-  --green: #e1f0a8;
+  --note-card-secondary: #dce5ff;
+  --green: #daeb94;
   --line: #cdd2dc;
   --rule: rgba(66, 104, 223, 0.07);
   --paper-fleck: rgba(19, 21, 26, 0.04);
@@ -47,10 +51,11 @@ html.dark {
   --ink: #f2f4f8;
   --paper: #11141b;
   --milk: #1a1f2a;
-  --blue: #6382ff;
-  --accent-foreground: #13151a;
-  --blue-pale: #263860;
-  --green: #e1f0a8;
+  --blue: #4268df;
+  --accent-foreground: #f7f8fa;
+  --blue-pale: #afb9d1;
+  --note-card-secondary: #cbd8f7;
+  --green: #daeb94;
   --line: #475064;
   --rule: rgba(99, 130, 255, 0.08);
   --paper-fleck: rgba(242, 244, 248, 0.04);
@@ -285,9 +290,6 @@ html.dark .theme-icon__moon {
     sans-serif;
   letter-spacing: -0.09em;
 }
-.hero h1 span {
-  color: #f7f8fa;
-}
 .hero-intro {
   max-width: 500px;
   margin: 0;
@@ -384,22 +386,32 @@ html.dark .theme-icon__moon {
 .note-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--milk);
 }
 .note-card {
   min-height: 245px;
   padding: 1.4rem;
+  border: 0.5px solid var(--line);
+  background: var(--milk);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none;
 }
+.note-card:nth-child(1) {
+  order: 1;
+  border-radius: 10px 0 0 10px;
+}
 .note-card:nth-child(2) {
-  background: var(--blue-pale);
+  order: 2;
+  background: var(--note-card-secondary);
+  color: var(--card-ink);
+}
+.note-card:nth-child(2):hover {
+  color: var(--blue);
 }
 .note-card:nth-child(3) {
+  order: 3;
+  border-radius: 0 10px 10px 0;
   background: var(--green);
 }
 .note-card h3 {
@@ -418,6 +430,7 @@ html.dark .theme-icon__moon {
 .social-grid a {
   min-width: 0;
   padding: 0.75rem 0.85rem;
+  border: 0.5px solid var(--line);
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -542,11 +555,15 @@ html.dark .theme-icon__moon {
   text-decoration: none;
   text-transform: uppercase;
 }
-.blog-filter:hover,
+.blog-filter:hover:not(.is-active) {
+  border-color: var(--line);
+  background: var(--green);
+  color: var(--blue);
+}
 .blog-filter.is-active {
   border-color: var(--blue);
-  background: var(--blue);
-  color: var(--accent-foreground);
+  background: var(--green);
+  color: var(--blue);
 }
 .post-tags {
   margin-bottom: 0.7rem;
@@ -682,7 +699,7 @@ html.dark .theme-icon__moon {
   padding: 0.28rem 0.4rem;
   border-radius: 999px;
   background: var(--blue-pale);
-  color: var(--ink);
+  color: var(--card-ink);
   font:
     500 0.66rem/1 'DM Mono',
     monospace;
@@ -840,16 +857,12 @@ html.dark .theme-icon__moon {
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
   font:
     0.72rem 'DM Mono',
     monospace;
   text-transform: uppercase;
-}
-.footer-signature {
-  width: 3rem;
-  height: auto;
 }
 .page,
 .hero,
@@ -983,7 +996,7 @@ html.dark .note-card:nth-child(3):hover {
   }
   .site-footer {
     padding: 1.25rem 1rem;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .coffee-grid {
     grid-template-columns: 1fr;
