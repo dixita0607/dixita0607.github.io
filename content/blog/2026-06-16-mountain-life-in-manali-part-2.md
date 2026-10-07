@@ -9,7 +9,7 @@ keywords:
   - travel
   - manali
   - nomad
-author: "contact@dixita.dev (Dixita Ganatra)"
+author: 'contact@dixita.dev (Dixita Ganatra)'
 ---
 
 This blog is the second part of the Manali series. You can read [Part 1](/blog/2026-06-16-mountain-life-in-manali-part-1) here. This one is more like a list of things that I did and places I visited.

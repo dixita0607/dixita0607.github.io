@@ -1,15 +1,11 @@
 # Dixita Ganatra
 
-My personal website built with [Jaspr](https://jaspr.site)
+My personal website, built with [Eleventy](https://www.11ty.dev/).
 
 ## Run locally
 
-Run it using `jaspr serve` command after activating `jaspr_cli` and installing dependencies with `dart pub get`.
-
-The development server will be available on `http://localhost:8080`.
+Install dependencies with `npm ci`, then run `npm start`.
 
 ## Build locally
 
-Build your project using `jaspr build`.
-
-The output will be located inside the `build/jaspr/` directory.
+Run `npm run build`. The deployable site is written to `dist/`.
