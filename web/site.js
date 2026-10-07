@@ -63,7 +63,11 @@ function selectBlogFilter(selectedTag) {
 
 blogFilters.forEach((filter) => {
   filter.addEventListener('click', () => {
-    selectBlogFilter(filter.dataset.filter);
+    const selectedTag = filter.dataset.filter;
+    selectBlogFilter(selectedTag);
+    const url = new URL(window.location.href);
+    url.hash = selectedTag === 'all' ? '' : selectedTag;
+    window.history.replaceState(null, '', url);
   });
 });
 
