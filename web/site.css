@@ -234,7 +234,7 @@ html.dark .theme-icon__moon {
   min-height: 520px;
   padding: 2rem;
   background: var(--blue);
-  color: #f7f8fa;
+  color: var(--accent-foreground);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -279,7 +279,7 @@ html.dark .theme-icon__moon {
 .hero h1 {
   max-width: 760px;
   margin: 1.6rem 0;
-  color: #f7f8fa;
+  color: var(--accent-foreground);
   font:
     700 clamp(2.8rem, 5.4vw, 5rem)/0.91 'Space Grotesk',
     sans-serif;
