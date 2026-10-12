@@ -6,6 +6,9 @@ reading:
     author: 'Frank Herbert'
     started: '2025-11'
 read:
+  2026:
+    - title: 'How Lucky am I'
+      author: 'Christian Watson'
   2025:
     - title: 'Sketch like an architect - Book 1'
       author: 'David Drazil'
