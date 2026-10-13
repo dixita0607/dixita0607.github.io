@@ -78,3 +78,60 @@ if (
 ) {
   selectBlogFilter(initialBlogFilter);
 }
+
+const animeFilters = document.querySelector('.anime-filters');
+const animeEntries = [...document.querySelectorAll('.anime-entry')];
+const animeEmpty = document.querySelector('#anime-filter-empty');
+const animeSections = document.querySelector('.anime-sections');
+
+if (animeFilters) {
+  animeFilters.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.animeFilter;
+      animeFilters.querySelectorAll('button').forEach((filter) => {
+        const active = filter === button;
+        filter.classList.toggle('is-active', active);
+        filter.setAttribute('aria-pressed', String(active));
+      });
+      animeEntries.forEach((entry) => {
+        const matches =
+          selected === 'all' ||
+          (selected === 'favorites'
+            ? entry.dataset.favorite === 'true'
+            : entry.dataset.type === selected);
+        entry.hidden = !matches;
+      });
+      document.querySelectorAll('.anime-year').forEach((year) => {
+        year.hidden = !year.querySelector('.anime-entry:not([hidden])');
+      });
+      document.querySelectorAll('.anime-watching, .anime-archive').forEach((section) => {
+        const hasEntries = section.querySelector('.anime-entry');
+        const hasVisibleEntries = section.querySelector('.anime-entry:not([hidden])');
+        section.hidden = Boolean(hasEntries) && !hasVisibleEntries;
+      });
+      animeSections.hidden = !animeSections.querySelector(':scope > section:not([hidden])');
+      animeEmpty.hidden = animeEntries.some((entry) => !entry.hidden);
+    });
+  });
+}
+
+const coffeeFilters = document.querySelector('.coffee-filters');
+const coffeeCards = [...document.querySelectorAll('.coffee-card')];
+const coffeeEmpty = document.querySelector('.coffee-empty');
+
+if (coffeeFilters) {
+  coffeeFilters.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.coffeeFilter;
+      coffeeFilters.querySelectorAll('button').forEach((filter) => {
+        const active = filter === button;
+        filter.classList.toggle('is-active', active);
+        filter.setAttribute('aria-pressed', String(active));
+      });
+      coffeeCards.forEach((card) => {
+        card.hidden = selected === 'favorites' && card.dataset.favorite !== 'true';
+      });
+      coffeeEmpty.hidden = coffeeCards.some((card) => !card.hidden);
+    });
+  });
+}

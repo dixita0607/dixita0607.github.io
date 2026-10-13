@@ -1,0 +1,107 @@
+# Add entries using these fields:
+# - title: 'Title'
+#   type: series # series, film, or ova
+#   favorite: false
+#   status: '' # Optional context such as waiting for a new season; not displayed.
+#   notes: '' # Personal notes; not displayed on the page.
+#   rewatched: false # Stored only; not displayed on the page.
+watching:
+  - title: The Apothecary Diaries
+    type: series
+    favorite: true
+watched:
+  2026:
+    - title: 'Frieren: Beyond Journey’s End'
+      type: series
+      favorite: true
+      status: Waiting for the next season
+      notes: >-
+        It’s calming. It reminds me to cherish even the smallest memories and to be
+        present, even when some moments pass unnoticed. My favorite scene is Frieren
+        giving Fern the butterfly hair clip and the small exchange of dialogue that follows.
+      rewatched: false
+    - title: Suzume
+      type: film
+      favorite: false
+      rewatched: false
+    - title: Laid-Back Camp (Yuru Camp)
+      type: series
+      favorite: true
+      status: Finished
+      notes: >-
+        It’s so calming. Even though the show can feel repetitive, I loved the episodes,
+        the scenes, and all the emotions they brought out. It felt freeing and, as a girl,
+        empowering in a way that’s hard to explain. It’s an all-time favorite.
+      rewatched: false
+    - title: 'Doraemon the Movie: New Nobita and the Castle of the Undersea Devil'
+      type: film
+      favorite: false
+      rewatched: false
+  2025:
+    - title: Chainsaw Man
+      type: series
+      favorite: false
+      status: Waiting for the next season
+      notes: >-
+        It has a fresh, quirky concept, and the artwork and cinematography are top-notch.
+        I recommend it!
+      rewatched: false
+  2018:
+    - title: Death Note
+      type: series
+      favorite: false
+      rewatched: false
+    - title: Your Name
+      type: film
+      favorite: true
+      rewatched: false
+  Undated:
+    - title: 'Demon Slayer: Kimetsu no Yaiba'
+      type: series
+      favorite: false
+      status: Waiting for the next movie
+      notes: >-
+        I love it for the artwork. It can feel slow, but it’s still a great watch for the
+        visuals.
+      rewatched: false
+    - title: My Neighbor Totoro
+      type: film
+      favorite: false
+      rewatched: true
+    - title: When Marnie Was There
+      type: film
+      favorite: true
+      notes: >-
+        I fell in love with how effortless this movie feels. Its scenes are simple yet
+        beautiful, and the story is niche but still relatable.
+      rewatched: false
+    - title: Princess Mononoke
+      type: film
+      favorite: false
+      rewatched: false
+    - title: Ponyo
+      type: film
+      favorite: false
+      rewatched: false
+    - title: Howl’s Moving Castle
+      type: film
+      favorite: true
+      notes: >-
+        The visuals and scenes are so intricate that I want to keep watching for the
+        tiniest details. Magical is the word that comes to mind whenever I think of this
+        movie.
+      rewatched: false
+    - title: Porco Rosso
+      type: film
+      favorite: false
+      rewatched: false
+    - title: Spirited Away
+      type: film
+      favorite: false
+      rewatched: false
+    - title: Grave of the Fireflies
+      type: film
+      favorite: false
+      notes: >-
+        It’s very emotional, so I wouldn’t recommend it to anyone with a soft heart.
+      rewatched: false
