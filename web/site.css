@@ -537,7 +537,7 @@ html.dark .theme-icon__moon {
 .not-much-header + .abc-section {
   padding-top: 0;
 }
-.content-list .abc-letter {
+.content-list .content-section-heading {
   margin: 0 0 var(--section-content-gap);
   font:
     700 2rem/1 'Space Grotesk',
@@ -690,7 +690,7 @@ html.dark .theme-icon__moon {
   row-gap: 3rem;
   margin-top: 3rem;
 }
-.content-list h2.abc-letter {
+.content-list h2.content-section-heading {
   margin: 0 0 var(--section-content-gap);
   color: var(--blue);
   font:
@@ -699,14 +699,14 @@ html.dark .theme-icon__moon {
   letter-spacing: normal;
   text-transform: none;
 }
-.book-page > h2.abc-letter {
+.book-page > h2.content-section-heading {
   margin-top: 4rem;
 }
-.book-page > h2.abc-letter + section.book-year h3,
+.book-page > h2.content-section-heading + section.book-year h3,
 .anime-archive__heading + .anime-year h3 {
   margin-top: var(--section-content-gap);
 }
-.anime-page h2.abc-letter {
+.anime-page h2.content-section-heading {
   color: var(--blue);
 }
 .anime-page .anime-entry {

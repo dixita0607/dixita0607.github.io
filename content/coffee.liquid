@@ -39,11 +39,8 @@ layout: main
       <div class='coffee-card' data-favorite='{{ coffee.favorite }}'>
         <div class='coffee-card__visual'>
           {% if coffee.image %}
-            {% assign thumbnail = coffee.image
-              | replace: '/assets/coffee/', '/assets/coffee/thumbnails/'
-            %}
             <img
-              src='{{ thumbnail }}'
+              src='{{ coffee.image }}'
               alt='Coffee packet for {{ coffee.name | escape }}'
               loading='lazy'
             >

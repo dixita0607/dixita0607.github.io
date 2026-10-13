@@ -38,7 +38,7 @@ layout: main
 
   <div class='anime-sections'>
     <section class='anime-watching' aria-labelledby='watching-heading'>
-      <h2 class='abc-letter' id='watching-heading'>Watching now</h2>
+      <h2 class='content-section-heading' id='watching-heading'>Watching now</h2>
       {% if anime.watching.size > 0 %}
         <ul class='anime-list'>
           {% for entry in anime.watching %}
@@ -52,7 +52,7 @@ layout: main
 
     <section class='anime-archive' aria-labelledby='watched-heading'>
       <div class='anime-archive__heading'>
-        <h2 class='abc-letter' id='watched-heading'>Watched</h2>
+        <h2 class='content-section-heading' id='watched-heading'>Watched</h2>
       </div>
       {% if anime.watched.size > 0 %}
         {% assign watched_years = anime.watched | entriesByNewestYear %}

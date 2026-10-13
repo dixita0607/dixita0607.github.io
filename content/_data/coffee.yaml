@@ -1,7 +1,7 @@
 coffees:
   - date: '2026-09-30'
     name: 'Elkhill Estates'
-    image: '/assets/coffee/elkhill-estates.jpeg'
+    image: '/assets/coffee/thumbnails/elkhill-estates.jpeg'
     origin: 'Kodagu, Karnataka'
     roasters: 'Blue Tokai Coffee Roasters'
     url: 'https://bluetokaicoffee.com/products/elkhill-estate'
@@ -27,7 +27,7 @@ coffees:
 
   - date: '2026-04-13'
     name: "Dylan's Toasted & Roasted"
-    image: '/assets/coffee/dylans-toasted-roasted.jpeg'
+    image: '/assets/coffee/thumbnails/dylans-toasted-roasted.jpeg'
     origin: ''
     roasters: "Dylan's Coffee House, Manali"
     url: ''
@@ -51,7 +51,7 @@ coffees:
 
   - date: '2026-03-17'
     name: 'Banana Kents'
-    image: '/assets/coffee/banana-kents.jpeg'
+    image: '/assets/coffee/thumbnails/banana-kents.jpeg'
     origin: 'Balanoor Plantation, Chikmagalur'
     roasters: 'Half Light Coffee Roasters - Jaipur'
     url: ''
@@ -78,7 +78,7 @@ coffees:
 
   - date: '2026-02-15'
     name: 'Parama - Luxury blend'
-    image: '/assets/coffee/parama-luxury-blend.jpeg'
+    image: '/assets/coffee/thumbnails/parama-luxury-blend.jpeg'
     origin: 'Coorg'
     roasters: 'Mavrick & Farmer Coffee'
     url: 'https://www.maverickandfarmer.com/products/parama'
@@ -105,7 +105,7 @@ coffees:
 
   - date: '2026-01-23'
     name: "Rohan Bopanna's Masterblend - 90% wet processed, 10% dry processed"
-    image: '/assets/coffee/rohan-bopanna-masterblend.jpeg'
+    image: '/assets/coffee/thumbnails/rohan-bopanna-masterblend.jpeg'
     origin: 'Coorg'
     roasters: 'Mavrick & Farmer Coffee'
     url: 'https://www.maverickandfarmer.com/products/rohan-bopannas-masterblend-1'
@@ -132,7 +132,7 @@ coffees:
 
   - date: '2025-10-24'
     name: 'Kilpauk Standard'
-    image: '/assets/coffee/kilpauk-standard.jpeg'
+    image: '/assets/coffee/thumbnails/kilpauk-standard.jpeg'
     origin: 'Yercaud and Coorg'
     roasters: 'Kāpi Kotai'
     url: 'https://kapikottai.coffee/products/kilpauk-standard'
@@ -160,7 +160,7 @@ coffees:
 
   - date: '2025-10-06'
     name: 'Bahār'
-    image: '/assets/coffee/bahar.jpeg'
+    image: '/assets/coffee/thumbnails/bahar.jpeg'
     origin: 'Unakki estate, Chikmagalur'
     roasters: 'Kāpi Kotai'
     url: 'https://kapikottai.coffee'
@@ -189,7 +189,7 @@ coffees:
 
   - date: '2025-09-09'
     name: 'Swell Blend'
-    image: '/assets/coffee/swell-blend.jpeg'
+    image: '/assets/coffee/thumbnails/swell-blend.jpeg'
     origin: 'Chikmangalur'
     roasters: 'Tulum Coffee (Mumbai)'
     url: 'https://www.tulum.coffee/products/the-swell-blend-specialty-blend'
@@ -217,7 +217,7 @@ coffees:
 
   - date: '2025-08-10'
     name: 'Naturals'
-    image: '/assets/coffee/naturals.jpeg'
+    image: '/assets/coffee/thumbnails/naturals.jpeg'
     origin: 'Nagaland'
     roasters: 'Brewed Awakening'
     price: 650
@@ -244,7 +244,7 @@ coffees:
 
   - date: '2025-07-12'
     name: 'M.S. Estate'
-    image: '/assets/coffee/ms-estate.jpeg'
+    image: '/assets/coffee/thumbnails/ms-estate.jpeg'
     origin: 'Chikmangalur'
     roasters: 'Blue Tokai'
     url: 'https://bluetokaicoffee.com/collections/roasted-and-ground-coffee-beans/products'
@@ -271,7 +271,7 @@ coffees:
 
   - date: '2026-07-12'
     name: 'Attikan Estate'
-    image: '/assets/coffee/attikan-estate.jpeg'
+    image: '/assets/coffee/thumbnails/attikan-estate.jpeg'
     origin: 'Biligiriranga Hills, Karnataka'
     roasters: 'Blue Tokai'
     url: 'https://bluetokaicoffee.com/products/attikan-estate'
@@ -300,7 +300,7 @@ coffees:
 
   - date: '2026-08-31'
     name: 'Silver Oak Cafe Blend'
-    image: '/assets/coffee/silver-oak-cafe-blend.jpeg'
+    image: '/assets/coffee/thumbnails/silver-oak-cafe-blend.jpeg'
     origin: 'Southern Indian coffee plantations'
     roasters: 'Blue Tokai'
     url: 'https://bluetokaicoffee.com/products/silver-oak-cafe-blend'
@@ -325,7 +325,7 @@ coffees:
 
   - date: '2025-06-15'
     name: 'Halli Berri'
-    image: '/assets/coffee/halli-berri.jpeg'
+    image: '/assets/coffee/thumbnails/halli-berri.jpeg'
     origin: 'Kambihalli Estate, Baba Budangiri, Chikmagalur'
     roasters: 'Half Light'
     url: 'https://halflightcoffee.com/'
@@ -354,7 +354,7 @@ coffees:
 
   - date: '2025-05-25'
     name: 'Araku - Selection'
-    image: '/assets/coffee/araku-selection.jpeg'
+    image: '/assets/coffee/thumbnails/araku-selection.jpeg'
     origin: 'Araku'
     roasters: 'Araku'
     url: 'https://www.arakucoffee.in/products/selection'
@@ -384,7 +384,7 @@ coffees:
 
   - date: '2025-04-26'
     name: 'Araku - Signature'
-    image: '/assets/coffee/araku-signature.jpeg'
+    image: '/assets/coffee/thumbnails/araku-signature.jpeg'
     origin: 'Araku'
     roasters: 'Araku'
     url: 'https://www.arakucoffee.in/products/signature'
@@ -413,7 +413,7 @@ coffees:
 
   - date: '2025-04-02'
     name: 'Araku - Micro Climate'
-    image: '/assets/coffee/araku-micro-climate.jpeg'
+    image: '/assets/coffee/thumbnails/araku-micro-climate.jpeg'
     origin: 'Araku'
     roasters: 'Araku'
     url: 'https://www.arakucoffee.in/products/micro-climate'
