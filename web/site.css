@@ -552,7 +552,7 @@ html.dark .theme-icon__moon {
 }
 .abc-section h3 {
   margin: var(--section-content-gap) 0 var(--section-content-gap);
-  color: var(--blue-text);
+  color: var(--blue);
   font:
     500 0.72rem/1 'DM Mono',
     monospace;
