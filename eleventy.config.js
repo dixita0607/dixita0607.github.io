@@ -18,9 +18,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownLibrary);
   eleventyConfig.addDataExtension('yaml', (contents) => YAML.parse(contents));
   eleventyConfig.addFilter('entriesByNewestYear', (entries) =>
-    Object.entries(entries).sort(
-      ([firstYear], [secondYear]) => Number(secondYear) - Number(firstYear),
-    ),
+    Object.entries(entries).sort(([firstYear], [secondYear]) => {
+      const firstNumber = Number(firstYear);
+      const secondNumber = Number(secondYear);
+      if (Number.isNaN(firstNumber)) return Number.isNaN(secondNumber) ? 0 : 1;
+      if (Number.isNaN(secondNumber)) return -1;
+      return secondNumber - firstNumber;
+    }),
   );
   eleventyConfig.addPassthroughCopy({ 'web/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'web/site.css': 'site.css' });

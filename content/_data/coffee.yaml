@@ -1,4 +1,30 @@
 coffees:
+  - date: '2026-09-30'
+    name: 'Elkhill Estates'
+    image: '/assets/coffee/elkhill-estates.jpeg'
+    origin: 'Kodagu, Karnataka'
+    roasters: 'Blue Tokai Coffee Roasters'
+    url: 'https://bluetokaicoffee.com/products/elkhill-estate'
+    price: 800
+    beans:
+      - Arabica: 'SLN9, Chandragiri'
+    roast_level: 'Medium'
+    processing: 'Anaerobic Fermented Washed'
+    altitude: '1,660 m'
+    aroma: 'Brown sugar and roasted almonds'
+    acidity: 'Medium'
+    body: '-'
+    notes:
+      - 'Orange'
+      - 'Brown spice'
+      - 'Roasted hazelnut'
+    aftertaste:
+      - 'Slightly tangy and sweet'
+      - 'Not too coffee-like'
+    rating: 4.5
+    favorite: true
+    note: 'Definitely recommend. Neutral to acidic, becoming slightly bittersweet when brewed longer. I usually buy ground coffee because I do not own a grinder, but this one preserves its original flavour for more than a few days—something new compared with the other coffees I have tried.'
+
   - date: '2026-04-13'
     name: "Dylan's Toasted & Roasted"
     image: '/assets/coffee/dylans-toasted-roasted.jpeg'
@@ -20,6 +46,7 @@ coffees:
     aftertaste:
       - 'Neutral like simple dark roast coffee. Neighter too bitter nor too acidic.'
     rating: 3.5
+    favorite: false
     note: "This is the first locally roasted coffee that I tired. They only had medium to dark roast option. Usually I don't enjoy dark roasts but this one was a bit mild in terms of bitterness. Not recommended for people who need acidity in the flavor of coffee."
 
   - date: '2026-03-17'
@@ -46,6 +73,7 @@ coffees:
     aftertaste:
       - 'While drinking, it tastes a bit acidic but then the after taste is a bit bitter (astringent but in a good way).'
     rating: 4
+    favorite: false
     note: "I think these were one of their last batches. It's a good coffee not too unique to miss out on anything."
 
   - date: '2026-02-15'
@@ -72,6 +100,7 @@ coffees:
     aftertaste:
       - "A bit fruity when it's closer to room temperature but still has that roast-like taste."
     rating: 5
+    favorite: true
     note: "This has Robusta beans. I was looking for a mix of beans in India for a very long time. The website says it tastes good with milk. I haven't tried that yet. But I think it will be a good choice to make cà phê việt nam due to its Robusta beans."
 
   - date: '2026-01-23'
@@ -98,6 +127,7 @@ coffees:
       - 'Bitter sweet'
       - 'Closer to a light roast if the coffee temperature comes down a little bit.'
     rating: 5
+    favorite: true
     note: "The coffee's taste is unique as the packet says 10% of it is dry processed. This is my new favorite and I recommend it for a morning coffee treat ;)"
 
   - date: '2025-10-24'
@@ -125,6 +155,7 @@ coffees:
       - 'Fruity-tangy but not too much'
       - 'A little bitter, in a good way'
     rating: 4.5
+    favorite: false
     note: 'Subscribed to 3 coffees on their site and got a discount. Enjoying it as my daily morning brew. Definitely recommend.'
 
   - date: '2025-10-06'
@@ -153,6 +184,7 @@ coffees:
       - 'A bit sweet'
       - 'Fresh coffee'
     rating: 5
+    favorite: false
     note: 'First time trying medium-light roast. I love this coffee—great daily cup, except when I want a darker roast. Second brew lost most of its flavor.'
 
   - date: '2025-09-09'
@@ -180,6 +212,7 @@ coffees:
       - 'Tea like bit bitter'
       - 'Slightly tangy sweet'
     rating: 3.5
+    favorite: false
     note: "It's an okay coffee. I can manage it when fewer options are available."
 
   - date: '2025-08-10'
@@ -206,6 +239,7 @@ coffees:
       - 'A bit tangy like wine'
       - 'Slightly bitter, like a floral tea'
     rating: 5
+    favorite: false
     note: "Liked the roast. Great when I don't want a very acidic coffee. Definitely a repurchase! Bought at Nerlu Cafe, Indiranagar. Couldn't find a link online."
 
   - date: '2025-07-12'
@@ -232,6 +266,7 @@ coffees:
     aftertaste:
       - 'Sweet-bitter'
     rating: 4
+    favorite: false
     note: 'Good strong coffee. Not a big fan.'
 
   - date: '2026-07-12'
@@ -260,6 +295,7 @@ coffees:
       - 'Slightly tangy'
       - 'Mostly sweet'
     rating: 4.5
+    favorite: true
     note: 'This coffee has a great composition for a slightly darker roast. The cup feels refreshing, and it is one of my favorites in the medium-dark category.'
 
   - date: '2026-08-31'
@@ -284,6 +320,7 @@ coffees:
       - 'Tangy'
       - 'Slightly sweet'
     rating: 4.5
+    favorite: false
     note: 'The bitterness is barely there, while the acidity is clearly noticeable without ever becoming too sour or citrus-fruit-like. It feels balanced and is a great fit for a daily morning coffee.'
 
   - date: '2025-06-15'
@@ -312,6 +349,7 @@ coffees:
       - 'Sweet'
       - 'Slightly bitter but good one'
     rating: 4
+    favorite: false
     note: "Recommend. First coffee that felt fresh and acidic, which I liked a lot—it nudged me toward lighter roasts. Can't find its picture or a link online."
 
   - date: '2025-05-25'
@@ -341,6 +379,7 @@ coffees:
       - 'Bitter'
       - 'Sweet'
     rating: 4
+    favorite: false
     note: 'Recommend. French press: 4:00 in water, stir, then 4:00 more minutes. Aeropress: 2:00 in water, stir, keep for 30 seconds, press.'
 
   - date: '2025-04-26'
@@ -369,6 +408,7 @@ coffees:
       - 'Chocolate like'
       - 'Good bitter'
     rating: 5
+    favorite: false
     note: 'Recommend for daily coffee. French press: 4:00 in water, stir, then 4:00 more minutes.'
 
   - date: '2025-04-02'
@@ -397,4 +437,5 @@ coffees:
       - 'Citrus'
       - 'Coffee like a little bit'
     rating: 3.5
+    favorite: false
     note: 'Recommend'

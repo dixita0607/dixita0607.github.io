@@ -16,6 +16,7 @@
   --paper-texture: none;
   --content-hr: var(--line);
   --muted: #6e6a63;
+  --section-content-gap: 0.5rem;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -354,7 +355,7 @@ html.dark .theme-icon__moon {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: var(--section-content-gap);
 }
 .section-heading h2 {
   max-width: 15ch;
@@ -501,20 +502,64 @@ html.dark .theme-icon__moon {
   display: block;
   width: 42%;
   min-width: 4rem;
+  height: 7px;
   margin-top: 0.28rem;
-  border-bottom: 3px solid var(--green);
+  background: var(--green);
+  clip-path: polygon(
+    0 58%,
+    12% 32%,
+    42% 5%,
+    76% 0,
+    91% 24%,
+    100% 50%,
+    91% 42%,
+    76% 19%,
+    42% 36%,
+    12% 70%
+  );
   transform: rotate(-1.2deg);
 }
 .page-header p {
   max-width: none;
+  margin: 0.65rem 0 0;
   overflow-wrap: anywhere;
-  font-size: 1.05rem;
+  color: var(--muted);
+  font:
+    0.84rem/1.5 'Space Grotesk',
+    sans-serif;
+}
+.abc-section {
+  padding-block: 2rem;
+}
+.not-much-header {
+  margin-bottom: 2rem;
+}
+.not-much-header + .abc-section {
+  padding-top: 0;
+}
+.content-list .abc-letter {
+  margin: 0 0 var(--section-content-gap);
+  font:
+    700 2rem/1 'Space Grotesk',
+    sans-serif;
+}
+.abc-section h3 {
+  margin: var(--section-content-gap) 0 var(--section-content-gap);
+  color: var(--blue);
+  font:
+    500 0.72rem/1 'DM Mono',
+    monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.abc-section p {
+  margin: 0;
 }
 .coffee-header {
   margin-bottom: 2rem;
 }
 .content-list h2 {
-  margin: 4rem 0 1rem;
+  margin: 4rem 0 var(--section-content-gap);
   color: var(--blue);
   font:
     500 0.72rem/1 'DM Mono',
@@ -531,6 +576,22 @@ html.dark .theme-icon__moon {
 }
 .content-list li a {
   font-weight: 600;
+}
+.content-list h2 + ul > li:first-child,
+.content-list h3 + ul > li:first-child {
+  padding-top: 0;
+}
+.content-list h2 + p {
+  margin-top: var(--section-content-gap);
+}
+.work-page li p {
+  max-width: 48rem;
+  margin: 0.45rem 0 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  font:
+    0.84rem/1.5 'Space Grotesk',
+    sans-serif;
 }
 .blog-filters,
 .post-tags {
@@ -587,8 +648,9 @@ html.dark .theme-icon__moon {
   padding: 0;
   list-style: none;
 }
-.book-year h3 {
-  margin: 2rem 0 1rem;
+.book-year h3,
+.anime-year h3 {
+  margin: 2rem 0 var(--section-content-gap);
   color: var(--blue);
   font:
     500 0.72rem/1 'DM Mono',
@@ -597,7 +659,7 @@ html.dark .theme-icon__moon {
   text-transform: uppercase;
 }
 .book-list li {
-  padding: 1rem 0;
+  padding: 0.85rem 0;
 }
 .book-list-item {
   display: flex;
@@ -617,10 +679,125 @@ html.dark .theme-icon__moon {
     monospace;
   color: var(--muted);
 }
+.anime-page .anime-list {
+  margin: 0;
+}
+.anime-page .anime-filters {
+  margin-bottom: 0;
+}
+.anime-page .anime-sections {
+  display: grid;
+  row-gap: 3rem;
+  margin-top: 3rem;
+}
+.content-list h2.abc-letter {
+  margin: 0 0 var(--section-content-gap);
+  color: var(--blue);
+  font:
+    700 1.5rem/1 'Space Grotesk',
+    sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.book-page > h2.abc-letter {
+  margin-top: 4rem;
+}
+.book-page > h2.abc-letter + section.book-year h3,
+.anime-archive__heading + .anime-year h3 {
+  margin-top: var(--section-content-gap);
+}
+.anime-page h2.abc-letter {
+  color: var(--blue);
+}
+.anime-page .anime-entry {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.85rem 0;
+}
+.anime-entry__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.8rem;
+  min-width: 0;
+}
+.anime-entry__main {
+  min-width: 0;
+  flex: 1;
+}
+.anime-entry__title strong {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+.favorite-heart {
+  display: inline-grid;
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1;
+  place-items: center;
+  color: var(--blue);
+  flex: none;
+  vertical-align: -0.12em;
+}
+.favorite-heart svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+.anime-note {
+  max-width: 48rem;
+  margin: 0.45rem 0 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  font:
+    0.84rem/1.5 'Space Grotesk',
+    sans-serif;
+}
+.anime-entry__type,
+.anime-order {
+  flex: none;
+  color: var(--muted);
+  font:
+    0.68rem 'DM Mono',
+    monospace;
+}
+.anime-archive__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.anime-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: -2rem 0 2rem;
+}
+.anime-empty {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.anime-page [hidden] {
+  display: none;
+}
 .coffee-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.2rem;
+}
+.coffee-filters {
+  margin-top: 0;
+}
+.coffee-card[hidden] {
+  display: none;
+}
+.coffee-empty {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 .coffee-card {
   display: grid;
@@ -696,10 +873,7 @@ html.dark .theme-icon__moon {
 }
 .coffee-card__rating {
   flex: none;
-  padding: 0.28rem 0.4rem;
-  border-radius: 999px;
-  background: var(--blue-pale);
-  color: var(--card-ink);
+  color: var(--blue);
   font:
     500 0.66rem/1 'DM Mono',
     monospace;
@@ -778,15 +952,19 @@ html.dark .theme-icon__moon {
     sans-serif;
 }
 .prose h2 {
-  margin: 3rem 0 1rem;
+  margin: 3rem 0 var(--section-content-gap);
   font:
     700 2rem/0.95 'Space Grotesk',
     sans-serif;
   letter-spacing: -0.07em;
 }
 .prose h3 {
-  margin-top: 2rem;
+  margin: 2rem 0 var(--section-content-gap);
   font-size: 1rem;
+}
+.prose h2 + p,
+.prose h3 + p {
+  margin-top: var(--section-content-gap);
 }
 .prose img {
   display: block;
@@ -878,12 +1056,12 @@ html.dark .theme-icon__moon {
   border: 1px dashed var(--blue);
   background: var(--milk);
 }
-.coming-soon__label {
+.page-header .coming-soon__label {
   display: inline-block;
   margin: 0 0 1.5rem;
   padding: 0.45rem 0.65rem;
   background: var(--green);
-  color: #13151a;
+  color: var(--blue);
   font:
     500 0.68rem/1 'DM Mono',
     monospace;
@@ -989,6 +1167,15 @@ html.dark .note-card:nth-child(3):hover {
   .social-grid a,
   .social-grid a:nth-child(2n) {
     border: 0;
+  }
+  .note-card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .note-card:nth-child(2) {
+    border-radius: 0;
+  }
+  .note-card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
   }
   .page,
   .note {

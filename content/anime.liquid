@@ -1,0 +1,74 @@
+---
+title: Anime — Dixita Ganatra
+layout: main
+---
+<article class='page content-list anime-page'>
+  <header class='page-header anime-header'>
+    <h1>Anime I’m watching / have watched.</h1>
+    <p>I mostly watch anime in Japanese, but I prefer the English dub when I want something to watch casually while doing something else.</p>
+  </header>
+
+  <div class='anime-filters' role='group' aria-label='Filter anime'>
+    <button
+      class='blog-filter is-active'
+      type='button'
+      data-anime-filter='all'
+      aria-pressed='true'
+    >
+      All
+    </button>
+    <button
+      class='blog-filter'
+      type='button'
+      data-anime-filter='favorites'
+      aria-pressed='false'
+    >
+      Favorites
+    </button>
+    <button class='blog-filter' type='button' data-anime-filter='series' aria-pressed='false'>
+      Seasons
+    </button>
+    <button class='blog-filter' type='button' data-anime-filter='film' aria-pressed='false'>
+      Movies
+    </button>
+  </div>
+  <p class='anime-empty' id='anime-filter-empty' role='status' hidden>
+    No titles in this view yet.
+  </p>
+
+  <div class='anime-sections'>
+    <section class='anime-watching' aria-labelledby='watching-heading'>
+      <h2 class='abc-letter' id='watching-heading'>Watching now</h2>
+      {% if anime.watching.size > 0 %}
+        <ul class='anime-list'>
+          {% for entry in anime.watching %}
+            {% include 'anime-entry' %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class='anime-empty'>Nothing here just yet.</p>
+      {% endif %}
+    </section>
+
+    <section class='anime-archive' aria-labelledby='watched-heading'>
+      <div class='anime-archive__heading'>
+        <h2 class='abc-letter' id='watched-heading'>Watched</h2>
+      </div>
+      {% if anime.watched.size > 0 %}
+        {% assign watched_years = anime.watched | entriesByNewestYear %}
+        {% for year_titles in watched_years %}
+          <section class='anime-year' aria-labelledby='anime-year-{{ year_titles[0] }}'>
+            <h3 id='anime-year-{{ year_titles[0] }}'>{{ year_titles[0] }}</h3>
+            <ul class='anime-list watched-anime'>
+              {% for entry in year_titles[1] %}
+                {% include 'anime-entry' %}
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      {% else %}
+        <p class='anime-empty'>The collection is on its way.</p>
+      {% endif %}
+    </section>
+  </div>
+</article>
