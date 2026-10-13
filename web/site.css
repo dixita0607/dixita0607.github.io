@@ -17,7 +17,7 @@
   --paper-texture: none;
   --content-hr: var(--line);
   --muted: #6e6a63;
-  --section-content-gap: 0.5rem;
+  --section-content-gap: 0.75rem;
 }
 @media (prefers-color-scheme: dark) {
   :root {
