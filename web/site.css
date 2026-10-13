@@ -552,6 +552,14 @@ html.dark .theme-icon__moon {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) .abc-section h3 {
+    color: var(--blue-pale);
+  }
+}
+html.dark .abc-section h3 {
+  color: var(--blue-pale);
+}
 .abc-section p {
   margin: 0;
 }
@@ -594,6 +602,7 @@ html.dark .theme-icon__moon {
     sans-serif;
 }
 .blog-filters,
+.coffee-filters,
 .post-tags {
   display: flex;
   flex-wrap: wrap;
@@ -746,15 +755,6 @@ html.dark .theme-icon__moon {
   width: 100%;
   height: 100%;
   fill: currentColor;
-}
-.anime-note {
-  max-width: 48rem;
-  margin: 0.45rem 0 0;
-  padding-left: 1rem;
-  color: var(--muted);
-  font:
-    0.84rem/1.5 'Space Grotesk',
-    sans-serif;
 }
 .anime-entry__type,
 .anime-order {

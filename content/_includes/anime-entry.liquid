@@ -10,9 +10,6 @@
         </span>
       {% endif %}
     </div>
-    {% if entry.notes != blank %}
-      <p class='anime-note'>{{ entry.notes | escape }}</p>
-    {% endif %}
   </div>
   <span class='anime-entry__type'>
     {% if entry.type == 'series' %}
