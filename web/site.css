@@ -564,6 +564,9 @@ html.dark .theme-icon__moon {
   padding-left: 1rem;
   color: var(--muted);
 }
+.abc-section a {
+  color: var(--blue-text);
+}
 .coffee-header {
   margin-bottom: 2rem;
 }
