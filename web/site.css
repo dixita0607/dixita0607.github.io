@@ -653,7 +653,8 @@ html.dark .theme-icon__moon {
   border: 0;
 }
 .sketch-grid {
-  position: relative;
+  columns: 240px;
+  column-gap: 16px;
   width: 100%;
   overflow-anchor: none;
 }
@@ -661,16 +662,14 @@ html.dark .theme-icon__moon {
   display: none;
 }
 .sketch-tile {
-  position: absolute;
-  top: 0;
-  left: 0;
+  break-inside: avoid;
+  margin-bottom: 16px;
   background: var(--milk);
   border-radius: 6px;
 }
 .sketch-tile button {
   display: block;
   width: 100%;
-  height: 100%;
   padding: 0;
   border: 1px solid var(--line);
   border-radius: inherit;
@@ -681,7 +680,7 @@ html.dark .theme-icon__moon {
 .sketch-tile img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
 }
 .sketch-tile button:focus-visible,

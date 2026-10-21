@@ -3,7 +3,6 @@
   if (!page) return;
 
   const artworks = JSON.parse(document.querySelector('#sketchbook-artworks').textContent);
-  const geometry = JSON.parse(document.querySelector('#sketchbook-geometry').textContent);
   const grid = page.querySelector('.sketch-grid');
   const filters = [...page.querySelectorAll('[data-sketch-filter]')];
   const status = page.querySelector('.sketch-status');
@@ -17,37 +16,15 @@
   const closeButton = dialog.querySelector('.sketch-lightbox__close');
   const previousButton = dialog.querySelector('.sketch-lightbox__previous');
   const nextButton = dialog.querySelector('.sketch-lightbox__next');
-  const mounted = new Map();
-  const gap = 16;
   const imageBase = page.dataset.imageBase.replace(/\/$/, '');
   let filtered = [];
-  let positions = [];
-  let columnWidth = 0;
   let previewIndex = 0;
   let openerIndex = 0;
-  let scheduled = false;
 
   const imageUrl = (artwork) =>
     `${imageBase}/${artwork.image_key.split('/').map(encodeURIComponent).join('/')}`;
   const thumbnailUrl = (artwork) =>
     `${imageBase}/cdn-cgi/image/width=320,format=auto/${artwork.image_key.split('/').map(encodeURIComponent).join('/')}`;
-
-  function layout() {
-    const width = grid.clientWidth;
-    if (width <= 0) return;
-    const columns = Math.max(1, Math.floor((width + gap) / (240 + gap)));
-    columnWidth = (width - gap * (columns - 1)) / columns;
-    const heights = Array(columns).fill(0);
-    positions = filtered.map((artwork) => {
-      const column = heights.indexOf(Math.min(...heights));
-      const height = columnWidth / (geometry[artwork.image_key] || 1);
-      const position = { x: column * (columnWidth + gap), y: heights[column], height };
-      heights[column] += height + gap;
-      return position;
-    });
-    grid.style.height = `${Math.max(0, ...heights) - (filtered.length ? gap : 0)}px`;
-    render();
-  }
 
   function createTile(index) {
     const artwork = filtered[index];
@@ -68,11 +45,6 @@
     let usingOriginal = false;
     image.addEventListener('load', () => {
       tile.classList.remove('is-loading');
-      // New additions can acquire their geometry when first viewed, without YAML fields.
-      if (!geometry[artwork.image_key] && image.naturalWidth && image.naturalHeight) {
-        geometry[artwork.image_key] = image.naturalWidth / image.naturalHeight;
-        layout();
-      }
     });
     image.addEventListener('error', () => {
       if (!usingOriginal) {
@@ -94,68 +66,8 @@
       dialog.showModal();
       closeButton.focus();
     });
-    // Tab follows catalogue order, including tiles not yet mounted in the window.
-    button.addEventListener('keydown', (event) => {
-      if (event.key !== 'Tab') return;
-      const next = index + (event.shiftKey ? -1 : 1);
-      if (next >= 0 && next < filtered.length) {
-        event.preventDefault();
-        focusTile(next);
-      }
-    });
     tile.append(button);
     return tile;
-  }
-
-  function render(forceIndex = -1) {
-    const top = grid.getBoundingClientRect().top;
-    const overscan = window.innerHeight * 0.75;
-    const start = -top - overscan;
-    const end = -top + window.innerHeight + overscan;
-    const active = document.activeElement;
-    const keep = new Set();
-    positions.forEach((position, index) => {
-      const tile = mounted.get(index);
-      if (
-        (position.y + position.height >= start && position.y <= end) ||
-        index === forceIndex ||
-        tile?.contains(active)
-      ) {
-        keep.add(index);
-        if (!tile) mounted.set(index, createTile(index));
-        const element = mounted.get(index);
-        element.style.width = `${columnWidth}px`;
-        element.style.height = `${position.height}px`;
-        element.style.transform = `translate(${position.x}px, ${position.y}px)`;
-      }
-    });
-    for (const [index, tile] of mounted) {
-      if (!keep.has(index)) {
-        tile.remove();
-        mounted.delete(index);
-      }
-    }
-    // Keep DOM and screen-reader order aligned without moving focused nodes.
-    let cursor = grid.firstElementChild;
-    [...keep]
-      .sort((a, b) => a - b)
-      .forEach((index) => {
-        const tile = mounted.get(index);
-        if (tile !== cursor) grid.insertBefore(tile, cursor);
-        cursor = tile.nextElementSibling;
-      });
-  }
-
-  function focusTile(index) {
-    const position = positions[index];
-    if (!position) return;
-    const gridTop = window.scrollY + grid.getBoundingClientRect().top;
-    const top = gridTop + position.y;
-    if (top < window.scrollY || top + position.height > window.scrollY + window.innerHeight) {
-      window.scrollTo({ top: Math.max(0, top - 24), behavior: 'instant' });
-    }
-    render(index);
-    mounted.get(index)?.querySelector('button').focus({ preventScroll: true });
   }
 
   function selectFilter(tag) {
@@ -165,11 +77,9 @@
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    mounted.clear();
-    grid.replaceChildren();
+    grid.replaceChildren(...filtered.map((_, index) => createTile(index)));
     empty.hidden = filtered.length > 0;
     status.textContent = `${filtered.length} artworks. ${tag === 'all' ? 'All tags' : tag} selected.`;
-    layout();
   }
 
   async function showPreview(index) {
@@ -249,7 +159,7 @@
     preview.removeAttribute('src');
     captionTitle.textContent = '';
     captionCredits.replaceChildren();
-    focusTile(openerIndex);
+    grid.children[openerIndex]?.querySelector('button').focus({ preventScroll: true });
   });
 
   filters.forEach((button) =>
@@ -278,22 +188,4 @@
     url.hash = startingFilter;
     window.history.replaceState(null, '', url);
   }
-  window.addEventListener(
-    'scroll',
-    () => {
-      if (scheduled) return;
-      scheduled = true;
-      requestAnimationFrame(() => {
-        scheduled = false;
-        render();
-      });
-    },
-    { passive: true },
-  );
-  let previousWidth = grid.clientWidth;
-  new ResizeObserver(([entry]) => {
-    if (entry.contentRect.width === previousWidth) return;
-    previousWidth = entry.contentRect.width;
-    layout();
-  }).observe(grid);
 })();
