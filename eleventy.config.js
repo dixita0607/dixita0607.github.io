@@ -17,6 +17,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', markdownLibrary);
   eleventyConfig.addDataExtension('yaml', (contents) => YAML.parse(contents));
+  eleventyConfig.addFilter('jsonForScript', (value) =>
+    JSON.stringify(value)
+      .replace(/</g, '\\u003c')
+      .replace(/\u2028/g, '\\u2028')
+      .replace(/\u2029/g, '\\u2029'),
+  );
   eleventyConfig.addFilter('entriesByNewestYear', (entries) =>
     Object.entries(entries).sort(([firstYear], [secondYear]) => {
       const firstNumber = Number(firstYear);
@@ -29,6 +35,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'web/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'web/site.css': 'site.css' });
   eleventyConfig.addPassthroughCopy({ 'web/site.js': 'site.js' });
+  eleventyConfig.addPassthroughCopy({ 'web/sketchbook.js': 'sketchbook.js' });
   eleventyConfig.addPassthroughCopy({ 'web/favicon.svg': 'favicon.svg' });
 
   return {
