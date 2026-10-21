@@ -9,8 +9,10 @@
   const status = page.querySelector('.sketch-status');
   const empty = page.querySelector('.sketch-empty');
   const dialog = page.querySelector('.sketch-lightbox');
-  const preview = dialog.querySelector('img');
-  const caption = dialog.querySelector('figcaption');
+  let preview = dialog.querySelector('img');
+  let previewRequest = 0;
+  const captionTitle = dialog.querySelector('.sketch-lightbox__title');
+  const captionCredits = dialog.querySelector('.sketch-lightbox__credits');
   const previewError = dialog.querySelector('.sketch-lightbox__error');
   const closeButton = dialog.querySelector('.sketch-lightbox__close');
   const previousButton = dialog.querySelector('.sketch-lightbox__previous');
@@ -162,26 +164,64 @@
     layout();
   }
 
-  function showPreview(index) {
+  async function showPreview(index) {
     if (!filtered.length) return;
     previewIndex = (index + filtered.length) % filtered.length;
     const artwork = filtered[previewIndex];
-    dialog.classList.add('is-loading');
+    const request = ++previewRequest;
+    const url = imageUrl(artwork);
+    dialog.classList.toggle('is-loading', !preview.hasAttribute('src'));
     previewError.hidden = true;
-    preview.removeAttribute('src');
-    preview.alt = artwork.alt;
-    caption.textContent = artwork.title;
-    previewError.querySelector('a').href = imageUrl(artwork);
-    preview.src = imageUrl(artwork);
+    dialog.setAttribute('aria-busy', 'true');
     previousButton.disabled = nextButton.disabled = filtered.length < 2;
+    const nextImage = new Image();
+    nextImage.alt = artwork.alt;
+    nextImage.src = url;
+    try {
+      await nextImage.decode();
+    } catch {
+      if (request !== previewRequest) return;
+      dialog.classList.remove('is-loading');
+      dialog.removeAttribute('aria-busy');
+      previewError.querySelector('a').href = url;
+      previewError.hidden = false;
+      return;
+    }
+    // Ignore superseded navigation and requests completed after the viewer closes.
+    if (request !== previewRequest) return;
+    preview.replaceWith(nextImage);
+    preview = nextImage;
+    dialog.classList.remove('is-loading');
+    dialog.removeAttribute('aria-busy');
+    captionTitle.textContent = artwork.title;
+    captionCredits.replaceChildren();
+    if (artwork.credits?.length) {
+      const label = document.createElement('span');
+      label.textContent = 'Inspired by: ';
+      label.className = 'sketch-lightbox__credit-label';
+      captionCredits.append(label);
+      artwork.credits.forEach((credit) => {
+        const entry = document.createElement('span');
+        entry.className = 'sketch-lightbox__credit-entry';
+        const text = credit.source ? `${credit.source} — ${credit.creator}` : credit.creator;
+        if (credit.url) {
+          const link = document.createElement('a');
+          link.href = credit.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = text;
+          entry.append(link);
+        } else {
+          const plainText = document.createElement('span');
+          plainText.textContent = text;
+          entry.append(plainText);
+        }
+        captionCredits.append(entry);
+      });
+    }
+    previewError.querySelector('a').href = url;
   }
 
-  preview.addEventListener('load', () => dialog.classList.remove('is-loading'));
-  preview.addEventListener('error', () => {
-    if (!preview.getAttribute('src')) return;
-    dialog.classList.remove('is-loading');
-    previewError.hidden = false;
-  });
   previousButton.addEventListener('click', () => showPreview(previewIndex - 1));
   nextButton.addEventListener('click', () => showPreview(previewIndex + 1));
   closeButton.addEventListener('click', () => dialog.close());
@@ -195,7 +235,12 @@
     }
   });
   dialog.addEventListener('close', () => {
+    ++previewRequest;
+    dialog.classList.remove('is-loading');
+    dialog.removeAttribute('aria-busy');
     preview.removeAttribute('src');
+    captionTitle.textContent = '';
+    captionCredits.replaceChildren();
     focusTile(openerIndex);
   });
 

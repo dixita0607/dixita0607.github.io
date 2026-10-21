@@ -7,21 +7,37 @@
   title: 'Inktober20 — Wisp'
   alt: 'Woman in a blue outfit holding a small glowing orange flame.'
   tags: [inktober-20]
+  credits:
+    - creator: 'Hayao Miyazaki / Studio Ghibli'
+      source: "Howl's moving castle"
+      url: 'https://www.ghibli.jp/works/howl/'
 
 - image_key: '3_Bulky.jpg'
   title: 'Inktober20 — Bulky'
   alt: 'Totoro standing beneath a leaf against a dark circular background.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Hayao Miyazaki / Studio Ghibli'
+      source: 'My Neighbor Totoro'
+      url: 'https://www.ghibli.jp/works/totoro/'
 
 - image_key: '4_Radio.jpg'
   title: 'Inktober20 — Radio'
   alt: 'Inktober interpretation of Lofi Girl wearing headphones and studying at her desk.'
-  tags: [inktober-20, portfolio]
+  tags: [inktober-20, portfolio, fanart, credit-review]
+  credits:
+    - creator: 'Lofi Girl'
+      source: 'Lofi Girl character and channel'
+      url: 'https://lofigirl.com/'
 
 - image_key: '5_Blade.jpg'
   title: 'Inktober20 — Blade'
   alt: 'Mulan holding a sword overhead as her long hair streams behind her.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Walt Disney Animation Studios'
+      source: 'Mulan'
+      url: 'https://en.wikipedia.org/wiki/Mulan_(1998_film)'
 
 - image_key: '6_Rodents.jpg'
   title: 'Inktober20 — Rodents'
@@ -66,7 +82,11 @@
 - image_key: '11_Duisgust.jpg'
   title: 'Inktober20 — Disgust'
   alt: 'Black-and-white Inktober interpretation of Disgust from the movie Inside Out.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Pixar Animation Studios'
+      source: 'Disgust from Inside Out'
+      url: 'https://www.pixar.com/inside-out'
 
 - image_key: '12_Slippery.jpg'
   title: 'Inktober20 — Slippery'
@@ -76,12 +96,20 @@
 - image_key: '13_Dune.jpg'
   title: 'Inktober20 — Dune'
   alt: 'Inktober interpretation of a character from the movie Dune.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Frank Herbert'
+      source: 'A character from Dune'
+      url: 'https://www.dunenovels.com/'
 
 - image_key: '14_Armour.jpg'
   title: 'Inktober20 — Armour'
   alt: 'Inktober interpretation of Wonder Woman holding a sword and shield against red and blue shapes.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'William Moulton Marston and Harry G. Peter'
+      source: 'Wonder Woman'
+      url: 'https://www.dc.com/blog/2020/09/30/wonder-woman-by-the-numbers'
 
 - image_key: '15_Outpost.jpg'
   title: 'Inktober20 — Outpost'
@@ -91,7 +119,11 @@
 - image_key: '16_Rocket.jpg'
   title: 'Inktober20 — Rocket'
   alt: 'Inktober interpretation of Rocket from the Marvel universe.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Bill Mantlo and Keith Giffen'
+      source: 'Rocket Raccoon'
+      url: 'https://www.marvel.com/characters/rocket'
 
 - image_key: '16th_Sept-4.png'
   title: 'HFD - Figure studies'
@@ -121,7 +153,11 @@
 - image_key: '22_chef.jpg'
   title: 'Inktober20 — Chef'
   alt: 'Inktober drawing of Hermione brewing a potion, interpreting the prompt Chef.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'J. K. Rowling'
+      source: 'Hermione Granger from Harry Potter'
+      url: 'https://www.harrypotter.com/collections/hermione-granger'
 
 - image_key: '23_Dec-3.png'
   title: 'HFD - Standing pose'
@@ -206,7 +242,11 @@
 - image_key: '31_crawl.jpg'
   title: 'Inktober20 — Crawl'
   alt: 'Spider-Gwen crouching between two corners decorated with webs.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Jason Latour and Robbi Rodriguez'
+      source: 'Spider-Gwen / Ghost-Spider'
+      url: 'https://www.marvel.com/characters/ghost-spider-gwen-stacy'
 
 - image_key: '2026-10.png'
   title: 'HFD - Gesture study'
@@ -221,7 +261,11 @@
 - image_key: 'Adventure_Futurama.jpg'
   title: 'Self Portrait - Adventure Futurama'
   alt: 'Cartoon portrait of a smiling person with round glasses, brown hair, and a yellow shirt.'
-  tags: [self-portrait]
+  tags: [self-portrait, fanart, credit-review]
+  credits:
+    - creator: 'Matt Groening'
+      source: 'Futurama visual world'
+      url: 'https://en.wikipedia.org/wiki/Futurama'
 
 - image_key: 'All_Pink.jpg'
   title: 'All Pink'
@@ -301,7 +345,11 @@
 - image_key: 'Day_17_Storm.jpg'
   title: 'Inktober20 — Storm'
   alt: 'Black-and-white portrait of Storm with windswept hair and lightning shapes behind her.'
-  tags: [inktober-20]
+  tags: [inktober-20, fanart, credit-review]
+  credits:
+    - creator: 'Len Wein and Dave Cockrum'
+      source: 'Storm from X-Men'
+      url: 'https://www.marvel.com/characters/storm'
 
 - image_key: 'Day2.jpg'
   title: 'Inktober25 - Weave'
@@ -311,7 +359,11 @@
 - image_key: 'Death_Profet.jpg'
   title: 'Death Prophet'
   alt: 'Fan art portrait of Death Prophet from Dota 2.'
-  tags: [fanart, illustration]
+  tags: [fanart, illustration, credit-review]
+  credits:
+    - creator: 'Valve'
+      source: 'Death Prophet from Dota 2'
+      url: 'https://www.dota2.com/hero/deathprophet'
 
 - image_key: 'Doodle.jpg'
   title: 'Illustration — Fancy Clothes'
@@ -337,16 +389,28 @@
   title: 'DTIYS — Max'
   alt: 'Woman in a red dress carrying shopping bags beneath a large umbrella.'
   tags: [dtiys]
+  credits:
+    - creator: 'Max Ulichney'
+      source: 'Umbrella'
+      url: 'https://maxulichney.com/umbrella'
 
 - image_key: 'Dtiys_Pixie.png'
   title: 'DTIYS — Pixie'
   alt: 'Seated pink-haired character with two buns, a patterned jacket, and a thoughtful expression.'
-  tags: [dtiys]
+  tags: [dtiys, credit-review]
+  credits:
+    - creator: 'Magdalina Dianova'
+      source: 'DTIYS — Pixie'
+      url: 'https://www.magdalinadianova.com/about'
 
 - image_key: 'DTIYS.png'
   title: 'Draw This in Your Style'
   alt: 'Colorful drawing of a seated character in a red outfit against yellow and purple shapes.'
   tags: [dtiys]
+  credits:
+    - creator: 'evayabai'
+      source: 'Original DTIYS host / prompt'
+      url: 'https://www.instagram.com/evayabai/'
 
 - image_key: 'Duck_Doodle.jpg'
   title: 'Duck Doodle'
@@ -366,7 +430,11 @@
 - image_key: 'Following_Loish.jpg'
   title: 'Following a Tutorial by Loish'
   alt: 'Softly shaded portrait of a smiling woman with long, flowing pink hair.'
-  tags: [sketchbook]
+  tags: [sketchbook, tutorial, credit-review]
+  credits:
+    - creator: 'Loish (Lois van Baarle)'
+      source: 'Tutorial'
+      url: 'https://loish.net/'
 
 - image_key: 'Fuji_Kaze.jpg'
   title: 'Fuji Kaze'
@@ -391,12 +459,19 @@
 - image_key: 'Girl_With_Pearl.jpg'
   title: 'Girl with a Pearl Earring — Study'
   alt: 'Stylized portrait of a woman in a blue-and-yellow headscarf with a large pearl earring.'
-  tags: [fanart, illustration]
+  tags: [fanart, illustration, credit-review]
+  credits:
+    - creator: 'Johannes Vermeer'
+      source: 'Girl with a Pearl Earring'
+      url: 'https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring'
 
 - image_key: 'Girl_With_Shirt_.png'
   title: 'DTIYS - Girl with a Shirt'
   alt: 'Blue-eyed character with long brown hair wearing an oversized blue shirt against a dark background.'
-  tags: [dtiys, illustration]
+  tags: [dtiys, illustration, credit-review]
+  credits:
+    - creator: 'unknown artist'
+      source: 'DTIYS'
 
 - image_key: 'Goauche_Practice.jpg'
   title: 'Road'
@@ -406,7 +481,11 @@
 - image_key: 'Goku.png'
   title: 'Goku'
   alt: 'Young Goku holding a glowing Dragon Ball against a dark background.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Akira Toriyama'
+      source: 'Goku from Dragon Ball'
+      url: 'https://en.dragon-ball-official.com/'
 
 - image_key: 'Gratitoad.jpg'
   title: 'Gratitoad'
@@ -416,7 +495,11 @@
 - image_key: 'Gravity_Falls.jpg'
   title: 'Self Portrait - Gravity Falls'
   alt: 'Cartoon self-portrait in a yellow shirt with round glasses and a wide smile.'
-  tags: [self-portrait]
+  tags: [self-portrait, fanart, credit-review]
+  credits:
+    - creator: 'Alex Hirsch'
+      source: 'Gravity Falls visual world'
+      url: 'https://en.wikipedia.org/wiki/Gravity_Falls'
 
 - image_key: 'Grumpy_Mana.jpg'
   title: 'Grumpy Mana'
@@ -472,6 +555,10 @@
   title: 'Indian Music Experience'
   alt: 'Four small observational paintings of museum architecture, displays, and interior spaces.'
   tags: [illustration, portfolio]
+  credits:
+    - creator: 'Indian Music Experience Museum'
+      source: 'Place depicted — Bengaluru'
+      url: 'https://indianmusicexperience.org/'
 
 - image_key: 'Inking_Practice_.png'
   title: 'Inking Practice'
@@ -496,7 +583,11 @@
 - image_key: 'Ken_Kaneki.png'
   title: 'Ken Kaneki'
   alt: 'Portrait of Ken Kaneki with white hair and contrasting eyes against a red-and-black background.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Sui Ishida'
+      source: 'Ken Kaneki from Tokyo Ghoul'
+      url: 'https://en.wikipedia.org/wiki/Tokyo_Ghoul'
 
 - image_key: 'Khushbu_Chandarana_.png'
   title: 'Khushbu Chandarana'
@@ -521,7 +612,11 @@
 - image_key: 'Loish_Learning.jpg'
   title: 'A Tutorial by Loish'
   alt: 'Woman with flowing red hair raising her arms in vivid pink, orange, and blue light.'
-  tags: [sketchbook]
+  tags: [sketchbook, tutorial, credit-review]
+  credits:
+    - creator: 'Loish (Lois van Baarle)'
+      source: 'Tutorial'
+      url: 'https://loish.net/'
 
 - image_key: 'Mana 1.jpg'
   title: 'Mana — Studies'
@@ -542,6 +637,10 @@
   title: 'Marnie'
   alt: 'Loose line portrait of a smiling young woman with long wavy hair and a collared dress.'
   tags: [fanart]
+  credits:
+    - creator: 'Joan G. Robinson / Hiromasa Yonebayashi / Studio Ghibli'
+      source: 'Marnie from When Marnie Was There'
+      url: 'https://www.ghibli.jp/works/marnie/'
 
 - image_key: 'Menstrual_Cup_Meme.jpg'
   title: 'Comic - Menstrual Cup Meme'
@@ -552,16 +651,27 @@
   title: 'Mermaid'
   alt: 'Red-haired mermaid looking over her shoulder against a coral-pink background.'
   tags: [fanart]
+  credits:
+    - creator: 'Walt Disney Animation Studios'
+      source: 'Ariel from The Little Mermaid'
+      url: 'https://en.wikipedia.org/wiki/The_Little_Mermaid_(1989_film)'
 
 - image_key: 'Mermay_Sabrina.jpg'
   title: 'Mermay — Sabrina'
-  alt: 'Blonde mermaid resting on a rock beside blue water under a cloudy sky.'
+  alt: 'Sabrina Carpenter imagined as a blonde mermaid resting on a rock beside blue water under a cloudy sky.'
   tags: [illustration, people, fanart]
+  credits:
+    - creator: 'Sabrina Carpenter'
+      source: 'Person depicted — imagined as a mermaid'
 
 - image_key: 'Mg09.png'
-  title: 'DTIYS - Mg09'
+  title: 'DTIYS - Mz09'
   alt: 'Dark-haired cartoon character balancing a piece of meat and a black bird on their head.'
-  tags: [dtiys]
+  tags: [dtiys, credit-review]
+  credits:
+    - creator: 'Mz09'
+      source: 'DTIYS challenge'
+      url: 'https://mz09.co'
 
 - image_key: 'Mirror_On_The_Grass.jpg'
   title: 'Mirror on the Grass'
@@ -571,7 +681,11 @@
 - image_key: 'mitsuri.jpg'
   title: 'Mitsuri'
   alt: 'Mitsuri with pink-and-green braids wearing a white jacket over her dark uniform.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Koyoharu Gotouge'
+      source: 'Mitsuri Kanroji from Demon Slayer: Kimetsu no Yaiba'
+      url: 'https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba'
 
 - image_key: 'Monstera.jpg'
   title: 'Monstera'
@@ -641,7 +755,11 @@
 - image_key: 'Poor_Things.jpg'
   title: 'Poor Things'
   alt: 'Portrait of a dark-haired woman in pale blue beside the words I am finding being alive fascinating.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Alasdair Gray'
+      source: 'Poor Things'
+      url: 'https://en.wikipedia.org/wiki/Poor_Things_(film)'
 
 - image_key: 'Portrait-First.png'
   title: 'First Portrait'
@@ -716,7 +834,11 @@
 - image_key: 'Sailor_Moon.jpg'
   title: 'Sailor Moon'
   alt: 'Close-up portrait of Sailor Moon with blonde hair, blue eyes, and a gold tiara.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Naoko Takeuchi'
+      source: 'Sailor Moon'
+      url: 'https://en.wikipedia.org/wiki/Sailor_Moon'
 
 - image_key: 'Sanvi.jpg'
   title: 'Sanvi'
@@ -746,7 +868,26 @@
 - image_key: 'SixFanarts.png'
   title: 'Six Fan Art Portraits'
   alt: 'Six character portraits arranged in labeled panels: Po, Gogeta, Popeye, Loki, Alita, and Harley Quinn.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'DreamWorks Animation'
+      source: 'Po from Kung Fu Panda'
+      url: 'https://www.dreamworks.com/movies/kung-fu-panda'
+    - creator: 'Akira Toriyama'
+      source: 'Gogeta from Dragon Ball'
+      url: 'https://en.dragon-ball-official.com/'
+    - creator: 'E. C. Segar'
+      source: 'Popeye'
+      url: 'https://www.popeye.com/'
+    - creator: 'Stan Lee, Larry Lieber, and Jack Kirby'
+      source: 'Loki from Marvel Comics'
+      url: 'https://www.marvel.com/characters/loki/on-screen'
+    - creator: 'Yukito Kishiro'
+      source: 'Alita from Battle Angel Alita'
+      url: 'https://kodansha.us/series/battle-angel-alita/'
+    - creator: 'Paul Dini and Bruce Timm'
+      source: 'Harley Quinn'
+      url: 'https://www.dc.com/characters/harley-quinn'
 
 - image_key: 'Sketchy_Mana.jpg'
   title: 'Sketchy Mana'
@@ -767,6 +908,10 @@
   title: "Sophie's Shop"
   alt: 'Warmly lit hat-shop interior with a person working at a table among colorful hats and shelves.'
   tags: [fanart, illustration, portfolio]
+  credits:
+    - creator: 'Hayao Miyazaki / Studio Ghibli'
+      source: "Howl's Moving Castle"
+      url: 'https://www.ghibli.jp/works/howl/'
 
 - image_key: 'Statue.jpg'
   title: 'Statue — Head Study'
@@ -776,12 +921,20 @@
 - image_key: 'Steven_Universe.jpg'
   title: 'Self Portrait - Steven Universe'
   alt: 'Cartoon portrait in a yellow shirt with round glasses, brown hair, and a broad toothy grin.'
-  tags: [self-portrait]
+  tags: [self-portrait, fanart, credit-review]
+  credits:
+    - creator: 'Rebecca Sugar'
+      source: 'Steven Universe visual world'
+      url: 'https://en.wikipedia.org/wiki/Steven_Universe'
 
 - image_key: 'Studio_Ghibili.jpg'
   title: 'Self Portrait - Studio Ghibli'
   alt: 'Anime-style portrait of a smiling person with round glasses and a yellow shirt.'
-  tags: [self-portrait]
+  tags: [self-portrait, fanart, credit-review]
+  credits:
+    - creator: 'Studio Ghibli'
+      source: 'Studio Ghibli-inspired self portrait'
+      url: 'https://www.ghibli.jp/'
 
 - image_key: 'Sudden_Cuddles.jpg'
   title: 'Comic - Sudden Cuddles'
@@ -841,7 +994,11 @@
 - image_key: 'Wanda.jpg'
   title: 'Wanda'
   alt: 'Cartoon portrait of Scarlet Witch in a red costume and pointed headpiece.'
-  tags: [fanart]
+  tags: [fanart, credit-review]
+  credits:
+    - creator: 'Stan Lee and Jack Kirby'
+      source: 'Scarlet Witch from Marvel Comics'
+      url: 'https://www.marvel.com/characters/scarlet-witch-wanda-maximoff/on-screen'
 
 - image_key: 'When_Bored._Do_Practice.jpg'
   title: 'When Bored, Do Practice'

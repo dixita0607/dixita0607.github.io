@@ -28,6 +28,11 @@ layout: main
       I can only give permission for my own contribution. For fan art and studies of other people’s
       work, rights in the original characters and artwork still belong to their owners.
     </p>
+    <p class='sketch-credit-note'>
+      Note: I’ve done my best to recall and credit the artists whose work inspired these pieces. If
+      I’ve missed your work or you’d prefer a different credit, please contact me at
+      <a href='mailto:contact@dixita.dev'>contact@dixita.dev</a>.
+    </p>
   </section>
   <nav class='blog-filters sketch-filters' aria-label='Filter artwork by tag' hidden>
     {% if artworkTags contains 'portfolio' %}
@@ -74,7 +79,10 @@ layout: main
       </button>
       <figure>
         <div class='sketch-lightbox__image'><img alt=''></div>
-        <figcaption aria-live='polite'></figcaption>
+        <figcaption aria-live='polite'>
+          <span class='sketch-lightbox__title'></span>
+          <span class='sketch-lightbox__credits'></span>
+        </figcaption>
       </figure>
       <button class='sketch-lightbox__next' type='button' aria-label='Next artwork'>→</button>
       <p class='sketch-lightbox__error' hidden>
