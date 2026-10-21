@@ -2,10 +2,92 @@
 title: Sketchbook — Dixita Ganatra
 layout: main
 ---
-<article class='page sketchbook-page'>
-  <header class='page-header coming-soon'>
-    <p class='coming-soon__label'>Coming soon</p>
-    <h1>Sketchbook.</h1>
-    <p>I’m preparing a new home for selected sketches, studies, and works in progress.</p>
+{% assign artworkTags = '' | split: '' %}
+{% for artwork in artworks %}
+  {% assign artworkTags = artworkTags | concat: artwork.tags %}
+{% endfor %}
+{% assign artworkTags = artworkTags | uniq | sort %}
+<article class='page sketchbook-page' data-image-base='{{ sketchbook.image_base_url | escape }}'>
+  <header class='page-header'>
+    <div class='sketch-heading'>
+      <h1>Sketchbook.</h1>
+      <span class='coming-soon__label' aria-label='Work in progress — more improvements coming'
+        >WIP</span
+      >
+    </div>
   </header>
+  <section class='sketch-license' id='artwork-license' aria-labelledby='artwork-license-title'>
+    <h2 id='artwork-license-title'>Artwork use & credit</h2>
+    <p>
+      You’re welcome to use, share, or remix my artwork, with or without AI. If you use an image
+      directly, as a reference, for style inspiration, or to create something new, credit Dixita
+      Ganatra and link to <a href='{{ site.url }}/sketchbook/'>this Sketchbook page</a> alongside
+      what you share.
+    </p>
+    <p>
+      I can only give permission for my own contribution. For fan art and studies of other people’s
+      work, rights in the original characters and artwork still belong to their owners.
+    </p>
+  </section>
+  <nav class='blog-filters sketch-filters' aria-label='Filter artwork by tag' hidden>
+    {% if artworkTags contains 'portfolio' %}
+      <button class='blog-filter' type='button' data-sketch-filter='portfolio' aria-pressed='false'>
+        Portfolio
+      </button>
+    {% endif %}
+    {% for tag in artworkTags %}
+      {% unless tag == 'portfolio' %}
+        <button
+          class='blog-filter'
+          type='button'
+          data-sketch-filter='{{ tag | escape }}'
+          aria-pressed='false'
+        >
+          {{ tag }}
+        </button>
+      {% endunless %}
+    {% endfor %}
+    <button class='blog-filter' type='button' data-sketch-filter='all' aria-pressed='false'>
+      All
+    </button>
+  </nav>
+  <p class='sketch-status sr-only' role='status' aria-live='polite'></p>
+  <div class='sketch-grid' role='list' aria-label='Artworks'></div>
+  <p class='sketch-empty' hidden>No artworks match this tag yet.</p>
+  <noscript>
+    <p>Enable JavaScript for the gallery, or open an artwork from this list.</p>
+    <ul>
+      {% for artwork in artworks %}
+        <li>
+          <a href='{{ sketchbook.image_base_url }}/{{ artwork.image_key | url_encode }}'>
+            {{- artwork.title | escape -}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </noscript>
+  <dialog class='sketch-lightbox' aria-label='Artwork preview'>
+    <div class='sketch-lightbox__frame'>
+      <button class='sketch-lightbox__close' type='button' aria-label='Close preview'>×</button>
+      <button class='sketch-lightbox__previous' type='button' aria-label='Previous artwork'>
+        ←
+      </button>
+      <figure>
+        <div class='sketch-lightbox__image'><img alt=''></div>
+        <figcaption aria-live='polite'></figcaption>
+      </figure>
+      <button class='sketch-lightbox__next' type='button' aria-label='Next artwork'>→</button>
+      <p class='sketch-lightbox__error' hidden>
+        Image unavailable.
+        <a href='' target='_blank' rel='noopener noreferrer'>Open the original</a>.
+      </p>
+    </div>
+  </dialog>
+  <script type='application/json' id='sketchbook-artworks'>
+    {{ artworks | jsonForScript }}
+  </script>
+  <script type='application/json' id='sketchbook-geometry'>
+    {{ artworkGeometry | jsonForScript }}
+  </script>
+  <script src='/sketchbook.js' defer></script>
 </article>

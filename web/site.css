@@ -641,6 +641,199 @@ html.dark .theme-icon__moon {
 .post-tags {
   margin-bottom: 0.7rem;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.sketch-grid {
+  position: relative;
+  width: 100%;
+  overflow-anchor: none;
+}
+.sketchbook-page [hidden] {
+  display: none;
+}
+.sketch-tile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--milk);
+  border-radius: 6px;
+}
+.sketch-tile button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: inherit;
+  overflow: hidden;
+  background: transparent;
+  cursor: zoom-in;
+}
+.sketch-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sketch-tile button:focus-visible,
+.sketch-lightbox button:focus-visible {
+  outline: 3px solid var(--blue-text);
+  outline-offset: 4px;
+}
+.sketch-tile.is-loading {
+  background: color-mix(
+    in srgb,
+    var(--blue-text) var(--sketch-placeholder-tint, 12%),
+    var(--paper)
+  );
+}
+.sketch-tile__error {
+  display: none;
+  padding: 1rem;
+  color: var(--ink);
+  font:
+    0.8rem/1.5 'DM Mono',
+    monospace;
+}
+.sketch-tile.has-error img {
+  display: none;
+}
+.sketch-tile.has-error .sketch-tile__error {
+  display: block;
+}
+.sketch-lightbox {
+  width: min(96vw, 80rem);
+  max-width: none;
+  max-height: 96dvh;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.sketch-lightbox::backdrop {
+  background: rgb(8 10 15 / 88%);
+}
+body:has(.sketch-lightbox[open]) {
+  overflow: hidden;
+}
+.sketch-lightbox__frame {
+  position: relative;
+  padding: 3.8rem 3.5rem 1.5rem;
+}
+.sketch-lightbox figure {
+  margin: 0;
+  text-align: center;
+}
+.sketch-lightbox__image {
+  display: grid;
+  place-items: center;
+  min-height: 8rem;
+}
+.sketch-lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 74dvh;
+  object-fit: contain;
+}
+.sketch-lightbox.is-loading img {
+  visibility: hidden;
+}
+.sketch-lightbox.is-loading .sketch-lightbox__image {
+  min-height: 50dvh;
+  background: color-mix(in srgb, var(--blue-text) 12%, var(--paper));
+}
+.sketch-lightbox figcaption {
+  margin-top: 1rem;
+  font:
+    0.75rem/1.5 'DM Mono',
+    monospace;
+}
+.sketch-lightbox button {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--milk);
+  color: var(--ink);
+  cursor: pointer;
+  font: 1.3rem/1 sans-serif;
+}
+.sketch-lightbox button:hover {
+  background: var(--green);
+  color: var(--blue);
+}
+.sketch-lightbox button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.sketch-lightbox__close {
+  top: 0.7rem;
+  right: 0.7rem;
+}
+.sketch-lightbox__previous,
+.sketch-lightbox__next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sketch-lightbox__previous {
+  left: 0.5rem;
+}
+.sketch-lightbox__next {
+  right: 0.5rem;
+}
+.sketch-lightbox__error {
+  text-align: center;
+}
+.sketchbook-page .page-header {
+  margin-bottom: 1.5rem;
+}
+.sketch-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-header .sketch-heading .coming-soon__label {
+  flex: none;
+  margin: 0 0 0.5rem;
+  border: 1px solid var(--blue);
+}
+.sketch-filters {
+  margin: 0 0 2rem;
+}
+.sketch-license {
+  margin: 0 0 2rem;
+  max-width: 48rem;
+  color: var(--ink);
+  font:
+    1rem/1.6 'Space Grotesk',
+    sans-serif;
+}
+.sketch-license h2 {
+  margin: 0 0 0.65rem;
+  color: var(--blue);
+  font:
+    500 0.72rem/1.5 'DM Mono',
+    monospace;
+  text-transform: uppercase;
+}
+.sketch-license p {
+  margin: 0.5rem 0;
+}
+.sketch-license a {
+  color: var(--blue);
+}
 .blog-list-item {
   display: flex;
   align-items: baseline;
