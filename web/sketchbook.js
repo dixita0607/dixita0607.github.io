@@ -29,6 +29,8 @@
 
   const imageUrl = (artwork) =>
     `${imageBase}/${artwork.image_key.split('/').map(encodeURIComponent).join('/')}`;
+  const thumbnailUrl = (artwork) =>
+    `${imageBase}/cdn-cgi/image/width=320,format=auto/${artwork.image_key.split('/').map(encodeURIComponent).join('/')}`;
 
   function layout() {
     const width = grid.clientWidth;
@@ -63,6 +65,7 @@
     image.alt = artwork.alt;
     image.decoding = 'async';
     image.loading = 'lazy';
+    let usingOriginal = false;
     image.addEventListener('load', () => {
       tile.classList.remove('is-loading');
       // New additions can acquire their geometry when first viewed, without YAML fields.
@@ -72,10 +75,15 @@
       }
     });
     image.addEventListener('error', () => {
+      if (!usingOriginal) {
+        usingOriginal = true;
+        image.src = imageUrl(artwork);
+        return;
+      }
       tile.classList.remove('is-loading');
       tile.classList.add('has-error');
     });
-    image.src = imageUrl(artwork);
+    image.src = thumbnailUrl(artwork);
     const error = document.createElement('span');
     error.className = 'sketch-tile__error';
     error.textContent = 'Preview unavailable. Open artwork';
@@ -263,7 +271,13 @@
   };
   window.addEventListener('hashchange', () => selectFilter(initialFilter()));
   page.querySelector('.sketch-filters').hidden = false;
-  selectFilter(initialFilter());
+  const startingFilter = initialFilter();
+  selectFilter(startingFilter);
+  if (window.location.hash !== `#${startingFilter}`) {
+    const url = new URL(window.location.href);
+    url.hash = startingFilter;
+    window.history.replaceState(null, '', url);
+  }
   window.addEventListener(
     'scroll',
     () => {
