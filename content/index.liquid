@@ -13,7 +13,7 @@ layout: main
     </div>
     <p class='availability'>Open to work</p>
   </div>
-  <div class='hero-side'>
+  <div>
     <div class='portrait-card'>
       <img src='/assets/home-window-art.png' alt='Painted portrait of Dixita by Swaroop'>
       <p>
@@ -46,16 +46,11 @@ layout: main
     <div><h2>Recent blogs.</h2></div>
   </div>
   <div class='note-grid'>
-    {% assign recent_posts = collections.all | reverse -%}
-    {%- assign post_count = 0 -%}
-    {%- for post in recent_posts -%}
-      {%- if post.data.layout == 'blog' and post_count < 3 -%}
-        <a class='note-card' href='{{ post.url }}'>
-          <h3>{{ post.data.title }}</h3>
-          <span>Read blog →</span></a
-        >
-        {%- assign post_count = post_count | plus: 1 -%}
-      {%- endif -%}
+    {% for post in collections.posts limit: 3 -%}
+      <a class='note-card' href='{{ post.url }}'>
+        <h3>{{ post.data.title }}</h3>
+        <span>Read blog →</span></a
+      >
     {%- endfor %}
   </div>
 </section>
@@ -85,7 +80,7 @@ layout: main
       target='_blank'
       rel='noreferrer'
       aria-label='Dixita on Bluesky'
-      ><span class='social-icon social-icon--bluesky' aria-hidden='true'>
+      ><span class='social-icon' aria-hidden='true'>
         <svg viewBox='0 0 24 24' focusable='false'>
           <path d="M12 10.9C10.9 8.78 7.92 5.2 5.14 3.23 2.47 1.35 1.45 1.67.78 1.98.01 2.34.01 3.53.01 4.24c0 .72.4 5.94.66 6.8.88 2.89 4.03 3.87 6.93 3.54-4.25.63-8.02 2.16-3.07 7.66 5.44 5.53 7.46-1.18 7.47-4.62.01 3.44 1.61 9.91 7.41 4.62 4.48-4.58 1.29-7.02-2.96-7.66 2.9.33 6.05-.65 6.93-3.54.26-.86.66-6.08.66-6.8 0-.71 0-1.9-.77-2.26-.67-.31-1.69-.63-4.36 1.25C16.08 5.2 13.1 8.78 12 10.9Z"/>
         </svg></span

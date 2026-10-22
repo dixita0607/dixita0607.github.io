@@ -7,63 +7,12 @@ layout: main
     <h1>Work.</h1>
   </header>
 
-  {% for group in projects.current %}
-    <section>
-      <h2>{{ group.title }}</h2>
-      <ul>
-        {% for project in group.projects %}
-          <li>
-            <a href='{{ project.code }}'>{{ project.title }}</a>
-            <p>{{ project.description }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+  {% assign project_groups = projects.current | concat: projects.currentContributions %}
+  {% for group in project_groups %}
+    {% include 'project-group', group: group, showDescription: false %}
   {% endfor %}
-
-  {% for group in projects.currentContributions %}
-    <section>
-      <h2>{{ group.title }}</h2>
-      <ul>
-        {% for project in group.projects %}
-          <li>
-            <a href='{{ project.code }}'>{{ project.title }}</a>
-            <p>{{ project.description }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endfor %}
-
-  {% for group in projects.fcc %}
-    <section>
-      <h2>{{ group.title }}</h2>
-      <p>{{ group.description }}</p>
-      <ul>
-        {% for project in group.projects %}
-          <li>
-            <a href='{{ project.code }}'>{{ project.title }}</a>
-            <p>{{ project.description }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endfor %}
-
-  {% for group in projects.other %}
-    <section>
-      <h2>{{ group.title }}</h2>
-      {% if group.description %}
-        <p>{{ group.description }}</p>
-      {% endif %}
-      <ul>
-        {% for project in group.projects %}
-          <li>
-            <a href='{{ project.code }}'>{{ project.title }}</a>
-            <p>{{ project.description }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+  {% assign project_groups = projects.fcc | concat: projects.other %}
+  {% for group in project_groups %}
+    {% include 'project-group', group: group, showDescription: true %}
   {% endfor %}
 </article>

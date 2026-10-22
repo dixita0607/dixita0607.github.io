@@ -9,11 +9,7 @@ layout: main
 
   <ul class='book-list'>
     {% for book in books.reading %}
-      <li>
-        <div class='book-list-item'>
-          <strong>{{ book.title }}</strong><span>{{ book.author }}</span>
-        </div>
-      </li>
+      {% include 'book-entry', book: book, linked: false %}
     {% endfor %}
   </ul>
 
@@ -26,16 +22,7 @@ layout: main
       <h3>{{ year_books[0] }}</h3>
       <ul class='book-list'>
         {%- for book in year_book_list %}
-          <li>
-            <div class='book-list-item'>
-              {% if book.link -%}
-                <a href='{{ book.link }}' target='_blank' rel='noreferrer'>{{ book.title }}</a>
-              {%- else -%}
-                <strong>{{ book.title }}</strong>
-              {%- endif -%}
-              <span>{{ book.author }}</span>
-            </div>
-          </li>
+          {% include 'book-entry', book: book, linked: true %}
         {% endfor -%}
       </ul>
     </section>

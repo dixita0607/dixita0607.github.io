@@ -1,13 +1,16 @@
 ---
 title: Sketchbook — Dixita Ganatra
 layout: main
+pagination:
+  data: collections.listings.sketchbook
+  size: 1
+  alias: listing
+permalink: '{{ listing.url }}'
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: 'Sketchbook — {{ listing.label }} — Dixita Ganatra'
 ---
-{% assign artworkTags = '' | split: '' %}
-{% for artwork in artworks %}
-  {% assign artworkTags = artworkTags | concat: artwork.tags %}
-{% endfor %}
-{% assign artworkTags = artworkTags | uniq | sort %}
-<article class='page sketchbook-page' data-image-base='{{ sketchbook.image_base_url | escape }}'>
+<article class='page sketchbook-page'>
   <header class='page-header'>
     <div class='sketch-heading'>
       <h1>Sketchbook.</h1>
@@ -31,65 +34,41 @@ layout: main
       <a href='mailto:contact@dixita.dev'>contact@dixita.dev</a>.
     </p>
   </section>
-  <nav class='blog-filters sketch-filters' aria-label='Filter artwork by tag' hidden>
-    {% if artworkTags contains 'portfolio' %}
-      <button class='blog-filter' type='button' data-sketch-filter='portfolio' aria-pressed='false'>
-        Portfolio
-      </button>
-    {% endif %}
-    {% for tag in artworkTags %}
-      {% unless tag == 'portfolio' %}
-        <button
-          class='blog-filter'
-          type='button'
-          data-sketch-filter='{{ tag | escape }}'
-          aria-pressed='false'
-        >
-          {{ tag }}
-        </button>
-      {% endunless %}
+  {% include 'filter-nav',
+    options: collections.listings.sketchbook,
+    navClass: 'blog-filters sketch-filters',
+    navLabel: 'Filter artwork by tag'
+  %}
+  <div class='sketch-grid' role='list' aria-label='Artworks'>
+    {% for artwork in listing.items %}
+      {% include 'sketch-tile' %}
     {% endfor %}
-    <button class='blog-filter' type='button' data-sketch-filter='all' aria-pressed='false'>
-      All
-    </button>
-  </nav>
-  <p class='sketch-status sr-only' role='status' aria-live='polite'></p>
-  <div class='sketch-grid' role='list' aria-label='Artworks'></div>
-  <p class='sketch-empty' hidden>No artworks match this tag yet.</p>
+  </div>
   <noscript>
-    <p>Enable JavaScript for the gallery, or open an artwork from this list.</p>
-    <ul>
-      {% for artwork in artworks %}
-        <li>
-          <a href='{{ sketchbook.image_base_url }}/{{ artwork.image_key | url_encode }}'>
-            {{- artwork.title | escape -}}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <p>Select an artwork to open the full image. Enable JavaScript for the gallery viewer.</p>
   </noscript>
-  <dialog class='sketch-lightbox' aria-label='Artwork preview'>
-    <div class='sketch-lightbox__frame'>
-      <button class='sketch-lightbox__close' type='button' aria-label='Close preview'>×</button>
-      <button class='sketch-lightbox__previous' type='button' aria-label='Previous artwork'>
+  <dialog class='sketch-preview' aria-label='Artwork preview'>
+    <div class='sketch-preview__frame'>
+      <button class='sketch-preview__close' type='button' aria-label='Close preview'>×</button>
+      <button class='sketch-preview__previous' type='button' aria-label='Previous artwork'>
         ←
       </button>
       <figure>
-        <div class='sketch-lightbox__image'><img alt=''></div>
+        <div class='sketch-preview__image'><img alt=''></div>
         <figcaption aria-live='polite'>
-          <span class='sketch-lightbox__title'></span>
-          <span class='sketch-lightbox__credits'></span>
+          <span class='sketch-preview__title'></span>
+          <span class='sketch-preview__credits'></span>
         </figcaption>
       </figure>
-      <button class='sketch-lightbox__next' type='button' aria-label='Next artwork'>→</button>
-      <p class='sketch-lightbox__error' hidden>
+      <button class='sketch-preview__next' type='button' aria-label='Next artwork'>→</button>
+      <p class='sketch-preview__error' hidden>
         Image unavailable.
         <a href='' target='_blank' rel='noopener noreferrer'>Open the original</a>.
       </p>
     </div>
   </dialog>
   <script type='application/json' id='sketchbook-artworks'>
-    {{ artworks | jsonForScript }}
+    {{ listing.items | artworkPreviews | jsonForScript }}
   </script>
   <script src='/sketchbook.js' defer></script>
 </article>

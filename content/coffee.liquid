@@ -1,6 +1,14 @@
 ---
 title: Coffee Journal - Dixita Ganatra
 layout: main
+pagination:
+  data: collections.listings.coffee
+  size: 1
+  alias: listing
+permalink: '{{ listing.url }}'
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: 'Coffee — {{ listing.label }} — Dixita Ganatra'
 ---
 <article class='page content-list'>
   <header class='page-header coffee-header'>
@@ -23,86 +31,17 @@ layout: main
     </p>
   </header>
 
-  <div class='coffee-filters' role='group' aria-label='Filter coffees'>
-    <button class='blog-filter is-active' type='button' data-coffee-filter='all' aria-pressed='true'>
-      All
-    </button>
-    <button class='blog-filter' type='button' data-coffee-filter='favorites' aria-pressed='false'>
-      Favorites
-    </button>
-  </div>
-  <p class='coffee-empty' role='status' hidden>No favorite coffees yet.</p>
-
+  {% include 'filter-nav',
+    options: collections.listings.coffee,
+    navClass: 'coffee-filters',
+    navLabel: 'Filter coffees'
+  %}
   <div class='coffee-grid'>
-    {% assign coffees_by_date = coffee.coffees | sort: 'date' | reverse %}
-    {% for coffee in coffees_by_date %}
-      <div class='coffee-card' data-favorite='{{ coffee.favorite }}'>
-        <div class='coffee-card__visual'>
-          {% if coffee.image %}
-            <img
-              src='{{ coffee.image }}'
-              alt='Coffee packet for {{ coffee.name | escape }}'
-              loading='lazy'
-            >
-          {% else %}
-            <span>Packet image</span>
-            <span class='coffee-card__visual-mark'>☕</span>
-          {% endif %}
-        </div>
-        <div class='coffee-card__body'>
-          <div class='coffee-card__heading'>
-            <h2>
-              {% if coffee.url != blank -%}
-                <a href='{{ coffee.url }}' target='_blank' rel='noreferrer'>{{ coffee.name }}</a>
-              {%- else -%}
-                {{- coffee.name -}}
-              {%- endif %}
-              {% if coffee.favorite %}
-                <span class='favorite-heart' role='img' aria-label='Favorite'>
-                  <svg viewBox='0 0 24 24' aria-hidden='true' focusable='false'>
-                    <path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' />
-                  </svg>
-                </span>
-              {% endif %}
-            </h2>
-            {% if coffee.rating != blank %}
-              <span class='coffee-card__rating'>{{ coffee.rating }}/5</span>
-            {% endif %}
-          </div>
-          <p class='coffee-card__roaster'>{{ coffee.roasters }}</p>
-          <dl class='coffee-card__facts'>
-            <div>
-              {% if coffee.origin != blank %}
-                <dt>Origin</dt>
-                <dd>{{ coffee.origin }}</dd>
-              {% endif %}
-            </div>
-            <div>
-              {% if coffee.roast_level != blank %}
-                <dt>Roast</dt>
-                <dd>{{ coffee.roast_level }}</dd>
-              {% endif %}
-            </div>
-            <div>
-              {% if coffee.price != blank %}
-                <dt>Price</dt>
-                <dd>₹{{ coffee.price }}</dd>
-              {% endif %}
-            </div>
-          </dl>
-          {% if coffee.date != blank %}
-            <p class='coffee-card__date'>Tried {{ coffee.date }}</p>
-          {% endif %}
-          {% if coffee.note != blank %}
-            <p class='coffee-card__note'><span>Personal note</span>{{ coffee.note }}</p>
-          {% endif %}
-          {% if coffee.aftertaste != blank %}
-            <p class='coffee-card__note'>
-              <span>Aftertaste</span>{{ coffee.aftertaste | join: ', ' }}
-            </p>
-          {% endif %}
-        </div>
-      </div>
+    {% if listing.items.size == 0 %}
+      <p class='coffee-empty'>No coffees in this view yet.</p>
+    {% endif %}
+    {% for coffee in listing.items %}
+      {% include 'coffee-card' %}
     {% endfor %}
   </div>
 </article>
