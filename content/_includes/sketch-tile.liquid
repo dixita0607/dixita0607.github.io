@@ -1,0 +1,15 @@
+{% assign imagePath = artwork.image_key | imagePath %}
+<div class='sketch-tile is-loading' role='listitem'>
+  <a
+    href='{{ sketchbook.image_base_url | escape }}/{{ imagePath | escape }}'
+    aria-label='Open {{ artwork.title | escape }}'
+  >
+    <img
+      src='{{ sketchbook.image_base_url | escape }}/cdn-cgi/image/width=640,format=auto/{{ imagePath | escape }}'
+      alt='{{ artwork.alt | escape }}'
+      loading='lazy'
+      decoding='async'
+    >
+    <span class='sketch-tile__error'>Thumbnail unavailable — open artwork</span>
+  </a>
+</div>

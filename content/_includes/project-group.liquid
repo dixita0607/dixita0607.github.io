@@ -1,0 +1,14 @@
+<section>
+  <h2>{{ group.title }}</h2>
+  {% if showDescription and group.description %}
+    <p>{{ group.description }}</p>
+  {% endif %}
+  <ul>
+    {% for project in group.projects %}
+      <li>
+        <a href='{{ project.code }}'>{{ project.title }}</a>
+        <p>{{ project.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

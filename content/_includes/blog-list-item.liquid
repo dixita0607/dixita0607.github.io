@@ -1,0 +1,6 @@
+<li>
+  <div class='blog-list-item'>
+    <a href='{{ note.url }}'>{{ note.data.title }}</a>
+    {% include 'post-date', postDate: note.data.publishDate %}
+  </div>
+</li>

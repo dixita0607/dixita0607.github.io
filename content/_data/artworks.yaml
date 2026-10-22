@@ -430,7 +430,7 @@
 - image_key: 'Following_Loish.jpg'
   title: 'Following a Tutorial by Loish'
   alt: 'Softly shaded portrait of a smiling woman with long, flowing pink hair.'
-  tags: [sketchbook, tutorial]
+  tags: [sketchbook, illustration]
   credits:
     - creator: 'Loish (Lois van Baarle)'
       source: 'Tutorial'
@@ -612,7 +612,7 @@
 - image_key: 'Loish_Learning.jpg'
   title: 'A Tutorial by Loish'
   alt: 'Woman with flowing red hair raising her arms in vivid pink, orange, and blue light.'
-  tags: [sketchbook, tutorial]
+  tags: [sketchbook, illustration]
   credits:
     - creator: 'Loish (Lois van Baarle)'
       source: 'Tutorial'

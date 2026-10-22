@@ -1,0 +1,10 @@
+<li>
+  <div class='book-list-item'>
+    {% if linked and book.link -%}
+      <a href='{{ book.link }}' target='_blank' rel='noreferrer'>{{ book.title }}</a>
+    {%- else -%}
+      <strong>{{ book.title }}</strong>
+    {%- endif -%}
+    <span>{{ book.author }}</span>
+  </div>
+</li>

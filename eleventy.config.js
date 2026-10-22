@@ -1,5 +1,6 @@
 const YAML = require('yaml');
 const markdownIt = require('markdown-it');
+const { createSectionListings } = require('./lib/listings');
 
 module.exports = function (eleventyConfig) {
   const markdownLibrary = markdownIt({ html: true, linkify: true, typographer: true });
@@ -17,6 +18,39 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', markdownLibrary);
   eleventyConfig.addDataExtension('yaml', (contents) => YAML.parse(contents));
+  const slugify = eleventyConfig.getFilter('slugify');
+  let posts;
+  eleventyConfig.on('eleventy.before', () => {
+    posts = undefined;
+  });
+  const blogPosts = (collection) =>
+    (posts ??= collection
+      .getAllSorted()
+      .filter((item) => item.data.layout === 'blog')
+      .reverse());
+  eleventyConfig.addCollection('posts', blogPosts);
+  eleventyConfig.addCollection('listings', (collection) => {
+    const { artworks, anime, coffee } = collection.getAll()[0].data;
+    return createSectionListings(
+      {
+        posts: blogPosts(collection),
+        artworks,
+        anime,
+        coffees: coffee.coffees,
+      },
+      slugify,
+    );
+  });
+  eleventyConfig.addFilter('groupByYear', (items) =>
+    items.reduce((years, item) => {
+      (years[item.year] ||= []).push(item);
+      return years;
+    }, {}),
+  );
+  eleventyConfig.addFilter('imagePath', (key) => key.split('/').map(encodeURIComponent).join('/'));
+  eleventyConfig.addFilter('artworkPreviews', (artworks) =>
+    artworks.map(({ title, alt, credits }) => ({ title, alt, credits })),
+  );
   eleventyConfig.addFilter('jsonForScript', (value) =>
     JSON.stringify(value)
       .replace(/</g, '\\u003c')

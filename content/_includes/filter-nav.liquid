@@ -1,0 +1,13 @@
+<nav class='{{ navClass }}' aria-label='{{ navLabel | escape }}'>
+  {% for option in options %}
+    <a
+      class='blog-filter{% if option.url == page.url %} is-active{% endif %}'
+      href='{{ option.url | escape }}'
+      {% if option.url == page.url %}
+        aria-current='page'
+      {% endif %}
+    >
+      {{- option.label | escape -}}
+    </a>
+  {% endfor %}
+</nav>
