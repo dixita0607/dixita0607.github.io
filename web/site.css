@@ -607,10 +607,12 @@ html.dark .theme-icon__moon {
   outline: 3px solid var(--blue-text);
   outline-offset: 4px;
 }
-.js .sketch-tile.is-loading {
+.js .sketch-tile.is-loading,
+.sketch-tile.has-error {
   background: color-mix(in srgb, var(--blue-text) 12%, var(--paper));
 }
-.js .sketch-tile.is-loading > a {
+.js .sketch-tile.is-loading > a,
+.sketch-tile.has-error > a {
   position: relative;
   aspect-ratio: 1;
 }
@@ -630,6 +632,12 @@ html.dark .theme-icon__moon {
 }
 .sketch-tile.has-error img {
   display: none;
+}
+.sketch-tile.has-error > a {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
 }
 .sketch-tile.has-error .sketch-tile__error {
   display: block;
