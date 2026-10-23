@@ -7,6 +7,8 @@
     <img
       src='{{ sketchbook.image_base_url | escape }}/cdn-cgi/image/width=640,format=auto/{{ imagePath | escape }}'
       alt='{{ artwork.alt | escape }}'
+      width='{{ artwork.width }}'
+      height='{{ artwork.height }}'
       loading='lazy'
       decoding='async'
     >

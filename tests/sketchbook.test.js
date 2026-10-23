@@ -5,6 +5,16 @@ const vm = require('node:vm');
 
 const source = readFileSync(require.resolve('../web/sketchbook.js'), 'utf8');
 
+test('every artwork reserves its own thumbnail proportions before lazy loading', () => {
+  const artworks = require('yaml').parse(
+    readFileSync(require.resolve('../content/_data/artworks.yaml'), 'utf8'),
+  );
+  for (const artwork of artworks) {
+    assert(Number.isInteger(artwork.width) && artwork.width > 0, artwork.image_key);
+    assert(Number.isInteger(artwork.height) && artwork.height > 0, artwork.image_key);
+  }
+});
+
 function element() {
   const classes = new Set();
   return {

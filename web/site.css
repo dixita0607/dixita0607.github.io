@@ -588,6 +588,7 @@ html.dark .theme-icon__moon {
 }
 .sketch-tile > a {
   display: block;
+  position: relative;
   width: 100%;
   padding: 0;
   border: 1px solid var(--line);
@@ -611,15 +612,7 @@ html.dark .theme-icon__moon {
 .sketch-tile.has-error {
   background: color-mix(in srgb, var(--blue-text) 12%, var(--paper));
 }
-.js .sketch-tile.is-loading > a,
-.sketch-tile.has-error > a {
-  position: relative;
-  aspect-ratio: 1;
-}
 .js .sketch-tile.is-loading img {
-  position: absolute;
-  inset: 0;
-  height: 100%;
   visibility: hidden;
 }
 .sketch-tile__error {
@@ -631,7 +624,7 @@ html.dark .theme-icon__moon {
     monospace;
 }
 .sketch-tile.has-error img {
-  display: none;
+  visibility: hidden;
 }
 .sketch-tile.has-error > a {
   display: grid;
@@ -641,6 +634,9 @@ html.dark .theme-icon__moon {
 }
 .sketch-tile.has-error .sketch-tile__error {
   display: block;
+  position: absolute;
+  inset: 0;
+  align-content: center;
 }
 .sketch-preview {
   width: min(96vw, 80rem);
